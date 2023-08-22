@@ -13,14 +13,14 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 ## Integrantes
 
 * Arthur Ramires
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Bernardo Garcia Marques
+* João Pedro de Castro Vieira
+* Gabriel Fioreze de Araújo
 * Nome completo do aluno 5
 
 ## Orientador
 
-* Nome completo do professor 1
+* Fabio Leandro Rodrgues Cordeiro
 
 # Planejamento
 
