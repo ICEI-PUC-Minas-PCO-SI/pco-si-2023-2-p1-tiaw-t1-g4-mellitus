@@ -16,7 +16,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Bernardo Garcia Marques
 * João Pedro de Castro Vieira
 * Gabriel Fioreze de Araújo
-* Nome completo do aluno 5
+* Matheus Antônio Valentin Freitas
 
 ## Orientador
 
