@@ -33,7 +33,7 @@ Apresente também alguns (pelo menos 2) objetivos específicos dependendo de ond
 
 ## Justificativa
 
-O projeto nasceu com uma experiência de um de nossos membros do grupo que em sua vivência pessoal convive com uma pessoa portadora de diabete tipo 1 e encontra dificuldades de calcular quanto de carboidratos tem em cada alimento antes de consumi-los.
+O projeto nasceu com uma experiência de um dos membros do grupo que em sua vivência pessoal convive com uma pessoa portadora de diabete tipo 1 e encontra dificuldades de calcular quanto de carboidratos tem em cada alimento antes de consumi-los.
 
 A aplicação permite o cálculo em tempo real de carboidratos em cada alimento e não só isso ela entregara usuário informações e procedimentos que contribuam e facilitam a vida do diabético.
 
