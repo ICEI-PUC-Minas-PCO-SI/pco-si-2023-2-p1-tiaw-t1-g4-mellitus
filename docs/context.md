@@ -11,12 +11,9 @@ Escreva de 2 a 3 parágrafos para contetualizar o seu projeto.
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Público-Alvo Indivíduos portadores de Diabetes tipo 1 e tipo 2, de todas as idades, assim como aqueles que têm familiares e amigos com Diabetes, encontram neste conteúdo um recurso valioso. Incluem-se aqui pessoas que buscam melhorar sua qualidade de vida através do cálculo para aplicação de insulina e que desejam obter dicas para aprimorar seus níveis glicêmicos. Não obstante, esta aplicação é relevante para pessoas não diabéticas que almejam otimizar seus níveis glicêmicos, visando evitar o desenvolvimento futuro da doença.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
+Também abrange estudantes e acadêmicos da área de saúde, bem como qualquer indivíduo que busque informações complementares sobre a Diabetes por meio de texto ou vídeo. Seja por curiosidade ou com fins didáticos, essa fonte é uma ferramenta útil para orientar-se sobre o assunto. Assim, estudantes e acadêmicos da área da saúde encontram aqui um recurso para aprofundar sua compreensão sobre o tema.
 > **Links Úteis**:
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
 > - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
