@@ -33,9 +33,9 @@ Apresente também alguns (pelo menos 2) objetivos específicos dependendo de ond
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+O projeto nasceu com uma experiência de um de nossos membros do grupo que em sua vivência pessoal convive com uma pessoa portadora de diabete tipo 1 e encontra dificuldades de calcular quanto de carboidratos tem em cada alimento antes de consumi-los.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+A aplicação permite o cálculo em tempo real de carboidratos em cada alimento e não só isso ela entregara usuário informações e procedimentos que contribuam e facilitam a vida do diabético.
 
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
