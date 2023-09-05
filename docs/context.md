@@ -1,10 +1,12 @@
 # Introdução
 
-O projeto "Mellitus" tem como objetivo auxiliar na melhoria da qualidade de vida de pessoas com diabetes e disponibilizar informações relacionadas ao Diabetes Mellitus (DM), abrangendo tanto o tipo 1 quanto o tipo 2. Atualmente, o Brasil ocupa a quinta posição no ranking de países com maior incidência de diabetes no mundo, com 16,8 milhões de adultos afetados, ficando para trás apenas da China, Índia, Estados Unidos e Paquistão. A estimativa aponta para um aumento na incidência da doença, que poderá atingir 21,5 milhões de casos até 2030, segundo dados do Atlas do Diabetes da Federação Internacional de Diabetes (IDF).
+Atualmente, o Brasil ocupa a quinta posição no ranking de países com maior incidência de diabetes no mundo, com 
+16,8 milhões de adultos afetados, ficando atrás apenas da China, Índia, Estados Unidos e Paquistão. A estimativa 
+aponta para um aumento na incidência da doença, que poderá atingir 21,5 milhões de casos até 2030, conforme dados 
+do Atlas do Diabetes da Federação Internacional de Diabetes (IDF).
 
-É extremamente reconhecido que o consumo excessivo de carboidratos pode elevar os níveis de glicose no sangue, aumentando assim o risco de complicações associadas à doença. uma resistência à ação desses hormônios. Então é fundamental manter um equilíbrio adequado na ingestão de carboidratos e níveis regulares de glicose no sangue, minimizando o risco de complicações relacionadas à glicemia elevada.
-
-Nosso objetivo é disponibilizar aos usuários o sistema de ajuda para a concentração de carboidratos, juntamente com informações essenciais sobre o assunto, permitindo também o cálculo dos níveis ideais de glicose a serem mantidos.
+O nosso propósito é disponibilizar aos usuários do sistema ferramentas para a contagem de carboidratos, juntamente com 
+informações essenciais sobre o assunto, permitindo também o cálculo dos níveis ideais de glicose a serem mantidos.
 
 
 ## Problema
