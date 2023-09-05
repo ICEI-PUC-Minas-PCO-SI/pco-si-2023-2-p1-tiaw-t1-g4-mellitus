@@ -1,13 +1,11 @@
 # Introdução
 
-Imagine que você deseja apresentar este projeto para investidores que deverão decidir se investem ou não no desenvolvimento da sua ferramenta.
+O projeto "Mellitus" tem como objetivo auxiliar na melhoria da qualidade de vida de pessoas com diabetes e disponibilizar informações relacionadas ao Diabetes Mellitus (DM), abrangendo tanto o tipo 1 quanto o tipo 2. Atualmente, o Brasil ocupa a quinta posição no ranking de países com maior incidência de diabetes no mundo, com 16,8 milhões de adultos afetados, ficando para trás apenas da China, Índia, Estados Unidos e Paquistão. A estimativa aponta para um aumento na incidência da doença, que poderá atingir 21,5 milhões de casos até 2030, segundo dados do Atlas do Diabetes da Federação Internacional de Diabetes (IDF).
 
-A **Introdução** consiste das etapas: *Contextualização -- Definição do problema -- Definição dos Objetivos -- Justificativa*, e tem como função situar o seu trabalho dentro de um contexto de mercado e mostrar a importância da sua proposta para resolver a dor de um usuário.
+É extremamente reconhecido que o consumo excessivo de carboidratos pode elevar os níveis de glicose no sangue, aumentando assim o risco de complicações associadas à doença. uma resistência à ação desses hormônios. Então é fundamental manter um equilíbrio adequado na ingestão de carboidratos e níveis regulares de glicose no sangue, minimizando o risco de complicações relacionadas à glicemia elevada.
 
+Nosso objetivo é disponibilizar aos usuários o sistema de ajuda para a concentração de carboidratos, juntamente com informações essenciais sobre o assunto, permitindo também o cálculo dos níveis ideais de glicose a serem mantidos.
 
-A Contextualização deve situar sem projeto em um determinado contexto de mercado, a fim de fornecer informações adicionais que possam ajudar a entender melhor o assunto que você irá abordar. Serve também para definir a relevância do seu assunto, uma vez que mostra o tamanho do mercado em que se está inserido. Ela pode envolver a análise de vários aspectos, como o ambiente histórico, cultural, político e social em que o problema a ser atacado surgiu.
-
-Escreva de 2 a 3 parágrafos para contetualizar o seu projeto.
 
 ## Problema
 
