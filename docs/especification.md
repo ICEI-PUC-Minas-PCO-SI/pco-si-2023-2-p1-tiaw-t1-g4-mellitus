@@ -12,6 +12,9 @@ Ana, 38 anos, Profissão: Nutricionista, portadora de Diabetes Tipo 2, é uma pe
 
 Augusto, 23 anos, estudante de engenharia e irmão do Lucas, uma criança de 12 anos que sofre com sobrepeso e diabetes tipo 2 de 12 anos. Augusto é o responsável pelo irmão em grande parte do tempo e está sempre em busca de auxiliar a mãe no máximo possível cuidando do pequeno. Se preocupa em levar o irmão ao médico uma vez por mês, preparar suas refeições e monitorar as atividades físicas do irmão, Augusto está sempre atrás de dicas e artigos para executar corretamente o controle glicemico e hormonal do irmão, além de zelar pela nutrição e perda de peso, já que se tratado corretamente, o caso de Lucas pode regredir bastante.
 
+Carlos é um engenheiro civil de 45 anos que enfrenta um desafio significativo em sua saúde devido ao seu estado avançado de diabetes tipo 2, que se desenvolveu na fase adulta devido à sua impertinência e obesidade. Carlos reconhece que suas escolhas de estilo de vida passadas contribuíram para essa condição e está determinado a fazer mudanças significativas em sua vida.
+
+Ele está empenhado em aprender a controlar sua diabetes por meio de uma dieta saudável, exercícios regulares e medicamentos prescritos por seu médico. Carlos compreende a importância de cuidar de sua saúde e está comprometido em melhorar seu bem-estar geral, enquanto continua sua carreira como engenheiro civil.
 
 > **Links Úteis**:
 > - [Rock Content](https://rockcontent.com/blog/personas/)
