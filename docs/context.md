@@ -9,7 +9,11 @@ Nosso objetivo é disponibilizar aos usuários o sistema de ajuda para a concent
 
 ## Problema
 
+A SBD (Sociedade Brasileira de Diabetes) e a comunidade médica responsável - endocrinologistas e pesquisadores - apontam o diagnóstico tardio e o tratamento inadequado como os principais impedimentos para melhoria do quadro da diabetes no país, e que estes problemas são oriundos da falta de informação por parte do enfermo e de seus familiares, bem como a sobrecarga da infraestrutura pública de saúde.
 
+Tais fatores corroboram para que os diabéticos não sejam bem acessados ​​nesta jornada e acabem adotando doses indiscriminadas de insulina, automedicação e a não-prática de hábitos cruciais ao diabético, como a atividade física, alimentação adequada e a realização recorrente de exames.
+
+Nesta ótica, o Mellitus busca resolver os problemas descritos ao fornecer de forma centralizada, todo o apoio informativo necessário para conscientização, tratamento, prevenção e diagnóstico da doença, a fim de reduzir os números no país e incentivar a melhoria da qualidade de vida.
 
 
 
