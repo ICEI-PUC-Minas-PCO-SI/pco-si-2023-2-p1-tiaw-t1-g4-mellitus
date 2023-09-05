@@ -6,9 +6,12 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Isabelle, de 19 anos, é atendente de supermercado e filha única. Ela possui casos de diabetes tipo 2 na família, tanto por parte do pai quanto por parte da mãe, e eles não a têm. Isabelle se preocupa e tem dúvidas se está predisposta a ter diabetes e quais cuidados deve tomar para não adquiri-la. Ela faz o que pode para contribuir com a renda em casa, evita ao máximo ficar doente para não trazer muitos gastos e, como ficou sabendo do caso na família, está em busca de auxílio.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+Ana, 38 anos, Profissão: Nutricionista, portadora de Diabetes Tipo 2, é uma pessoa ativa. Ela trabalha em um consultório de nutrição, gosta de cozinhar refeições saudáveis em casa e pratica pilates regularmente. Procura gerenciar sua ingestão de carboidratos de forma eficaz para manter níveis estáveis de glicose no sangue e melhorar sua saúde a longo prazo.
+
+Augusto, 23 anos, estudante de engenharia e irmão do Lucas, uma criança de 12 anos que sofre com sobrepeso e diabetes tipo 2 de 12 anos. Augusto é o responsável pelo irmão em grande parte do tempo e está sempre em busca de auxiliar a mãe no máximo possível cuidando do pequeno. Se preocupa em levar o irmão ao médico uma vez por mês, preparar suas refeições e monitorar as atividades físicas do irmão, Augusto está sempre atrás de dicas e artigos para executar corretamente o controle glicemico e hormonal do irmão, além de zelar pela nutrição e perda de peso, já que se tratado corretamente, o caso de Lucas pode regredir bastante.
+
 
 > **Links Úteis**:
 > - [Rock Content](https://rockcontent.com/blog/personas/)
