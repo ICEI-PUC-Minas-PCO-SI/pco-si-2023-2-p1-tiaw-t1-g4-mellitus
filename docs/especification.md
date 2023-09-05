@@ -6,6 +6,8 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
+Giovanna tem 19 anos , trabalha como técnica de farmácia e cursa fisioterapia. Portadora de diabetes tipo 1 (insulinódependant) desde 8 anos de idade. Busca melhorar seus hábitos de vida, aprendendo melhor quanto de insulina reguladora aplicar antes de comer. E precisa de uma plataforma para isto.
+
 Isabelle, de 19 anos, é atendente de supermercado e filha única. Ela possui casos de diabetes tipo 2 na família, tanto por parte do pai quanto por parte da mãe, e eles não a têm. Isabelle se preocupa e tem dúvidas se está predisposta a ter diabetes e quais cuidados deve tomar para não adquiri-la. Ela faz o que pode para contribuir com a renda em casa, evita ao máximo ficar doente para não trazer muitos gastos e, como ficou sabendo do caso na família, está em busca de auxílio.
 
 Ana, 38 anos, Profissão: Nutricionista, portadora de Diabetes Tipo 2, é uma pessoa ativa. Ela trabalha em um consultório de nutrição, gosta de cozinhar refeições saudáveis em casa e pratica pilates regularmente. Procura gerenciar sua ingestão de carboidratos de forma eficaz para manter níveis estáveis de glicose no sangue e melhorar sua saúde a longo prazo.
