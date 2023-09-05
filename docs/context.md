@@ -10,16 +10,11 @@ informações essenciais sobre o assunto, permitindo também o cálculo dos nív
 
 
 ## Problema
+A SBD (Sociedade Brasileira de Diabetes) e a comunidade médica responsável - endocrinologistas e pesquisadores - apontam o diagnóstico tardio e o tratamento inadequado como os principais impecilhos para melhoria do quadro da diabetes no país, e que estes problemas são oriundos da falta de informação por parte do enfermo e de seus familiares, bem como da sobrecarga da infraestrutura pública de saúde.
 
-A SBD (Sociedade Brasileira de Diabetes) e a comunidade médica responsável - endocrinologistas e pesquisadores - apontam o diagnóstico tardio e o tratamento inadequado como os principais impedimentos para melhoria do quadro da diabetes no país, e que estes problemas são oriundos da falta de informação por parte do enfermo e de seus familiares, bem como a sobrecarga da infraestrutura pública de saúde.
+Tais fatores corroboram para que os diabéticos não sejam bem acessorados nesta jornada e acabem adotando doses indiscriminadas de insulina, auto-medicação e a não-prática de hábitos cruciais ao diabético, como a atividade física, alimentação adequada e a realização recorrente de exames.
 
-Tais fatores corroboram para que os diabéticos não sejam bem assessorados ​​nesta jornada e acabem adotando doses indiscriminadas de insulina, automedicação e a não-prática de hábitos cruciais ao diabético, como a atividade física, alimentação adequada e a realização recorrente de exames.
-
-Nesta ótica, o Mellitus busca resolver os problemas descritos ao fornecer de forma centralizada, todo o apoio informativo necessário para conscientização, tratamento, prevenção e diagnóstico da doença, a fim de reduzir os números no país e incentivar a melhoria da qualidade de vida.
-
-
-
-
+Nesta ótica, faz-se necessário a o fornecimento de apoio médico e informacional para promover maior conscientização sobre o tratamento, prevenção e diagnóstico da Diabetes, afim de reduzir os números da doença no país e incentivar a melhoria da qualidade de vida.
    
 > **Links Úteis**:
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
