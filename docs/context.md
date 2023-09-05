@@ -28,7 +28,9 @@ Nesta ótica, o Mellitus busca resolver os problemas descritos ao fornecer de fo
 
 ## Objetivos
 
-Nosso propósito consiste em prestar assistência às pessoas que exercem controle sobre suas taxas de insulina, evoluindo para um gerenciamento mais abrangente e minimização de crises potenciais iminentes. Almejamos proporcionar um maior conforto ao indivíduo, permitindo-lhe concentrar-se integralmente em sua qualidade de vida. Além disso, nossa missão envolve a responsabilidade de educar os indivíduos sobre este tema de extrema gravidade, o diabetes mellitus, adotando medidas preventivas e proativas para o manejo eficaz desta condição.
+O propósito da organização consiste em prestar assistência às pessoas que necessitam exercer controle sobre sua taxa de insulina, visando a um gerenciamento mais abrangente e a minimização de potenciais crises iminentes. Almeja-se proporcionar um maior conforto ao indivíduo, permitindo que ele se concentre integralmente em sua qualidade de vida. Adicionalmente, percebe-se a necessidade e a responsabilidade de educar indivíduos acerca deste tema de extrema gravidade, o diabetes mellitus, adotando medidas preventivas e proativas para o eficaz manejo desta condição.
+
+
  
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
