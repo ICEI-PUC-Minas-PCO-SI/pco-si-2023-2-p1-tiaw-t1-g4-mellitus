@@ -26,9 +26,7 @@ Nesta ótica, o Mellitus busca resolver os problemas descritos ao fornecer de fo
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+Nosso propósito consiste em prestar assistência às pessoas que exercem controle sobre suas taxas de insulina, evoluindo para um gerenciamento mais abrangente e minimização de crises potenciais iminentes. Almejamos proporcionar um maior conforto ao indivíduo, permitindo-lhe concentrar-se integralmente em sua qualidade de vida. Além disso, nossa missão envolve a responsabilidade de educar os indivíduos sobre este tema de extrema gravidade, o diabetes mellitus, adotando medidas preventivas e proativas para o manejo eficaz desta condição.
  
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
