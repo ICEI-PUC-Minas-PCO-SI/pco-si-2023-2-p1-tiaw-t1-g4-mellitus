@@ -33,9 +33,9 @@ Nosso propósito consiste em prestar assistência às pessoas que exercem contro
 
 ## Justificativa
 
-O projeto nasceu com uma experiência de um dos membros do grupo que em sua vivência pessoal convive com uma pessoa portadora de diabete tipo 1 que encontra dificuldades de calcular quanto de carboidratos tem em cada alimento antes de consumi-los.
+O projeto nasceu com uma experiência de um dos membros do grupo que em sua vivência pessoal convive com uma pessoa portadora de diabetes tipo 1 que encontra dificuldades de calcular quanto de carboidratos tem em cada alimento antes de consumi-los.
 
-A aplicação permitira o cálculo em tempo real de carboidratos em cada alimento e não só isso ela entregara usuário informações e procedimentos que contribuam e facilitam a vida do diabético.
+A aplicação permitira o cálculo em tempo real de carboidratos em cada alimento e não só isso, ela entregara usuário informações e procedimentos que contribuam e facilitam a vida do diabético.
 
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
