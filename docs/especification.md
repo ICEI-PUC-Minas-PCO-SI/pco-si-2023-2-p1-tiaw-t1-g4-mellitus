@@ -2,48 +2,37 @@
 
 Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
 ## Personas
 
-Giovanna tem 19 anos , trabalha como técnica de farmácia e cursa fisioterapia. Portadora de diabetes tipo 1 (insulinódependant) desde 8 anos de idade. Busca melhorar seus hábitos de vida, aprendendo melhor quanto de insulina reguladora aplicar antes de comer. E precisa de uma plataforma para isto.
+#1: Giovanna tem 19 anos , trabalha como técnica de farmácia e cursa fisioterapia. Portadora de diabetes tipo 1 (insulinódependant) desde 8 anos de idade. Busca melhorar seus hábitos de vida, aprendendo melhor quanto de insulina reguladora aplicar antes de comer. E precisa de uma plataforma para isto.
 
-Isabelle, de 19 anos, é atendente de supermercado e filha única. Ela possui casos de diabetes tipo 2 na família, tanto por parte do pai quanto por parte da mãe, e eles não a têm. Isabelle se preocupa e tem dúvidas se está predisposta a ter diabetes e quais cuidados deve tomar para não adquiri-la. Ela faz o que pode para contribuir com a renda em casa, evita ao máximo ficar doente para não trazer muitos gastos e, como ficou sabendo do caso na família, está em busca de auxílio.
+#2: Isabelle, de 19 anos, é atendente de supermercado e filha única. Ela possui casos de diabetes tipo 2 na família, tanto por parte do pai quanto por parte da mãe, e eles não a têm. Isabelle se preocupa e tem dúvidas se está predisposta a ter diabetes e quais cuidados deve tomar para não adquiri-la. Ela faz o que pode para contribuir com a renda em casa, evita ao máximo ficar doente para não trazer muitos gastos e, como ficou sabendo do caso na família, está em busca de auxílio.
 
-Ana, 38 anos, Profissão: Nutricionista, portadora de Diabetes Tipo 2, é uma pessoa ativa. Ela trabalha em um consultório de nutrição, gosta de cozinhar refeições saudáveis em casa e pratica pilates regularmente. Procura gerenciar sua ingestão de carboidratos de forma eficaz para manter níveis estáveis de glicose no sangue e melhorar sua saúde a longo prazo.
+#3: Ana, 38 anos, Profissão: Nutricionista, portadora de Diabetes Tipo 2, é uma pessoa ativa. Ela trabalha em um consultório de nutrição, gosta de cozinhar refeições saudáveis em casa e pratica pilates regularmente. Procura gerenciar sua ingestão de carboidratos de forma eficaz para manter níveis estáveis de glicose no sangue e melhorar sua saúde a longo prazo.
 
-Augusto, 23 anos, estudante de engenharia e irmão do Lucas, uma criança de 12 anos que sofre com sobrepeso e diabetes tipo 2 de 12 anos. Augusto é o responsável pelo irmão em grande parte do tempo e está sempre em busca de auxiliar a mãe no máximo possível cuidando do pequeno. Se preocupa em levar o irmão ao médico uma vez por mês, preparar suas refeições e monitorar as atividades físicas do irmão, Augusto está sempre atrás de dicas e artigos para executar corretamente o controle glicemico e hormonal do irmão, além de zelar pela nutrição e perda de peso, já que se tratado corretamente, o caso de Lucas pode regredir bastante.
+#4: Augusto, 23 anos, estudante de engenharia e irmão do Lucas, uma criança de 12 anos que sofre com sobrepeso e diabetes tipo 2. Augusto é o responsável pelo irmão em grande parte do tempo e está sempre em busca de auxiliar a mãe no máximo possível cuidando do pequeno. Se preocupa em levar o irmão ao médico uma vez por mês, preparar suas refeições e monitorar as atividades físicas do irmão, Augusto está sempre atrás de dicas e artigos para executar corretamente o controle glicemico e hormonal do irmão, além de zelar pela nutrição e perda de peso, já que se tratado corretamente, o caso de Lucas pode regredir bastante.
 
-Carlos é um engenheiro civil de 45 anos que enfrenta um desafio significativo em sua saúde devido ao seu estado avançado de diabetes tipo 2, que se desenvolveu na fase adulta devido à sua impertinência e obesidade. Carlos reconhece que suas escolhas de estilo de vida passadas contribuíram para essa condição e está determinado a fazer mudanças significativas em sua vida.
+#5: Rafael, 25 anos, estudante de medicina da USP, buscava um tema relevante para seu trabalho final da faculdade. Tendo sempre muito interesse na área de endocrinologia e suas complexidades, deu ênfase ao estudo da diabetes. 
 
-Ele está empenhado em aprender a controlar sua diabetes por meio de uma dieta saudável, exercícios regulares e medicamentos prescritos por seu médico. Carlos compreende a importância de cuidar de sua saúde e está comprometido em melhorar seu bem-estar geral, enquanto continua sua carreira como engenheiro civil.
+#6: Luciano 50 anos tem dificuldades de relacionar apesar da rotina com a diabete tem no caso e de variação de glicemia constantes Luciano precisa se organizar para criar uma rotina de cuidados com a diabete, na sua alimentação e na aplicação da insulina.
 
-Luciano 50 anos tem dificuldades de relacionar apesar da rotina com a diabete tem no caso e de variação de glicemia constantes Luciano precisa se organizar para criar uma rotina de cuidados com a diabete, na sua alimentação e na aplicação da insulina.
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
 
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+#1: Como diabética, quero manter minha glicemia em uma faixa mais saudável e estável. Para ter uma qualidade de vida maior e uma maior longevidade. Preciso de uma plataforma que me ajude com ferramentas de  cálculo  tanto para quanto insulina aplicar ao comer tanto para o  calculo do Bolus de correção. (Giovanna, 19 anos).
 
-Como diabética, quero manter minha glicemia em uma faixa mais saudável. Para ter uma qualidade de vida maior e uma maior longevidade. Preciso de uma plataforma que me ajude com ferramentas de  cálculo  tanto para quanto insulina aplicar ao comer tanto para o  calculo do Bolus de correção. (Giovanna 19 anos)
+#2: Em busca de informações sobre diabetes, uma amiga recomendou o site "Mellitus" para orientá-la. Ao se cadastrar, o aplicativo solicitou algumas informações sobre seu histórico médico e estilo de vida. Ela inseriu os dados sobre a diabetes na família, seus hábitos alimentares e sua rotina de exercícios. O aplicativo forneceu algumas dicas simples sobre como manter um estilo de vida mais saudável, sugerindo pequenas mudanças em sua dieta, como incluir mais frutas e vegetais, e também a orientou a praticar atividades físicas ao ar livre, como caminhar. (Isabelle, 19 anos).
 
-Em busca de informações sobre diabetes, uma amiga recomendou o site "Mellitus" para orientá-la. Ao se cadastrar, o aplicativo solicitou algumas informações sobre seu histórico médico e estilo de vida. Ela inseriu os dados sobre a diabetes na família, seus hábitos alimentares e sua rotina de exercícios. O aplicativo forneceu algumas dicas simples sobre como manter um estilo de vida mais saudável, sugerindo pequenas mudanças em sua dieta, como incluir mais frutas e vegetais, e também a orientou a praticar atividades físicas ao ar livre, como caminhar. (Isabelle, 19 anos)
+#4: Costumo rodar a internet toda buscando informações para controle glicêmico e bem-estar do meu irmão. Como meu tempo é muito curto, preciso de uma plataforma simples, centralizada e de fácil uso para que eu e ele possamos estudar sobre a condição de forma otimizada no meu tempo livre, levando em consideração a dieta do Lucas para nossa mãe preparar as comidas da semana, atividade física e as doses de insulina corretas após cada refeição. Além desta demanda seria bom ter uma plataforma para que eu pudesse estudar tudo sobre a doença. (Augusto, 23 anos)
 
-Meu nome é Luciano tenho 52  anos e com a correria da vida não tenho muito tempo para cuidar da minha saúde, com isso meu filho mais novo me apresentou a aplicação mellitus   que me ajudou na organização de uma rotina saudável além de me proporcionar um jeito rápido e fácil de calcular o quanto de insulina eu devo aplicar para cada refeição(Luciano 52).
+#5: Durante suas buscas na internet, Rafael encontrou o "Mellitus", um site dedicado a fornecer informações confiáveis sobre diabetes. Encontrou um vasto conteúdo sobre o tema, com informações bem aprofundadas, além de auxílio para o controle dessa condição, como estilo de vida, nutrição, atividade física, entre outros aspectos. 
+A partir das informações encontradas no "Mellitus", Rafael pôde terminar seu trabalho e percebeu a importância da disseminação de informação de qualidade e acessível ao público, compreendendo não só o aspecto da doença, mas também o impacto social de tal condição(Rafael, 25 anos).
+
+#6: Meu nome é Luciano tenho 52  anos e com a correria da vida não tenho muito tempo para cuidar da minha saúde, com isso meu filho mais novo me apresentou a aplicação mellitus   que me ajudou na organização de uma rotina saudável além de me proporcionar um jeito rápido e fácil de calcular o quanto de insulina eu devo aplicar para cada refeição. (Luciano 52).
 
 ## Requisitos
 
