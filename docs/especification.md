@@ -18,6 +18,8 @@ Carlos é um engenheiro civil de 45 anos que enfrenta um desafio significativo e
 
 Ele está empenhado em aprender a controlar sua diabetes por meio de uma dieta saudável, exercícios regulares e medicamentos prescritos por seu médico. Carlos compreende a importância de cuidar de sua saúde e está comprometido em melhorar seu bem-estar geral, enquanto continua sua carreira como engenheiro civil.
 
+Luciano 50 anos tem dificuldades de relacionar apesar da rotina com a diabete tem no caso e de variação de glicemia constantes Luciano precisa se organizar para criar uma rotina de cuidados com a diabete, na sua alimentação e na aplicação da insulina.
+
 > **Links Úteis**:
 > - [Rock Content](https://rockcontent.com/blog/personas/)
 > - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
@@ -37,14 +39,11 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
 |Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+Como diabética, quero manter minha glicemia em uma faixa mais saudável. Para ter uma qualidade de vida maior e uma maior longevidade. Preciso de uma plataforma que me ajude com ferramentas de  cálculo  tanto para quanto insulina aplicar ao comer tanto para o  calculo do Bolus de correção. (Giovanna 19 anos)
 
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+Em busca de informações sobre diabetes, uma amiga recomendou o site "Mellitus" para orientá-la. Ao se cadastrar, o aplicativo solicitou algumas informações sobre seu histórico médico e estilo de vida. Ela inseriu os dados sobre a diabetes na família, seus hábitos alimentares e sua rotina de exercícios. O aplicativo forneceu algumas dicas simples sobre como manter um estilo de vida mais saudável, sugerindo pequenas mudanças em sua dieta, como incluir mais frutas e vegetais, e também a orientou a praticar atividades físicas ao ar livre, como caminhar. (Isabelle, 19 anos)
+
+Meu nome é Luciano tenho 52  anos e com a correria da vida não tenho muito tempo para cuidar da minha saúde, com isso meu filho mais novo me apresentou a aplicação mellitus   que me ajudou na organização de uma rotina saudável além de me proporcionar um jeito rápido e fácil de calcular o quanto de insulina eu devo aplicar para cada refeição(Luciano 52).
 
 ## Requisitos
 
