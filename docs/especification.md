@@ -44,31 +44,29 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA |  |
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA | |
+|RF-001| Permitir que o usuário se cadastre no site | ALTA |  |
+|RF-002| Permitir que o usuário faça login na plataforma   | ALTA | |
+|RF-003| Os usuários podem registrar suas refeições, incluindo alimentos consumidos, quantidade e horário   | ALTA | |
+|RF-004| Alterar, Adicionar e Remover alimentos de sua refeição | ALTA | |
+|RF-005| Cálculo de bolus alimentar e bolus de correção e sua somatória | ALTA | |
+|RF-006| Integrações com dispositivos de medições de glicose para facilitar a entrada de dados | MÉDIA | |
+|RF-007| A aplicação fornece dicas personalizadas com base nas informações do usuário | MÉDIA | |
+|RF-008| Pesquisar alimentos do site/app | ALTA | |
+|RF-009| Interação entre os usuários do site | ALTA | |
+|RF-010| Avaliação entre os usuários do site | ALTA | |
+|RF-011| Opiniões entre os usuários do site | ALTA | |
 
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| A Aplicação vai rodar o tempo todo | ALTA |
+|RNF-002| Deve processar requisições do usuário em no máximo 5s |  BAIXA |
+|RNF-003| Vai armazenar os dados do usuário | MÉDIA |
+|RNF-004| Exibir os conteúdos a partir dos dados do usuário | ALTA |
+|RNF-005| Carregar tela de aplicação no menor tempo possível | ALTA |
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
@@ -78,10 +76,3 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend        |
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
