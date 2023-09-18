@@ -49,12 +49,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-003| Os usuários podem registrar suas refeições, incluindo alimentos consumidos, quantidade e horário   | ALTA | |
 |RF-004| Alterar, Adicionar e Remover alimentos de sua refeição | ALTA | |
 |RF-005| Cálculo de bolus alimentar e bolus de correção e sua somatória | ALTA | |
-|RF-006| Integrações com dispositivos de medições de glicose para facilitar a entrada de dados | MÉDIA | |
-|RF-007| A aplicação fornece dicas personalizadas com base nas informações do usuário | MÉDIA | |
-|RF-008| Pesquisar alimentos do site/app | ALTA | |
-|RF-009| Interação entre os usuários do site | ALTA | |
-|RF-010| Avaliação entre os usuários do site | ALTA | |
-|RF-011| Opiniões entre os usuários do site | ALTA | |
+|RF-006| A aplicação fornece dicas personalizadas com base nas informações do usuário | MÉDIA | |
+|RF-007| Pesquisar alimentos do site/app | ALTA | |
+|RF-008| Interação entre os usuários do site | ALTA | |
+|RF-009| Avaliação entre os usuários do site | ALTA | |
+|RF-010| Opiniões entre os usuários do site | ALTA | |
 
 
 ### Requisitos não Funcionais
