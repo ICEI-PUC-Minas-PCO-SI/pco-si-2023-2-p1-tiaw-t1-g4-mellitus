@@ -61,8 +61,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001| A Aplicação vai rodar o tempo todo | ALTA |
-|RNF-002| Deve processar requisições do usuário em no máximo 5s |  BAIXA |
-|RNF-003| Vai armazenar os dados do usuário | MÉDIA |
+|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA |
+|RNF-003| Vai armazenar os dados do usuário | ALTA |
 |RNF-004| Exibir os conteúdos a partir dos dados do usuário | ALTA |
 |RNF-005| Carregar tela de aplicação no menor tempo possível | ALTA |
 
