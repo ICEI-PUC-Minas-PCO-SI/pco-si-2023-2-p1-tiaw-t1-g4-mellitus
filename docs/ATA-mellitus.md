@@ -8,3 +8,5 @@ etapa 1
 gravação do vídeo e roteiro da mesma.
 
 * João Pedro de Castro Vieira: Elaborei a seção "Problemas" do documento de contexto, defini uma das personas e uma das histórias de usuários no documento de especificação além de redigir os requisitos funcionais e não funcionais. No que tange a apresentação do trabalho, atuei na definição de a aplicação e na explicação da entrega de valor do projeto.
+
+* Felipe Claver Diniz: Eu fiquei de dar suporte na elaboração da "Intrudução" do documento de contexto, realizei uma das personas e uma das histórias de usuários no documento de especificação e colaborei na formulação dos requisitos funcionais e não funcionais. Com relação a apresentação do trabalho, apresentei os principais recursos e suas funções da aplicação. 
