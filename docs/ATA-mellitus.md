@@ -13,4 +13,4 @@ gravação do vídeo e roteiro da mesma.
 
 * Gabriel Fioreze: Na Etapa 1, foram atribuídas várias responsabilidades a todos nós. Eu fiquei encarregado da elaboração da "Introdução" e dos Requisitos Funcionais, além disso, também assumi a responsabilidade por uma das personas e uma das histórias de usuário. Quanto à apresentação, fiquei encarregado para falar sobre como nosso projeto pode ajudar.
 
-* Matheus Antônio Valentin Freitas: Responsável pela elaboração dos "Objetivos" do projeto, criação de persona e história de usuário. Com relação à parte da gravação do video do trabalho fiquei responsável por fazer a edição do video e de postá-lo em um ambiente acessível para a sua visualização.
+* Matheus Antônio Valentin Freitas: Responsável pela elaboração dos "Objetivos do projeto", criação de persona e história de usuário. Com relação à parte da gravação do video do trabalho fiquei responsável por fazer a edição do video e de postá-lo em um ambiente acessível para a sua visualização.
