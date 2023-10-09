@@ -1,36 +1,38 @@
 # Template padrão do site
+Template padrão para definição de layout padrão de todos os Wireframes presentes no projeto.
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+### Tela de Home-Page
+![Home-Page](snapshots\user-flows-and-wireframes\Homepage.png)
 
-Explique as guias de estilo utilizadas no seu projeto.
+### Tela de login e cadastro
+![Home-Page](snapshots\user-flows-and-wireframes\Logar_Cadastrar.png)
 
-## Design
+### Tela de formulário de cadastro
+![Home-Page](snapshots\user-flows-and-wireframes\Forms.png)
 
-Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo do sistema. Defina os menus padrões, entre outras coisas.
+### Tela de Cálculo de Glicemia
+![Home-Page](snapshots\user-flows-and-wireframes\Calculo_de_Glicemia.png)
 
+### Tela de guia pessoal do usuário
+![Home-Page](snapshots\user-flows-and-wireframes\Meu_Guia.png)
+
+### Tela de Guia de alimentação
+![Home-Page](snapshots\user-flows-and-wireframes\Alimentacao.png)
 
 ## Cores
 
-Apresente a paleta de cores que será utilizada. Uma ferramenta interessante para a criação de palestas de cores é o *Adobe Color* ([https://color.adobe.com/pt/create/color-wheel](https://color.adobe.com/pt/create/color-wheel)).
+### Paleta de cores da aplicação
+![Paleta de cores](snapshots\paleta_de_cores.png)
 
 
 ## Tipografia
 
-Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
+Fontes utilizadas: 
+*[Inter](https://fonts.google.com/specimen/Inter?query=inter) 
 
 
 ## Iconografia
-
-Defina os ícones que serão utilizados e suas respectivas funções.
-
-Apresente os estilos CSS criados para cada um dos elementos apresentados.
-Outras seções podem ser adicionadas neste documento para apresentar padrões de componentes, de menus, etc.
-
-
-> **Links Úteis**:
->
-> -  [Como criar um guia de estilo de design da Web](https://edrodrigues.com.br/blog/como-criar-um-guia-de-estilo-de-design-da-web/#)
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+* [SearchIcon](https://mui.com/material-ui/material-icons/?query=search&selected=Search)  - Indicar input para pesquisa de artigos e recursos da aplicação
+* [PersonIcon](https://mui.com/material-ui/material-icons/?query=person&selected=Person) - Indicar botão que exibe o menu de usuário
+* [CalculateIcon](https://mui.com/material-ui/material-icons/?query=calcul&selected=Calculate) - Indicar botão para a tela de cálculo de insulina
+* [LocalDiningIcon](https://mui.com/material-ui/material-icons/?query=food&selected=LocalDining) - Indicar botão que exibe o menu de refeições cadastradas do usuário
