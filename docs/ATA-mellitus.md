@@ -17,4 +17,4 @@ gravação do vídeo e roteiro da mesma.
 
 ETAPA 2
 
-*Felipe Claver Diniz: Eu fiquei responsável por boa parte do projeto interface da aplicação, fazendo alguns dos wireframes das páginas e do userflow.
+* Felipe Claver Diniz: Eu fiquei responsável por boa parte do projeto interface da aplicação, fazendo alguns dos wireframes das páginas e do userflow.
