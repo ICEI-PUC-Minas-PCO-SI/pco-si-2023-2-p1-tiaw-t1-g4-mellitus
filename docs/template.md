@@ -2,29 +2,9 @@
 
 Template padrão para definição de layout padrão de todos os Wireframes presentes no projeto.
 
-### Tela de Home-Page
+### Template básico da aplicação
 
-![Home-Page](/snapshots/user-flows-and-wireframes/Homepage.png)
-
-### Tela de login e cadastro
-
-![Home-Page](/snapshots/user-flows-and-wireframes/Logar_Cadastrar.png)
-
-### Tela de formulário de cadastro
-
-![Home-Page](/snapshots/user-flows-and-wireframes/Forms.png)
-
-### Tela de Cálculo de Glicemia
-
-![Home-Page](/snapshots/user-flows-and-wireframes/Calculo_de_Glicemia.png)
-
-### Tela de guia pessoal do usuário
-
-![Home-Page](/snapshots/user-flows-and-wireframes/Meu_Guia.png)
-
-### Tela de Guia de alimentação
-
-![Home-Page](/snapshots/user-flows-and-wireframes/Alimentacao.png)
+![Home-Page](/snapshots/template.png)
 
 ## Cores
 
