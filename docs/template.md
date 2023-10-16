@@ -4,7 +4,12 @@ Template padrão para definição de layout padrão de todos os Wireframes prese
 
 ### Template básico da aplicação
 
-![Home-Page](/snapshots/template.png)
+![Home-Page](/snapshots/desktop-template.png)
+
+### Template básico da (Mobile)
+
+![Home-Page](/snapshots/mobile-collapsed-template.png)
+![Home-Page](/snapshots/mobile-extended-template.png)
 
 ## Cores
 
