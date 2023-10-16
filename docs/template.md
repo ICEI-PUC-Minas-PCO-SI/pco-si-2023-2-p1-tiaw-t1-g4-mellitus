@@ -12,6 +12,7 @@ Template padrão para definição de layout padrão de todos os Wireframes prese
 ![Home-Page](/snapshots/mobile-extended-template.png)
 
 ## Cores
+Nossa paleta de cores foi usada por um padrão de cores usadas na área da saúde e que sinergizam bem umas com as outras
 
 ### Paleta de cores da aplicação
 
@@ -20,6 +21,7 @@ Template padrão para definição de layout padrão de todos os Wireframes prese
 ## Tipografia
 
 Fontes utilizadas: [Inter](https://fonts.google.com/specimen/Inter?query=inter)
+Achamos uma fonte clássica e boa para o mercado 
 
 ## Iconografia
 
