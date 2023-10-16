@@ -12,24 +12,18 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ### Tela de Home-Page
 
-![Home-Page](/snapshots/user-flows-and-wireframes/Homepage.png)
+![Home-Page](/snapshots/user-flows-and-wireframes/Userflow1.png)
 
 ### Tela de login e cadastro
 
-![Home-Page](/snapshots/user-flows-and-wireframes/Logar_Cadastrar.png)
-
-### Tela de formulário de cadastro
-
-![Home-Page](/snapshots/user-flows-and-wireframes/Forms.png)
+![Home-Page](/snapshots/user-flows-and-wireframes/Userflow2.png)
 
 ### Tela de Cálculo de Glicemia
 
-![Home-Page](/snapshots/user-flows-and-wireframes/Calculo_de_Glicemia.png)
+![Home-Page](/snapshots/user-flows-and-wireframes/Userflow3.png)
 
 ### Tela de guia pessoal do usuário
 
-![Home-Page](/snapshots/user-flows-and-wireframes/Meu_Guia.png)
+![Home-Page](/snapshots/user-flows-and-wireframes/Userflow4.png)
 
-### Tela de Guia de alimentação
 
-![Home-Page](/snapshots/user-flows-and-wireframes/Alimentacao.png)
