@@ -12,109 +12,95 @@
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
       crossorigin="anonymous"
     />
-
-    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link href="./template.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container-fluid">
-          <img
-            src="../docs/img/frame.png"
-            style="width: 70px; height: 70px; padding: 5px"
-          />
-          <a class="navbar-brand" href="#">Mellitus</a>
+          <a class="navbar-brand" href="#"
+            ><img
+              height="48"
+              width="48"
+              src="assets/logo.png"
+              alt="Logo do Mellitus"
+          /></a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler custom"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa-solid fa-bars"></i>
           </button>
+
           <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarSupportedContent"
+            class="offcanvas w-75 offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
           >
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#"
-                  >Cauculo de Glicemia</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Alimentação</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Logar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Cadastrar</a>
-              </li>
-              <li class="nav-item dropdown" data-container="body">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Sobre
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Ação</a></li>
-                  <li><a class="dropdown-item" href="#">Outra ação</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Alguma outra coisa</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+            <div class="offcanvas-header">
+              <span class="offcanvas-title" id="offcanvasNavbarLabel">
+                Mellitus
+              </span>
+              <button
+                class="btn-close custom"
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"
+                    ><i class="fa-solid fa-house"></i>Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"
+                    ><i class="fa-solid fa-calculator"></i>Cálculo de
+                    Glicemia</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa-solid fa-bowl-food"></i>Alimentação</a
+                  >
+                </li>
+              </ul>
+              <ul class="navbar-nav auth-items">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa-solid fa-arrow-right-to-bracket"></i>Logar</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa-solid fa-pen-to-square"></i>Cadastrar</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
     </header>
 
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="productModal"
-      tabindex="-1"
-      aria-labelledby="productModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-      crossorigin="anonymous"
-    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"
     ></script>
-
+    <script
+      src="https://kit.fontawesome.com/d617ea5e74.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./script.js"></script>
   </body>
 </html>
