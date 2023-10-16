@@ -6,7 +6,7 @@ Template padrão para definição de layout padrão de todos os Wireframes prese
 
 ![Home-Page](/snapshots/desktop-template.png)
 
-### Template básico da (Mobile)
+### Template básico da aplicação (Mobile)
 
 ![Home-Page](/snapshots/mobile-collapsed-template.png)
 ![Home-Page](/snapshots/mobile-extended-template.png)
