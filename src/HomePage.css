@@ -4,12 +4,6 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-/*To achando o batão muito pequeno*/
-#menuButton {
-  width: 75px;
-  height: 40px;
-}
-
 nav, div.offcanvas-header {
 background-color: var(--blue);
 }
@@ -77,22 +71,22 @@ button.navbar-toggler.custom, button.navbar-toggler.custom:focus {
 /*Olhar a organização das cores*/
 
 body {
-  padding-top: 120px;
-  background-color: var(--green) !important;
+  padding-top: 115px;
+  background-color: var(--lilac) !important;
 }
 
 section {
   border-radius: 20px;
-  margin: 0px 40px;
-  color: black;
-  background-color: var(--lilac);
+  margin: 0px 40px 35px;
+  color: white;
+  background-color: var(--dark-blue);
 }
 
 section h4 {
   padding: 15px 0px;
 }
 
-@media (max-width:992px) {
+@media (max-width:768px) {
   body {
     padding-top: 70px;
   }
