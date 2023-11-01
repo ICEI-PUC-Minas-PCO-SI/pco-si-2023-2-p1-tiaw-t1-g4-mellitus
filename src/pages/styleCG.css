@@ -1,0 +1,20 @@
+.row{
+    padding-top: 20px;
+}
+
+#calculo {
+    width: 60%;
+}
+
+#cabecalho_alimentos {
+    color: red;
+}
+
+.cantina {
+    color: beige;
+}
+
+.cantina_col {
+    font-size: 30px;
+    background-color: red;
+}
