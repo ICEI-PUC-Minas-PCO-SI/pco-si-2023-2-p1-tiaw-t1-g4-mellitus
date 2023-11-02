@@ -8,6 +8,6 @@ function calculo() {
 
     let resultado = ((gliPre - gliPos) / sensi);
 
-    elemento.textContent = resultado;
+    elemento.textContent = resultado + "u";
     
 }
