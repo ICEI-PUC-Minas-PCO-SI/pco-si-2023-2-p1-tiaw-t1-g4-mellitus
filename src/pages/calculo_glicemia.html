@@ -106,21 +106,24 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <label>Peso</label>
-                        <input class="form-control" type="text" placeholder="Digite seu peso">
+                        <label>Glicemia Pré Prandial</label>
+                        <input id="gliPre" class="form-control" type="text" placeholder="Glicemia Pré Prandial">
                     </div>
                     <div class="col">
-                        <label>Altura</label>
-                        <input class="form-control" type="text" placeholder="Digite sua altura">
+                        <label>Glicemia Meta Pós Prandial</label>
+                        <input id="gliPos" class="form-control" type="text" placeholder="Glicemia Meta Pós Prandial">
                     </div>                    
                     <div class="col">
-                        <label>Idade</label>
-                        <input class="form-control" type="text" placeholder="Digite sua idade">
+                        <label>Sensibilidade Insulínica</label>
+                        <input id="sensi" class="form-control" type="text" placeholder="Sensibilidade Insulínica">
                     </div>
+                </div>
+                <div class="row">
+                    <label>Dose de correção: <span id="correto"></span></label>
                 </div>
                 <div class="row text-center">
                     <div class="col">
-                        <button id="calculo" type="button" class="btn btn-primary">Calcular</button>
+                        <button id="calculo" type="button" onclick="calculo()" class="btn btn-primary">Calcular</button>
                     </div>
                 </div>
                 <div class="row">
@@ -448,5 +451,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./script.js"></script>
+    <script src="controle.js"></script>
   </body>
 </html>
