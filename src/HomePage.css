@@ -68,7 +68,6 @@ button.navbar-toggler.custom, button.navbar-toggler.custom:focus {
 
 /*Seperação de estilização do menu para o corpo principal*/
 /*As palavras do navbar ficam pretas dps que clicam, porque?*/
-/*Olhar a organização das cores*/
 
 body {
   padding-top: 115px;
@@ -91,7 +90,7 @@ section h4 {
     padding-top: 70px;
   }
   section {
-    width: 100%; /*Mas o que está acontecendo, fica aparecendo barra em baixo*/
+    width: 100%;
     border-radius: 0px;
     margin: 0px;
     padding: 0px;
