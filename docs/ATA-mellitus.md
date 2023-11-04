@@ -24,3 +24,11 @@ ETAPA 2
 * Matheus Antônio: Auxiliou no html e css do template padrão. 
 * Gabriel Fioreze: Indentificou problemas no userflow e os aprimorou. 
 
+ETAPA 3
+
+* Felipe Claver Diniz:
+* Bernardo Garcia: 
+* João Pedro de 
+* Arthur Ramires: 
+* Matheus Antônio: Responsável por desenvolver a tela de cálculo de glicemia focado na parte da dose de correção e tabela de dados nutricionais.
+* Gabriel Fioreze: 
