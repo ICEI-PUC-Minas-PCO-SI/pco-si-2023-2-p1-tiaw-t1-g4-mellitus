@@ -5,13 +5,11 @@
   font: 1em sans-serif;
 }
 
-p{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    text-align: justify;
-}
 
-body {
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    text-align: justify;
 }
 
 .nome {
@@ -37,9 +35,6 @@ main {
   background-color: white;
   padding: 1.5rem;
   border-radius: 0.5rem;
-}
-
-.main-header h1 {
 }
 
 .main-header form {
@@ -96,9 +91,51 @@ main {
   width: 30%;
 }
 
-.main-bod-footer {
+.info-rectangles{
+  display: flex; /* Aplica a exibição flexbox para os retângulos */
+  justify-content: space-between; 
 }
 
+.info-rectangle {
+  width: 600px;
+  height: 400px;
+  background-color: #bdb2ff;
+  border: 30px solid #bdb2ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  margin: 60px auto; 
+  max-height: 500px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 210px;
+  flex: 0 1 calc(30% - 20px); 
+  margin-right: 20px; 
+}
+
+.imagem-retangulo {
+  max-width: 210px;
+  max-height: 600px;
+  margin-bottom: 20px;
+}
+body{
+  background-color: #4c8bf580;
+}
+
+.btn {
+  font-size: 0.9rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 10px 2rem;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+}
+.btn-green {
+  background-color: #623cd3;
+}
 @media (max-width: 704px) {
   .main-header form {
     flex-direction: column;
