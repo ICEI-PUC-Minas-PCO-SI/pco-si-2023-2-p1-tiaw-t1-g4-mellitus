@@ -42,9 +42,6 @@ p {
   text-align: justify;
 }
 
-body {
-}
-
 .nome {
   font-size: 1rem;
   color: #ffff;
@@ -68,9 +65,6 @@ main {
   background-color: white;
   padding: 1.5rem;
   border-radius: 0.5rem;
-}
-
-.main-header h1 {
 }
 
 .main-header form {
@@ -125,9 +119,6 @@ main {
 .body-width-image {
   text-align: center;
   width: 30%;
-}
-
-.main-bod-footer {
 }
 
 @media (max-width: 704px) {
