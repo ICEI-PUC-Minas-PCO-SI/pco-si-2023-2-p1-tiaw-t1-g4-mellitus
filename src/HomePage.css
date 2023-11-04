@@ -67,7 +67,6 @@ button.navbar-toggler.custom, button.navbar-toggler.custom:focus {
 }
 
 /*Seperação de estilização do menu para o corpo principal*/
-/*As palavras do navbar ficam pretas dps que clicam, porque?*/
 
 body {
   padding-top: 115px;
