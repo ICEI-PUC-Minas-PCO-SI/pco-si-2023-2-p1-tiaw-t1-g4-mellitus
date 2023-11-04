@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 1em sans-serif;
+}
+
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.nome {
+  font-size: 1rem;
+  color: #ffff;
+}
+
+@media (max-width: 992px) {
+  .nome {
+    display: none;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 4rem 3.5rem;
+  background-color: #f0f2f2;
+}
+
+.main-header {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.main-header form {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+}
+
+.main-header form input {
+  flex: 1;
+  font-size: 0.9rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  padding: 10px;
+}
+
+.main-header form select {
+  font-size: 0.9rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  padding: 10px;
+}
+
+.main-header form button {
+  font-size: 0.9rem;
+
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+
+  padding: 10px 2rem;
+
+  cursor: pointer;
+
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.main-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.body-width {
+  width: 70%;
+}
+
+.body-width-image {
+  text-align: center;
+  width: 30%;
+}
+
+.info-rectangles{
+  display: flex; /* Aplica a exibição flexbox para os retângulos */
+  justify-content: space-between; 
+}
+
+.info-rectangle {
+  width: 600px;
+  height: 400px;
+  background-color: #bdb2ff;
+  border: 30px solid #bdb2ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  margin: 60px auto; 
+  max-height: 500px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 210px;
+  flex: 0 1 calc(30% - 20px); 
+  margin-right: 20px; 
+}
+
+.imagem-retangulo {
+  max-width: 210px;
+  max-height: 600px;
+  margin-bottom: 20px;
+}
+body{
+  background-color: #4c8bf580;
+}
+
+.btn {
+  font-size: 0.9rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 10px 2rem;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+}
+.btn-green {
+  background-color: #623cd3;
+}
+@media (max-width: 704px) {
+  .main-header form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 444px) {
+  main {
+    padding: 2rem 1.5rem;
+  }
+}
