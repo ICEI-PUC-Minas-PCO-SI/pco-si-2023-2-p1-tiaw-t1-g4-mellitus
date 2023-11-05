@@ -29,4 +29,4 @@ ETAPA 2
 
 ETAPA 3
 * Bernardo Garcia: Fiquei responsável pelo desenvolvimento das páginas do Meu Guia. Horário para tomar insulina, execícios e quais especialistas consultar. Eu e o Gabriel concordamos que seria melhor nos desenvolvermos na mesma Brench pois seria mais fácil de organizar e linkar a navegação das páginas.
-* Felipe Claver Diniz: Eu me encarreguei pelo desenvolvimento das duas páginas Home, tanto quanto a para usuários não logados quanto para úsuarios logados, e ajudei os outros membros do grupo, melhorando o desenvolvimento da entrega de valor. 
+* Felipe Claver Diniz: Eu me encarreguei pelo desenvolvimento das duas páginas Home, tanto quanto a para usuários não logados quanto para usúarios logados, e ajudei os outros membros do grupo, melhorando o desenvolvimento da entrega de valor. 
