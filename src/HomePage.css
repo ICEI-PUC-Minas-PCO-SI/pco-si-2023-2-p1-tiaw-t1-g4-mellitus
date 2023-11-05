@@ -99,7 +99,7 @@ footer i {
 
 @media (max-width:768px) {
   body {
-    padding-top: 45px;
+    padding-top: 70px;
   }
   section {
     width: 100%;
@@ -107,8 +107,7 @@ footer i {
     margin: 0px;
     padding: 0px;
   }
-
-  img {
+  #advertising {
     display: none;
   }
 }
