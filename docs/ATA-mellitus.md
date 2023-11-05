@@ -23,4 +23,5 @@ ETAPA 2
 * Arthur Ramires: Ensinou o grupo a utilizar o figma e colaborou para a elaboração do userflow
 * Matheus Antônio: Auxiliou no html e css do template padrão. 
 * Gabriel Fioreze: Indentificou problemas no userflow e os aprimorou. 
-
+ETAPA 3
+* Bernardo Garcia: Fiquei responsável pelo desenvolvimento das páginas do Meu Guia. Horário para tomar insulina, execícios e quais especialistas consultar. Eu e o Gabriel concordamos que seria melhor nos desenvolvermos na mesma Brench pois seria mais fácil de organizar e linkar a navegação das páginas. 
