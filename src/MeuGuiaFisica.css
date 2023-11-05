@@ -106,5 +106,8 @@ footer i {
     border-radius: 0px;
     margin: 0px;
     padding: 0px;
+  }
+  img {
+    display:none;
   }  
 }
