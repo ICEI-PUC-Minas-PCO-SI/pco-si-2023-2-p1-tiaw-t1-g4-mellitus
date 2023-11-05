@@ -20,7 +20,6 @@ a.nav-link {
   color: var(--white);
   font-weight: 500;
   font-size: 1.1rem;
-
 }
 
 .offcanvas-title {
@@ -99,7 +98,7 @@ footer i {
 
 @media (max-width:768px) {
   body {
-    padding-top: 45px;
+    padding-top: 70px;
   }
   section {
     width: 100%;
@@ -107,7 +106,7 @@ footer i {
     margin: 0px;
     padding: 0px;
   }
-  img {
-    display:none;
+  #advertising {
+    display: none;
   }  
 }
