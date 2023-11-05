@@ -19,8 +19,7 @@ background-color: var(--blue);
 a.nav-link {
   color: var(--white);
   font-weight: 500;
-  font-size: 1.3rem;
-
+  font-size: 1.1rem;
 }
 
 .offcanvas-title {
@@ -99,12 +98,15 @@ footer i {
 
 @media (max-width:768px) {
   body {
-    padding-top: 45px;
+    padding-top: 70px;
   }
   section {
     width: 100%;
     border-radius: 0px;
     margin: 0px;
     padding: 0px;
+  }
+  img {
+    display: none;
   }  
 }
