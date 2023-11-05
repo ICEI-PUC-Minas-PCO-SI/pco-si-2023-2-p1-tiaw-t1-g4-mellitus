@@ -19,7 +19,7 @@ background-color: var(--blue);
 a.nav-link {
   color: var(--white);
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 
 }
 
@@ -100,7 +100,7 @@ footer i {
 
 @media (max-width:768px) {
   body {
-    padding-top: 45px;
+    padding-top: 70px;
   }
   section {
     width: 100%;
@@ -109,7 +109,7 @@ footer i {
     padding: 0px;
   }
 
-  img {
+  #advertising {
     display: none;
   }
 }
