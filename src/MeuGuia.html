@@ -17,80 +17,57 @@
   </head>
   <body>
     <header>
-      <nav class="navbar fixed-top navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><img
-              height="48"
-              width="48"
-              src="assets/logo.png"
-              alt="Logo do Mellitus"
-          /></a>
-          <button
-            class="navbar-toggler custom"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <i class="fa-solid fa-bars"></i>
-          </button>
-
-          <div
-            class="offcanvas w-75 offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <span class="offcanvas-title" id="offcanvasNavbarLabel">
-                Mellitus
-              </span>
-              <button
-                class="btn-close custom"
-                type="button"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              >
-                <i class="fa-solid fa-xmark"></i>
+      <nav class="navbar fixed-top navbar-expand-md">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img height="48" width="48" src="assets/logo.png"
+                      alt="Logo do Mellitus" /></a>
+              <button class="navbar-toggler custom rounded-3" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+                  id="menuButton">
+                  <i class="fa-solid fa-bars"></i>
               </button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="#"
-                    ><i class="fa-solid fa-house"></i>Calculo de Glicemia</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    ><i class="fa-solid fa-calculator"></i>Meu Guia</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"
-                    ><i class="fa-solid fa-bowl-food"></i>Logar</a
-                  >
-                </li>
-              </ul>
-              <ul class="navbar-nav auth-items">
-                <li class="nav-item">
-                  <a class="nav-link" href="#"
-                    ><i class="fa-solid fa-arrow-right-to-bracket"></i>Cadastrar</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"
-                    ><i class="fa-solid fa-pen-to-square"></i>Sair</a
-                  >
-                </li>
-              </ul>
-            </div>
+
+              <div class="offcanvas w-75 offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                      <span class="offcanvas-title" id="offcanvasNavbarLabel">
+                          Mellitus
+                      </span>
+                      <button class="btn-close custom" type="button" data-bs-dismiss="offcanvas"
+                          aria-label="Close">
+                          <i class="fa-solid fa-xmark"></i>
+                      </button>
+                  </div>
+                  <div class="offcanvas-body">
+                      <ul class="navbar-nav mb-2 mb-lg-0">
+                          <li class="nav-item">
+                              <a class="nav-link " href="#"><i class="fa-solid fa-house"></i>Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="#"><i
+                                      class="fa-solid fa-calculator"></i>Cálculo de
+                                  Glicemia</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#"><i class="fa-solid fa-bowl-food"></i>Alimentação</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link active" href="#"><i class="fa-solid fa-book-open-reader"></i>
+                                  Meu Guia</a>
+                          </li>
+                      </ul>
+                      <ul class="navbar-nav mb-2 mb-lg-0">
+                          <!--Aqui coloquei o símbolo do usuário-->
+                          <li class="nav-item">
+                              <a class="nav-link" href="#"><i class="fa-regular fa-circle-user fa-2xl"></i></a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
           </div>
-        </div>
       </nav>
-    </header>
+  </header>
+
 
     <div class="info-rectangles">
       <div class="info-rectangle">
