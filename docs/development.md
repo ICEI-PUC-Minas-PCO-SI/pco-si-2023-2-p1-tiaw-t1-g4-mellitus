@@ -19,16 +19,46 @@ O professor Rommel Carneiro apresenta alguns exemplos prontos para serem utiliza
 
 ## Exemplo
 
+![login](../snapshots/pages-screenshot/Login.png)
+![alimentacao](../snapshots/pages-screenshot/Alimentacao.png)
+![alimentacao](../snapshots/pages-screenshot/AlimentacaoOrganica.png)
+![alimentacao](../snapshots/pages-screenshot/AlimentacaoSaldavel.png)
+![alimentacao](../snapshots/pages-screenshot/NutricaoEquilibrada.png)
+![alimentacao](../snapshots/pages-screenshot/AlimentacaoEsportes.png)
+![alimentacao](../snapshots/pages-screenshot/AlimentacaoTecno.png)
+![alimentacao](../snapshots/pages-screenshot/IntoAlimentar.png)
+![guia](../snapshots/pages-screenshot/MeuGuia.png)
+![guia](../snapshots/pages-screenshot/GuiaEsport.png)
+![guia](../snapshots/pages-screenshot/GuiaEspec.png)
+![guia](../snapshots/pages-screenshot/GuiaInsu.png)
+![calculo](../snapshots/pages-screenshot/CalculoGlicemia.png)
+![home](../snapshots/pages-screenshot/HomePage.png)
+![home](../snapshots/pages-screenshot/HomeLoged.png)
+
 ## Requisitos Atendidos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais que relacionam o escopo do projeto com os artefatos criados:
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito | Prioridade | Artefato Criado |
-|------|------------------------|------------|-----------------|
-|RF-001| O sistema deve exibir as notícias mais populares. | ALTA | index.html |
-|RF-002| Usuários autenticados podem registrar novas notícias. | ALTA | cadastro-noticia.html |
+
+| ID    | Descrição do Requisito                                    | Prioridade | Artefato Criado         |
+|-------|-----------------------------------------------------------|------------|-------------------------|
+| RF-001| Criação do cadastro de usuário.                              | ALTA       | login.html              |
+| RF-002| Página principal do sistema.      | ALTA       | HomePage.html           |
+| RF-003| Página principal do sistema, porém para usuários já cadastrados.      | ALTA       | HomePageLoged.html      |
+| RF-004| Dicas de alimentação.      | ALTA       | Alimentacao.html        |
+| RF-005| Calculadora de correção de dose glicêmica.      | ALTA       | CalculoGlicemia.html    |
+| RF-006| Dicas de alimentação saudável.      | ALTA       | AlimentacaoSaudavel.html |
+| RF-007| Dicas de alimentação esportiva.      | ALTA       | AlimentacaoeEsportes.html|
+| RF-008| Dicas de alimentação e suas tecnologias.      | ALTA       | AlimentacaoeTecnologia.html|
+| RF-009| Dicas de alimentos orgânicos.      | ALTA       | AlimentosOrganicos.html |
+| RF-010| Informativo de intolerância alimentar.            | ALTA       | IntoleranciaAlimentar.html|
+| RF-011| Navegação entre páginas do Meu Guia.                     | ALTA       | MeuGuia.html            |
+| RF-012| Registro Meu Guia Física.               | ALTA       | MeuGuiaFisica.html       |
+| RF-013| Registro Meu Guia Frequência.           | ALTA       | MeuGuiaFrequencia.html   |
+| RF-014| Registro Meu Guia Insulina.             | ALTA       | MeuGuiaInsulina.html     |
+| RF-015| Correção do path para login e login homepage loged.      | ALTA       | NutricaoEquilibrada.html |
 
 ## Descrição das estruturas:
 
