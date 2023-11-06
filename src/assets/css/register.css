@@ -3,7 +3,7 @@ body {
   margin: auto;
   padding: 0;
   height: 100vh;
-  background-color: var(--blue);
+  background-color: var(--phantom-blue);
 }
 form {
   height: 100%;
@@ -13,22 +13,30 @@ form {
   margin: auto;
 }
 
-a#login-btn {
+a {
+  text-decoration: none;
+  color: var(--purple);
+}
+
+a#register-btn {
   text-decoration: none;
   color: var(--green);
 }
 
-a {
-  color: var(--purple);
-}
 h1 {
-  color: var(--lilac);
+  color: var(--orange);
 }
+
 span {
   color: black;
 }
+
 div#title-box {
-  background-color: var(--dark-blue);
+  background-color: var(--purple);
+}
+
+label {
+  color: var(--blue);
 }
 
 #ent:hover {
