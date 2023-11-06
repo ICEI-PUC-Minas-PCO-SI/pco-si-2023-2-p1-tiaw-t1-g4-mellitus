@@ -22,13 +22,14 @@ ETAPA 2
 * João Pedro de Castro: Elaborou a paleta de cores , a logo e o html do template. 
 * Arthur Ramires: Ensinou o grupo a utilizar o figma e colaborou para a elaboração do userflow
 * Matheus Antônio: Auxiliou no html e css do template padrão. 
-* Gabriel Fioreze: Indentificou problemas no userflow e os aprimorou. 
+* Gabriel Fioreze: Indentificou problemas no userflow e os aprimorou.
+
+
+
 
 ETAPA 3
-
-* Felipe Claver Diniz:
-* Bernardo Garcia: 
-* João Pedro de 
-* Arthur Ramires: 
-* Matheus Antônio: Responsável por desenvolver a tela de cálculo de glicemia focado na parte da dose de correção e tabela de dados nutricionais.
-* Gabriel Fioreze: 
+* Bernardo Garcia: Fiquei responsável pelo desenvolvimento das páginas do Meu Guia. Horário para tomar insulina, execícios e quais especialistas consultar. Eu e o Gabriel concordamos que seria melhor nos desenvolvermos na mesma Brench pois seria mais fácil de organizar e linkar a navegação das páginas.
+* Felipe Claver Diniz: Eu me encarreguei pelo desenvolvimento das duas páginas Home, tanto quanto a para usuários não logados quanto para usúarios logados, e ajudei os outros membros do grupo, melhorando o desenvolvimento da entrega de valor. 
+* Arthur Ramires: Fiquei responsável pela tela de login do usuário usando os temas e templates pre definidos, e menção aos alunos Filipe, João e Bernardo que me auxiliaram na utilização do git com excelência.
+* Matheus Freitas: Fiquei responsável pela criação da tela de cálculo de glicemia. Além disso, unifiquei todo o projeto, conectando as telas em uma única branch, estabelecendo o fluxo de navegação e organizando a disposição dos diretórios para uma melhor organização do projeto.
+* Gabriel Fioreze: Fiquei responsável por fazer as páginas iniciais do "Meu Guia" e "Alimentação", juntamente com as paginas informativas restantes (Alimentação orgânica, Alimentação e tecnologia, Alimentação e esportes, Alimentação saúdavel, Nutrição equlibrada e Intolerâncias alimentares).
