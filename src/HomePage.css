@@ -84,6 +84,20 @@ section h4 {
   padding: 15px 0px;
 }
 
+
+.card-body {
+  background-color: var(--green);
+}
+
+section .card:hover {
+  box-shadow: black;
+}
+
+section .card {
+  width: 90%;
+  height: 100%;
+}
+
 footer {
   color: var(--white);
   background-color: var(--blue);
