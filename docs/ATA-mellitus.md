@@ -17,7 +17,7 @@ gravação do vídeo e roteiro da mesma.
 
 ETAPA 2
 
-* Felipe Claver Diniz: Fiquei responsável por boa parte do projeto interface da aplicação, fazendo alguns dos wireframes das páginas e do userflow.
+* Felipe Claver Diniz: Fiquei responsável por boa parte do projeto interface da aplicação, fazendo a maioria dos wireframes do userflow.
 * Bernardo Garcia: Auxiliei na escolha da paleta de cores e confecção de wireframes do userflow.
 * João Pedro de Castro: Elaborou a paleta de cores , a logo e o html do template. 
 * Arthur Ramires: Ensinou o grupo a utilizar o figma e colaborou para a elaboração do userflow
