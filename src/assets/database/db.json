@@ -16,9 +16,16 @@
   "profile": {
     "name": "typicode"
   },
-  "usuarios": {
-    "id": 1,
-    "nome": "Admin",
-    "senha": "admin"
-  }
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Admin",
+      "senha": "admin"
+    },
+    {
+      "id": 2,
+      "nome": "Matheus",
+      "senha": "123"
+    }
+  ]
 }
