@@ -15,11 +15,11 @@ function calculo2() {
     
     let Carb = parseFloat(document.getElementById('Carb').value);
     let Res = parseFloat(document.getElementById('Res').value);
-    let Re = parseFloat(document.getElementById('Re').value);
+    let Relacao = parseFloat(document.getElementById('Relacao').value);
 
-    let elemento = document.getElementById("correto");
+    let elemento = document.getElementById("correto2");
 
-    let resultado2 = ((Carb/Re) + Res);
+    let resultado2 = ((Carb/Relacao) + Res);
 
     elemento.textContent = (isNaN(resultado2)) ? "Favor informar os dados corretamente." : resultado2 + "u";
     
