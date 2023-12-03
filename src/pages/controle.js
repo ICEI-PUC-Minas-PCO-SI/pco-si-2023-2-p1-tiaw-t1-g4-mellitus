@@ -11,3 +11,17 @@ function calculo() {
     elemento.textContent = (isNaN(resultado)) ? "Favor informar os dados corretamente." : resultado + "u";
     
 }
+function calculo2() {
+    
+    let Carb = parseFloat(document.getElementById('Carb').value);
+    let Res = parseFloat(document.getElementById('Res').value);
+    let Re = parseFloat(document.getElementById('Re').value);
+
+    let elemento = document.getElementById("correto");
+
+    let resultado2 = ((Carb - Res) / Re);
+
+    elemento.textContent = (isNaN(resultado2)) ? "Favor informar os dados corretamente." : resultado2 + "u";
+    
+}
+
