@@ -19,7 +19,7 @@ function calculo2() {
 
     let elemento = document.getElementById("correto");
 
-    let resultado2 = ((Carb - Res) / Re);
+    let resultado2 = ((Carb/Re) + Res);
 
     elemento.textContent = (isNaN(resultado2)) ? "Favor informar os dados corretamente." : resultado2 + "u";
     
