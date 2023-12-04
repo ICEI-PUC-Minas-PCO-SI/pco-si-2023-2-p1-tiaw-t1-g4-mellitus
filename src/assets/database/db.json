@@ -20,12 +20,20 @@
     {
       "id": 1,
       "nome": "Admin",
+      "login": "Admin",
       "senha": "admin"
     },
     {
       "id": 2,
       "nome": "Matheus",
+      "login": "Matheus",
       "senha": "123"
+    },
+    {
+      "id": 3,
+      "nome": "Hello",
+      "login": "Teste",
+      "senha": "1234"
     }
   ]
 }
