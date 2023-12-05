@@ -1,120 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mellitus</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
-      crossorigin="anonymous"
-    />
-    <link href="../template.css" rel="stylesheet" type="text/css" />
-    <link href="../style.css" rel="stylesheet" type="text/css" />
-    <link href="styleCG.css" rel="stylesheet" type="text/css"/>
-  </head>
-  <body>
-    <header>
-        <div class="main-header">
-      <nav class="navbar fixed-top navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-            <img
-              height="48"
-              width="48"
-              src="../assets/logo.png"
-              alt="Logo do Mellitus"
-            />
-          </a>
-          <button
-            class="navbar-toggler custom"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <i class="fa-solid fa-bars"></i>
-          </button>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
 
-          <div
-            class="offcanvas w-75 offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <span class="offcanvas-title" id="offcanvasNavbarLabel">
-                Mellitus
-              </span>
-              <button
-                class="btn-close custom"
-                type="button"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              >
-                <i class="fa-solid fa-xmark"></i>
-              </button>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link href="styleCG.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img height="48" width="48" src="../assets/logo.png"
+                        alt="Logo do Mellitus" /></a>
+                <button class="navbar-toggler custom" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="offcanvas w-50 offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <span class="offcanvas-title" id="offcanvasNavbarLabel">
+                            Mellitus
+                        </span>
+                        <button class="btn-close custom" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mb-2 mb-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-house"></i>Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><i
+                                        class="fa-solid fa-calculator"></i>Cálculo de Glicemia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-bowl-food"></i>Alimentação</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav auth-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i>Logar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-pen-to-square"></i>Cadastrar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">
-                    <i class="fa-solid fa-house"></i>
-                    Home
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">
-                    <i class="fa-solid fa-calculator"></i>
-                    Cálculo de Glicemia
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <i class="fa-solid fa-bowl-food"></i>
-                    Alimentação
-                  </a>
-                </li>
-              </ul>
-              <ul class="navbar-nav auth-items">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                    Logar
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                    Cadastrar
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
+        </nav>
     </header>
 
     <main>
         <div class="main-header">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-12 col-md-4 col-sm-12 col-lg-4 " >
-                        <label>Glicemia Pré Prandial</label>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 p-2">
+                        <label class="pb-1">Glicemia Pré Prandial</label>
                         <input id="gliPre" class="form-control" type="text" placeholder="Glicemia Pré Prandial">
                     </div>
-                    <div class="col-12 col-md-4 col-sm-12 col-lg-4">
-                        <label>Glicemia  Pós Prandial</label>
+                    <div class="col-md-4 p-2">
+                        <label class="pb-1">Glicemia Pós Prandial</label>
                         <input id="gliPos" class="form-control" type="text" placeholder="Glicemia Meta Pós Prandial">
-                    </div>                    
-                    <div class="col-12 col-md-4 col-sm-12 col-lg-4">
-                        <label>Sensibilidade Insulínica</label>
+                    </div>
+                    <div class="col-md-4 p-2">
+                        <label class="pb-1">Sensibilidade Insulínica</label>
                         <input id="sensi" class="form-control" type="text" placeholder="Sensibilidade Insulínica">
                     </div>
                 </div>
@@ -126,354 +87,353 @@
                         <button id="calculo" type="button" onclick="calculo()" class="btn btn-primary">Calcular</button>
                     </div>
                 </div>
-                <div class="container">
-                  <div class="row">
-                      <div class="col-12 col-md-4 col-sm-12 col-lg-4">
-                          <label>Total em grama de Carboidratos</label>
-                          <input id="Carb" class="form-control" type="text" placeholder="Total em grama de Carboidratos">
-                      </div>
-                      <div class="col-12 col-md-4 col-sm-12 col-lg-4 ">
-                          <label>Dose de correção anterior</label>
-                          <input id="Res" class="form-control" type="text" placeholder="Dose de correção anterior">
-                      </div>                    
-                      <div class="col-12 col-md-4 col-sm-12 col-lg-4">
-                          <label>Relação Carboidratos Insulina</label>
-                          <input id="Relacao" class="form-control" type="text" placeholder="Relação Carboidratos Insulina">
-                      </div>
-                  </div>
-                  <div class="row">
-                      <label>Dose de correção Total: <span id="correto2"></span></label>
-                  </div>
-                  <div class="row text-center">
-                      <div class="col">
-                          <button id="calculo2" type="button" onclick="calculo2()" class="btn btn-primary">Calcular</button>
-                      </div>
-                  </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 p-2">
+                            <label class="pb-1">Total em grama de Carboidratos</label>
+                            <input id="Carb" class="form-control" type="text"
+                                placeholder="Total em grama de Carboidratos">
+                        </div>
+                        <div class="col-md-4 p-2">
+                            <label class="pb-1">Dose de correção anterior</label>
+                            <input id="Res" class="form-control" type="text" placeholder="Dose de correção anterior">
+                        </div>
+                        <div class="col-md-4 p-2">
+                            <label class="pb-1">Relação Carboidratos Insulina</label>
+                            <input id="Relacao" class="form-control" type="text"
+                                placeholder="Relação Carboidratos Insulina">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label>Dose de correção Total: <span id="correto2"></span></label>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col">
+                            <button id="calculo2" type="button" onclick="calculo2()"
+                                class="btn btn-primary">Calcular</button>
+                        </div>
+                    </div>
 
-                <div class="row">
-                    <div class="col">
-                        <label id="cabecalho_alimentos">TABELA DE ALIMENTOS: FESTAS E COMEMORAÇÕES</label>
-                    </div>                    
-                </div>
-                <div class="row">
-                    <div class="col text-center cantina_col">
-                        <label class="cantina">CANTINA ITALIANA</label>
+                    <div class="row">
+                        <div class="col">
+                            <label id="cabecalho_alimentos">TABELA DE ALIMENTOS: FESTAS E COMEMORAÇÕES</label>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <table class="table table-striped table-hover">
-                        <tr>
-                            <th><b>Alimento</b></th>
-                            <th><b>Medida Usual</b></th>
-                            <th class="text-center"><b>g ou mL</b></th>
-                            <th class="text-center"><b>CHO (g)</b></th>
-                            <th class="text-center"><b>kcal</b></th>
-                        </tr>
-                        <tr>
-                            <td>Antepasto alichella</td>
-                            <td>colher de sopa cheia</td>
-                            <td class="text-center">30</td>
-                            <td class="text-center">1</td>
-                            <td class="text-center">106</td>
-                        </tr>
-                        <tr>
-                            <td>Antepasto abobrinha escabeche</td>
-                            <td>colher de sopa cheia</td>
-                            <td class="text-center">30</td>
-                            <td class="text-center">4</td>
-                            <td class="text-center">57</td>
-                        </tr>
-                        <tr>
-                            <td>Antepasto berinjela</td>
-                            <td>colher de sopa cheia</td>
-                            <td class="text-center">30</td>
-                            <td class="text-center">4</td>
-                            <td class="text-center">88</td>
-                        </tr>
-                        <tr>
-                            <td>Antepasto sardella</td>
-                            <td>colher de sopa cheia</td>
-                            <td class="text-center">30</td>
-                            <td class="text-center">5</td>
-                            <td class="text-center">160</td>
-                        </tr>
-                        <tr>
-                            <td>Pão italiano</td>
-                            <td>01 fatia</td>
-                            <td class="text-center">50</td>
-                            <td class="text-center">28</td>
-                            <td class="text-center">125</td>
-                        </tr>
-                        <tr>
-                            <td>Fettuccine</td>
-                            <td>01 pegador</td>
-                            <td class="text-center">110</td>
-                            <td class="text-center">24</td>
-                            <td class="text-center">150</td>
-                        </tr>
-                        <tr>
-                            <td>Focaccia</td>
-                            <td>fatia</td>
-                            <td class="text-center">50</td>
-                            <td class="text-center">22</td>
-                            <td class="text-center">136</td>
-                        </tr>
-                        <tr>
-                            <td>Nhoque</td>
-                            <td>01 escumadeira cheia</td>
-                            <td class="text-center">100</td>
-                            <td class="text-center">21</td>
-                            <td class="text-center">120</td>
-                        </tr>
-                        <tr>
-                            <td>Ravióli de carne</td>
-                            <td>01 escumadeira cheia</td>
-                            <td class="text-center">100</td>
-                            <td class="text-center">20</td>
-                            <td class="text-center">136</td>
-                        </tr>
-                        <tr>
-                            <td>Ravióli de mussarela</td>
-                            <td>01 escumadeira cheia</td>
-                            <td class="text-center">100</td>
-                            <td class="text-center">20</td>
-                            <td class="text-center">210</td>
-                        </tr>
-                        <tr>
-                            <td>Spaghetti ao sugo</td>
-                            <td>01 pegador</td>
-                            <td class="text-center">110</td>
-                            <td class="text-center">22</td>
-                            <td class="text-center">170</td>
-                        </tr>
-                        <tr>
-                            <td>Risoto a milanes</td>
-                            <td>01 colher de sopa cheia</td>
-                            <td class="text-center">25</td>
-                            <td class="text-center">19</td>
-                            <td class="text-center">95</td>
-                        </tr>
-                        <tr>
-                            <td>Risoto de camarão</td>
-                            <td>01 colher de sopa cheia</td>
-                            <td class="text-center">25</td>
-                            <td class="text-center">6</td>
-                            <td class="text-center">45</td>
-                        </tr>
-                        <tr>
-                            <td>Filé a parmeggiana</td>
-                            <td>01 unidade pequena</td>
-                            <td class="text-center">150</td>
-                            <td class="text-center">13</td>
-                            <td class="text-center">490</td>
-                        </tr>
-                        <tr>
-                            <td>Tiramissu</td>
-                            <td>unidade</td>
-                            <td class="text-center">100</td>
-                            <td class="text-center">21</td>
-                            <td class="text-center">364</td>
-                        </tr>
-                        <tr>
-                            <td>Polpetone a parmeggiana</td>
-                            <td>01 unidade</td>
-                            <td class="text-center">150</td>
-                            <td class="text-center">12</td>
-                            <td class="text-center">280</td>
-                        </tr>
-                        <tr>
-                            <td>Polenta mole</td>
-                            <td>01 concha pequena</td>
-                            <td class="text-center">100</td>
-                            <td class="text-center">8</td>
-                            <td class="text-center">59</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="row">
-                    <div class="col text-center cantina_col">
-                        <label class="cantina">NATAL</label>
+                    <div class="row">
+                        <div class="col text-center cantina_col">
+                            <label class="cantina">CANTINA ITALIANA</label>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <table class="table table-striped table-hover">
-                        <tr>
-                            <th><b>Alimento</b></th>
-                            <th><b>Medida Usual</b></th>
-                            <th class="text-center"><b>Quantidade (g)</b></th>
-                            <th class="text-center"><b>CHO</b></th>
-                            <th class="text-center"><b>Calorias</b></th>
-                        </tr>
-                        <tr>
-                            <td>Ameixa em calda</td>
-                            <td>01 unidade média</td>
-                            <td class="text-center">7</td>
-                            <td class="text-center">5</td>
-                            <td class="text-center">20</td>
-                        </tr>
-                        <tr>
-                            <td>Amêndoa</td>
-                            <td>01 unidade média</td>
-                            <td class="text-center">3</td>
-                            <td class="text-center">1</td>
-                            <td class="text-center">13</td>
-                        </tr>
-                        <tr>
-                            <td>Arroz à grega</td>
-                            <td>01 colher de sopa cheia</td>
-                            <td class="text-center">25</td>
-                            <td class="text-center">7</td>
-                            <td class="text-center">35</td>
-                        </tr>
-                        <tr>
-                            <td>Castanha de caju</td>
-                            <td>01 unidade média</td>
-                            <td class="text-center">3</td>
-                            <td class="text-center">1</td>
-                            <td class="text-center">13</td>
-                        </tr>
-                        <tr>
-                            <td>Castanha do pará</td>
-                            <td>01 unidade média</td>
-                            <td class="text-center">6</td>
-                            <td class="text-center">1</td>
-                            <td class="text-center">42</td>
-                        </tr>
-                        <tr>
-                            <td>Castanha portuguesa</td>
-                            <td>01 unidade</td>
-                            <td class="text-center">10</td>
-                            <td class="text-center">5</td>
-                            <td class="text-center">21</td>
-                        </tr>
-                        <tr>
-                            <td>Chester</td>
-                            <td>colher sp ch desfiado</td>
-                            <td class="text-center">20</td>
-                            <td class="text-center">0</td>
-                            <td class="text-center">34</td>
-                        </tr>
-                        <tr>
-                            <td>Chocotone Bauducco®</td>
-                            <td>01 fatia pequena</td>
-                            <td class="text-center">100</td>
-                            <td class="text-center">49</td>
-                            <td class="text-center">396</td>
-                        </tr>
-                        <tr>
-                            <td>cuscuz paulista</td>
-                            <td>01 fatia pequena</td>
-                            <td class="text-center">80</td>
-                            <td class="text-center">34</td>
-                            <td class="text-center">161</td>
-                        </tr>
-                        <tr>
-                            <td>Damasco seco</td>
-                            <td>01 unidade pequena</td>
-                            <td class="text-center">7</td>
-                            <td class="text-center">2</td>
-                            <td class="text-center">9</td>
-                        </tr>
-                        <tr>
-                            <td>Farofa com Bacon</td>
-                            <td>01 colher de sopa cheia</td>
-                            <td class="text-center">45</td>
-                            <td class="text-center">26</td>
-                            <td class="text-center">206</td>
-                        </tr>
-                        <tr>
-                            <td>Lombo (ao Vinho)</td>
-                            <td>01 fatia média</td>
-                            <td class="text-center">80</td>
-                            <td class="text-center">6</td>
-                            <td class="text-center">440</td>
-                        </tr>
-                        <tr>
-                            <td>Maionese de legumes</td>
-                            <td>01 colher de sopa cheia</td>
-                            <td class="text-center">38</td>
-                            <td class="text-center">6</td>
-                            <td class="text-center">51</td>
-                        </tr>
-                        <tr>
-                            <td>Nozes</td>
-                            <td>01 unidade média</td>
-                            <td class="text-center">5</td>
-                            <td class="text-center">1</td>
-                            <td class="text-center">35</td>
-                        </tr>
-                        <tr>
-                            <td>Pernil assado</td>
-                            <td>1 fatia</td>
-                            <td class="text-center">100</td>
-                            <td class="text-center">1,7</td>
-                            <td class="text-center">94</td>
-                        </tr>
-                        <tr>
-                            <td>Pessego em calda</td>
-                            <td>01 metade</td>
-                            <td class="text-center">30</td>
-                            <td class="text-center">6</td>
-                            <td class="text-center">25</td>
-                        </tr>
-                        <tr>
-                            <td>Pinhão</td>
-                            <td>01 unidade média</td>
-                            <td class="text-center">10</td>
-                            <td class="text-center">5</td>
-                            <td class="text-center">25</td>
-                        </tr>
-                        <tr>
-                            <td>Queijo parmesão</td>
-                            <td>01 pedaço pequeno</td>
-                            <td class="text-center">15</td>
-                            <td class="text-center">0</td>
-                            <td class="text-center">54</td>
-                        </tr>
-                        <tr>
-                            <td>Queijo provolone</td>
-                            <td>01 fatia media</td>
-                            <td class="text-center">30</td>
-                            <td class="text-center">1</td>
-                            <td class="text-center">103</td>
-                        </tr>
-                        <tr>
-                            <td>Tender</td>
-                            <td>01 fatia fina</td>
-                            <td class="text-center">100</td>
-                            <td class="text-center">0</td>
-                            <td class="text-center">146</td>
-                        </tr>
-                        <tr>
-                            <td>Torradas aperitivo</td>
-                            <td>01 unidade</td>
-                            <td class="text-center">2</td>
-                            <td class="text-center">1</td>
-                            <td class="text-center">7</td>
-                        </tr>
-                        <tr>
-                            <td>Uva passa</td>
-                            <td>01 colher de sopa cheia</td>
-                            <td class="text-center">18</td>
-                            <td class="text-center">14</td>
-                            <td class="text-center">55</td>
-                        </tr>
-                    </table>
-                    
+                    <div class="row">
+                        <table class="table table-striped table-hover">
+                            <tr>
+                                <th><b>Alimento</b></th>
+                                <th><b>Medida Usual</b></th>
+                                <th class="text-center"><b>g ou mL</b></th>
+                                <th class="text-center"><b>CHO (g)</b></th>
+                                <th class="text-center"><b>kcal</b></th>
+                            </tr>
+                            <tr>
+                                <td>Antepasto alichella</td>
+                                <td>colher de sopa cheia</td>
+                                <td class="text-center">30</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">106</td>
+                            </tr>
+                            <tr>
+                                <td>Antepasto abobrinha escabeche</td>
+                                <td>colher de sopa cheia</td>
+                                <td class="text-center">30</td>
+                                <td class="text-center">4</td>
+                                <td class="text-center">57</td>
+                            </tr>
+                            <tr>
+                                <td>Antepasto berinjela</td>
+                                <td>colher de sopa cheia</td>
+                                <td class="text-center">30</td>
+                                <td class="text-center">4</td>
+                                <td class="text-center">88</td>
+                            </tr>
+                            <tr>
+                                <td>Antepasto sardella</td>
+                                <td>colher de sopa cheia</td>
+                                <td class="text-center">30</td>
+                                <td class="text-center">5</td>
+                                <td class="text-center">160</td>
+                            </tr>
+                            <tr>
+                                <td>Pão italiano</td>
+                                <td>01 fatia</td>
+                                <td class="text-center">50</td>
+                                <td class="text-center">28</td>
+                                <td class="text-center">125</td>
+                            </tr>
+                            <tr>
+                                <td>Fettuccine</td>
+                                <td>01 pegador</td>
+                                <td class="text-center">110</td>
+                                <td class="text-center">24</td>
+                                <td class="text-center">150</td>
+                            </tr>
+                            <tr>
+                                <td>Focaccia</td>
+                                <td>fatia</td>
+                                <td class="text-center">50</td>
+                                <td class="text-center">22</td>
+                                <td class="text-center">136</td>
+                            </tr>
+                            <tr>
+                                <td>Nhoque</td>
+                                <td>01 escumadeira cheia</td>
+                                <td class="text-center">100</td>
+                                <td class="text-center">21</td>
+                                <td class="text-center">120</td>
+                            </tr>
+                            <tr>
+                                <td>Ravióli de carne</td>
+                                <td>01 escumadeira cheia</td>
+                                <td class="text-center">100</td>
+                                <td class="text-center">20</td>
+                                <td class="text-center">136</td>
+                            </tr>
+                            <tr>
+                                <td>Ravióli de mussarela</td>
+                                <td>01 escumadeira cheia</td>
+                                <td class="text-center">100</td>
+                                <td class="text-center">20</td>
+                                <td class="text-center">210</td>
+                            </tr>
+                            <tr>
+                                <td>Spaghetti ao sugo</td>
+                                <td>01 pegador</td>
+                                <td class="text-center">110</td>
+                                <td class="text-center">22</td>
+                                <td class="text-center">170</td>
+                            </tr>
+                            <tr>
+                                <td>Risoto a milanes</td>
+                                <td>01 colher de sopa cheia</td>
+                                <td class="text-center">25</td>
+                                <td class="text-center">19</td>
+                                <td class="text-center">95</td>
+                            </tr>
+                            <tr>
+                                <td>Risoto de camarão</td>
+                                <td>01 colher de sopa cheia</td>
+                                <td class="text-center">25</td>
+                                <td class="text-center">6</td>
+                                <td class="text-center">45</td>
+                            </tr>
+                            <tr>
+                                <td>Filé a parmeggiana</td>
+                                <td>01 unidade pequena</td>
+                                <td class="text-center">150</td>
+                                <td class="text-center">13</td>
+                                <td class="text-center">490</td>
+                            </tr>
+                            <tr>
+                                <td>Tiramissu</td>
+                                <td>unidade</td>
+                                <td class="text-center">100</td>
+                                <td class="text-center">21</td>
+                                <td class="text-center">364</td>
+                            </tr>
+                            <tr>
+                                <td>Polpetone a parmeggiana</td>
+                                <td>01 unidade</td>
+                                <td class="text-center">150</td>
+                                <td class="text-center">12</td>
+                                <td class="text-center">280</td>
+                            </tr>
+                            <tr>
+                                <td>Polenta mole</td>
+                                <td>01 concha pequena</td>
+                                <td class="text-center">100</td>
+                                <td class="text-center">8</td>
+                                <td class="text-center">59</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center cantina_col">
+                            <label class="cantina">NATAL</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <table class="table table-striped table-hover">
+                            <tr>
+                                <th><b>Alimento</b></th>
+                                <th><b>Medida Usual</b></th>
+                                <th class="text-center"><b>Quantidade (g)</b></th>
+                                <th class="text-center"><b>CHO</b></th>
+                                <th class="text-center"><b>Calorias</b></th>
+                            </tr>
+                            <tr>
+                                <td>Ameixa em calda</td>
+                                <td>01 unidade média</td>
+                                <td class="text-center">7</td>
+                                <td class="text-center">5</td>
+                                <td class="text-center">20</td>
+                            </tr>
+                            <tr>
+                                <td>Amêndoa</td>
+                                <td>01 unidade média</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">13</td>
+                            </tr>
+                            <tr>
+                                <td>Arroz à grega</td>
+                                <td>01 colher de sopa cheia</td>
+                                <td class="text-center">25</td>
+                                <td class="text-center">7</td>
+                                <td class="text-center">35</td>
+                            </tr>
+                            <tr>
+                                <td>Castanha de caju</td>
+                                <td>01 unidade média</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">13</td>
+                            </tr>
+                            <tr>
+                                <td>Castanha do pará</td>
+                                <td>01 unidade média</td>
+                                <td class="text-center">6</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">42</td>
+                            </tr>
+                            <tr>
+                                <td>Castanha portuguesa</td>
+                                <td>01 unidade</td>
+                                <td class="text-center">10</td>
+                                <td class="text-center">5</td>
+                                <td class="text-center">21</td>
+                            </tr>
+                            <tr>
+                                <td>Chester</td>
+                                <td>colher sp ch desfiado</td>
+                                <td class="text-center">20</td>
+                                <td class="text-center">0</td>
+                                <td class="text-center">34</td>
+                            </tr>
+                            <tr>
+                                <td>Chocotone Bauducco®</td>
+                                <td>01 fatia pequena</td>
+                                <td class="text-center">100</td>
+                                <td class="text-center">49</td>
+                                <td class="text-center">396</td>
+                            </tr>
+                            <tr>
+                                <td>cuscuz paulista</td>
+                                <td>01 fatia pequena</td>
+                                <td class="text-center">80</td>
+                                <td class="text-center">34</td>
+                                <td class="text-center">161</td>
+                            </tr>
+                            <tr>
+                                <td>Damasco seco</td>
+                                <td>01 unidade pequena</td>
+                                <td class="text-center">7</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center">9</td>
+                            </tr>
+                            <tr>
+                                <td>Farofa com Bacon</td>
+                                <td>01 colher de sopa cheia</td>
+                                <td class="text-center">45</td>
+                                <td class="text-center">26</td>
+                                <td class="text-center">206</td>
+                            </tr>
+                            <tr>
+                                <td>Lombo (ao Vinho)</td>
+                                <td>01 fatia média</td>
+                                <td class="text-center">80</td>
+                                <td class="text-center">6</td>
+                                <td class="text-center">440</td>
+                            </tr>
+                            <tr>
+                                <td>Maionese de legumes</td>
+                                <td>01 colher de sopa cheia</td>
+                                <td class="text-center">38</td>
+                                <td class="text-center">6</td>
+                                <td class="text-center">51</td>
+                            </tr>
+                            <tr>
+                                <td>Nozes</td>
+                                <td>01 unidade média</td>
+                                <td class="text-center">5</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">35</td>
+                            </tr>
+                            <tr>
+                                <td>Pernil assado</td>
+                                <td>1 fatia</td>
+                                <td class="text-center">100</td>
+                                <td class="text-center">1,7</td>
+                                <td class="text-center">94</td>
+                            </tr>
+                            <tr>
+                                <td>Pessego em calda</td>
+                                <td>01 metade</td>
+                                <td class="text-center">30</td>
+                                <td class="text-center">6</td>
+                                <td class="text-center">25</td>
+                            </tr>
+                            <tr>
+                                <td>Pinhão</td>
+                                <td>01 unidade média</td>
+                                <td class="text-center">10</td>
+                                <td class="text-center">5</td>
+                                <td class="text-center">25</td>
+                            </tr>
+                            <tr>
+                                <td>Queijo parmesão</td>
+                                <td>01 pedaço pequeno</td>
+                                <td class="text-center">15</td>
+                                <td class="text-center">0</td>
+                                <td class="text-center">54</td>
+                            </tr>
+                            <tr>
+                                <td>Queijo provolone</td>
+                                <td>01 fatia media</td>
+                                <td class="text-center">30</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">103</td>
+                            </tr>
+                            <tr>
+                                <td>Tender</td>
+                                <td>01 fatia fina</td>
+                                <td class="text-center">100</td>
+                                <td class="text-center">0</td>
+                                <td class="text-center">146</td>
+                            </tr>
+                            <tr>
+                                <td>Torradas aperitivo</td>
+                                <td>01 unidade</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">7</td>
+                            </tr>
+                            <tr>
+                                <td>Uva passa</td>
+                                <td>01 colher de sopa cheia</td>
+                                <td class="text-center">18</td>
+                                <td class="text-center">14</td>
+                                <td class="text-center">55</td>
+                            </tr>
+                        </table>
+
+                    </div>
                 </div>
             </div>
-        </div>
     </main>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/d617ea5e74.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d617ea5e74.js" crossorigin="anonymous"></script>
     <script src="controle.js"></script>
-  </body>
+</body>
+
 </html>
