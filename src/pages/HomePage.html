@@ -15,9 +15,21 @@
         crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/d617ea5e74.js" crossorigin="anonymous"></script>
+    <script src="/src/api/controller.js"></script>
+
 </head>
 
 <body>
+    <script>
+    window.onload = createUser({
+        name: '',
+        age: 0,
+        gender: '',
+        goal: '',
+        email: '',
+        password: ''
+    })
+    </script>
     <main>
         <header>
             <nav class="navbar fixed-top navbar-expand-md">
@@ -30,7 +42,7 @@
                         <i class="fa-solid fa-bars"></i>
                     </button>
 
-                    <div class="offcanvas w-75 offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    <div class="offcanvas w-50 offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
                             <span class="offcanvas-title" id="offcanvasNavbarLabel">
