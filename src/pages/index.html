@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mellitus</title>
-    <link rel="stylesheet" href="../assets/css/HomePage.css">
+    <link rel="stylesheet" href="HomePage.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -22,7 +22,7 @@
         <header>
             <nav class="navbar fixed-top navbar-expand-md">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img height="48" width="48" src="../assets/images/logo.png"
+                    <a class="navbar-brand" href="#"><img height="48" width="48" src="assets/logo.png"
                             alt="Logo do Mellitus" /></a>
                     <button class="navbar-toggler custom rounded-3" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
@@ -47,21 +47,21 @@
                                     <a class="nav-link active" href="#"><i class="fa-solid fa-house"></i>Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="CalculoGlicemia.html"><i
+                                    <a class="nav-link" aria-current="page" href="#"><i
                                             class="fa-solid fa-calculator"></i>Cálculo de
                                         Glicemia</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Alimentacao.html"><i class="fa-solid fa-bowl-food"></i>Alimentação</a>
+                                    <a class="nav-link" href="#"><i class="fa-solid fa-bowl-food"></i>Alimentação</a>
                                 </li>
                             </ul>
                             <ul class="navbar-nav auth-items">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="login.html"><i
+                                    <a class="nav-link" href="#"><i
                                             class="fa-solid fa-arrow-right-to-bracket"></i>Logar</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="register.html"><i class="fa-solid fa-pen-to-square"></i>Cadastrar</a>
+                                    <a class="nav-link" href="#"><i class="fa-solid fa-pen-to-square"></i>Cadastrar</a>
                                 </li>
                             </ul>
                         </div>
@@ -73,118 +73,133 @@
         <section class="shadow">
             <div class="container-fluid">
                 <div class="row">
-                    <h1 class="col m-4 px-3" > Diabetes </h1>
+                    <h1 class="col m-4 px-3"> Diabetes </h1>
                 </div>
             </div>
-            <div class="containet-fluid"></div>
-            <div class="row p-0 m-0">
-                <div class="col-md-8 px-5">
+            <div class="container-fluid">
+                <div class="row row-cols-md-4 row-cols-sm-2">
+                    <div class="m-2 p-3">
+                        <div class="card rounded-4" id="efeito">
+                            <div class="card-body rounded-4">
+                                <h5 class="card-title">O que é?</h5>
+                                <p class="card-text mb-5">Diabetes é uma doença causada pela falta ou má absorção de
+                                    insulina, hormônio que promove o aproveitamento da glicose como energia para o nosso
+                                    corpo. </p>
+                                <a href="#collapseQueE" class="position-absolute bottom-0 start-50 translate-middle-x">
+                                    <p class="btn p-2 text-center text-light rounded-3"
+                                        style="width: 150px; background-color: #4c8bf5;" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseQueE" aria-expanded="false"
+                                        aria-controls="collapseQueE">
+                                        <strong>Saiba Mais</strong>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-2 p-3">
+                        <div class="card rounded-4" id="efeito">
+                            <div class="card-body rounded-4">
+                                <h5 class="card-title">Sintomas</h5>
+                                <p class="card-text mb-5">Alguns são: Poliúria que a pessoa urina demais e, como isso a
+                                    desidrata, sente muita sede; Aumento no apetite; Alterações visuais..
+                                </p>
+                                <!--text-underline text-light-->
+                                <a href="#" class="position-absolute bottom-0 start-50 translate-middle-x">
+                                    <p class="p-2 text-center text-light rounded-3"
+                                        style="width: 150px; background-color: #4c8bf5;">
+                                        <strong>Saiba Mais</strong>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-2 p-3">
+                        <div class="card rounded-4" id="efeito">
+                            <div class="card-body rounded-4">
+                                <h5 class="card-title">Fatores de risco</h5>
+                                <p class="card-text mb-5">Obesidade; Hereditariedade; Falta de atividade física regular;
+                                    Níveis altos de colesterol e triglicérides..</p>
+                                <a class="position-absolute bottom-0 start-50 translate-middle-x">
+                                    <p class="p-2 text-center text-light rounded-3"
+                                        style="width: 150px; background-color: #4c8bf5;">
+                                        <strong>Saiba Mais</strong>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-2 p-3">
+                        <div class="card rounded-4" id="efeito">
+                            <div class="card-body rounded-4">
+                                <h5 class="card-title">Tratamento</h5>
+                                <p class="card-text mb-5">Dieta alimentar equilibrada é fundamental para o controle do
+                                    diabetes. A orientação de um
+                                    nutricionista e o acompanhamento de psicólogos e psiquiatras podem ajudar muito...
+                                </p>
+                                <a class="position-absolute bottom-0 start-50 translate-middle-x">
+                                    <p class="p-2 text-center text-light rounded-3"
+                                        style="width: 150px; background-color: #4c8bf5;">
+                                        <strong>Saiba Mais</strong>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-2 p-3">
+                        <div class="card rounded-4" id="efeito">
+                            <div class="card-body rounded-4">
+                                <h5 class="card-title">Recomendações</h5>
+                                <p class="card-text mb-5">O tratamento do diabetes exige, além do acompanhamento médico
+                                    especializado, os cuidados
+                                    de uma equipe multidisciplinar. Procure seguir as orientações desses
+                                    profissionais...</p>
+                                <a class="position-absolute bottom-0 start-50 translate-middle-x">
+                                    <p class="p-2 text-center text-light rounded-3"
+                                        style="width: 150px; background-color: #4c8bf5;">
+                                        <strong>Saiba Mais</strong>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse pb-4 px-3 m-2" id="collapseQueE">
                     <h4>O que é?</h4>
                     <p>Diabetes mellitus é uma doença do metabolismo da glicose causada pela falta
                         ou má
-                        absorção de insulina, hormônio produzido pelo pâncreas e cuja função é quebrar as moléculas
-                        de glicose para transformá-las em energia, a fim de que seja aproveitada por todas as
-                        células. A ausência total ou parcial desse hormônio interfere não só na queima do açúcar
-                        como na sua transformação em outras substâncias (proteínas, músculos e gordura). <br>
-                        Na verdade, não se trata de uma doença única, mas de um conjunto de doenças com uma
-                        característica em comum, o aumento da concentração de glicose no sangue provocado por duas
+                        absorção de insulina, hormônio produzido pelo pâncreas e cuja função é
+                        quebrar as moléculas
+                        de glicose para transformá-las em energia, a fim de que seja aproveitada por
+                        todas as
+                        células. A ausência total ou parcial desse hormônio interfere não só na
+                        queima do açúcar
+                        como na sua transformação em outras substâncias (proteínas, músculos e
+                        gordura). <br>
+                        Na verdade, não se trata de uma doença única, mas de um conjunto de doenças
+                        com uma
+                        característica em comum, o aumento da concentração de glicose no sangue
+                        provocado por duas
                         diferentes situações:
                     </p>
                     <ul>
-                        <li><strong>Diabetes tipo 1: </strong> O pâncreas produz pouca ou nenhuma insulina. A
-                            instalação da doença ocorre mais na infância e adolescência e é insulinodependente, isto
+                        <li><strong>Diabetes tipo 1: </strong> O pâncreas produz pouca ou nenhuma
+                            insulina. A
+                            instalação da doença ocorre mais na infância e adolescência e é
+                            insulinodependente, isto
                             é, exige a aplicação de injeções diárias de insulina.</li>
-                        <li><strong>Diabetes tipo 2: </strong> As células são resistentes à ação da insulina. A
-                            incidência da doença que pode não ser insulinodependente, em geral, acomete as pessoas
+                        <li><strong>Diabetes tipo 2: </strong> As células são resistentes à ação da
+                            insulina. A
+                            incidência da doença que pode não ser insulinodependente, em geral,
+                            acomete as pessoas
                             depois dos 40 anos de idade;</li>
-                        <li><strong>Diabetes gestacional: </strong> Ocorre durante a gravidez e, na maior parte dos
+                        <li><strong>Diabetes gestacional: </strong> Ocorre durante a gravidez e, na
+                            maior parte dos
                             casos, é provocado pelo aumento excessivo de peso da mãe;</li>
-                        <li><strong>Outros: </strong> Diabetes associados a outras patologias como as pancreatites
+                        <li><strong>Outros: </strong> Diabetes associados a outras patologias como
+                            as pancreatites
                             alcoólicas, uso de certos medicamentos etc.</li>
                     </ul>
-                    <h4>Sintomas</h4>
-                    <ul>
-                        <li>Poliúria – a pessoa urina demais e, como isso a desidrata, sente muita sede (polidpsia);
-                        </li>
-                        <li>Aumento do apetite;</li>
-                        <li>Alterações visuais;</li>
-                        <li>Impotência sexual;</li>
-                        <li>Infecções fúngicas na pele e nas unhas;</li>
-                        <li>Feridas, especialmente nos membros inferiores, que demoram a cicatrizar;</li>
-                        <li>Neuropatias diabéticas provocada pelo comprometimento das terminações nervosas;</li>
-                        <li>Distúrbios cardíacos e renais.</li>
-                    </ul>
-                    <h4>Fatores de risco</h4>
-                    <ul>
-                        <li>Obesidade (inclusive a
-                            <a href="https://drauziovarella.uol.com.br/entrevistas-2/obesidade-infantil-entrevista/"
-                                class="link-light" target="blank">
-                                <strong>obesidade infantil</strong>
-                            </a>);
-                        </li>
-                        <li>Hereditariedade;</li>
-                        <li>Falta de atividade física regular;</li>
-                        <li>
-                            <a href="https://drauziovarella.uol.com.br/doencas-e-sintomas/hipertensao-pressao-alta/"
-                                class="link-light" target="blank">
-                                <strong>Hipertensão</strong>
-                            </a>;
-                        </li>
-                        <li>Níveis altos de colesterol e triglicérides;</li>
-                        <li>Medicamentos, como os à base de cortisona;</li>
-                        <li>Idade acima dos 40 anos (para o diabetes tipo 2);</li>
-                        <li>Estresse emocional.</li>
-                    </ul>
-                    <h4>Tratamento</h4>
-                    <p>O diabetes não pode ser dissociado de outras doenças glandulares. Além da obesidade, outros
-                        distúrbios metabólicos (excesso de cortisona, do hormônio do crescimento ou maior produção
-                        de adrenalina pelas
-                        <a href="https://drauziovarella.uol.com.br/corpo-humano/adrenais-suprarrenais/"
-                            class="link-light" target="blank">
-                            <strong>adrenais</strong>
-                        </a>) podem estar associados ao diabetes.
-                    </p>
-                    <p>O tipo 1 é também chamado de insulinodependente, porque exige o uso de insulina por via
-                        injetável para suprir o organismo desse hormônio que deixou de ser produzido pelo pâncreas.
-                        A suspensão da medicação pode provocar a cetoacidose diabética, distúrbio metabólico que
-                        pode colocar a vida em risco.</p>
-                    <p>O tipo 2 não depende da aplicação de insulina e pode ser controlado por medicamentos
-                        ministrados por via oral. A doença descompensada pode levar ao coma hiperosmolar, uma
-                        complicação grave que pode ser fatal.</p>
-                    <p>Dieta alimentar equilibrada é fundamental para o controle do diabetes. A orientação de um
-                        nutricionista e o acompanhamento de psicólogos e psiquiatras podem ajudar muito a reduzir o
-                        peso e, como consequência, cria a possibilidade de usar doses menores de remédios.</p>
-                    <p>Atividade física é de extrema importância para reduzir o nível da glicose nos dois tipos de
-                        diabetes.</p>
-
-                    <h4>Recomendações</h4>
-                    <ul>
-                        <li>O tratamento do diabetes exige, além do acompanhamento médico especializado, os cuidados
-                            de uma equipe multidisciplinar. Procure seguir as orientações desses profissionais;</li>
-                        <li>A dieta alimentar deve ser observada criteriosamente. Procure ajuda para elaborar o
-                            cardápio adequado para seu caso. Não é necessário que você se prive por toda a vida dos
-                            alimentos de que mais gosta. Uma vez ou outra, você poderá saboreá-los desde que o faça
-                            com parcimônia;</li>
-                        <li>Um programa regular de exercícios físicos irá ajudá-lo a controlar o nível de açúcar no
-                            sangue. Coloque-os como prioridade em sua rotina de vida;</li>
-                        <li>O fumo provoca estreitamento das artérias e veias. Como o diabetes compromete a
-                            circulação nos pequenos vasos sanguíneos (retina e rins) e nos grandes vasos (coração e
-                            cérebro), fumar pode acelerar o processo e o aparecimento de complicações;</li>
-                        <li>O controle da pressão arterial e dos níveis de colesterol e triglicérides deve ser feito
-                            com regularidade;</li>
-                        <li>Medicamentos à base de cortisona aumentam os níveis de glicose no sangue. Não se
-                            automedique;</li>
-                        <li>O diagnóstico precoce é o primeiro passo para o sucesso do tratamento. Não minimize seus
-                            sintomas. Procure logo um serviço de saúde se está urinando demais e sentindo muita sede
-                            e muita fome.</li>
-                    </ul>
                 </div>
-                <div class="col-md-4 pe-4">
-                    <img class="w-100 pt-3 mb-3" src="https:source.unsplash.com/random" alt="advertising" id="advertising">
-                    <!--Se quiser testar tamanhos diferente de imagem, só colocar a resolução no final:
-                            https:source.unsplash.com/random/500x1040-->
-                </div>
-            </div>
             </div>
         </section>
         <footer class="pb-3">
@@ -206,5 +221,4 @@
         </footer>
     </main>
 </body>
-
 </html>

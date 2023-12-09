@@ -19,7 +19,7 @@ background-color: var(--blue);
 a.nav-link {
   color: var(--white);
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
 
 }
 
@@ -67,7 +67,6 @@ button.navbar-toggler.custom, button.navbar-toggler.custom:focus {
 }
 
 /*Seperação de estilização do menu para o corpo principal*/
-/*As palavras do navbar ficam pretas dps que clicam, porque?*/
 
 body {
   padding-top: 115px;
@@ -83,6 +82,33 @@ section {
 
 section h4 {
   padding: 15px 0px;
+}
+
+
+.card-body {
+  background-color: var(--green);
+}
+
+#efeito {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 40px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+
+}
+
+#efeito:hover,
+#efeito:focus,
+#efeito:active {
+  box-shadow: 0 0 40px white;
+}
+
+section .card {
+  width: 90%;
+  height: 100%;
 }
 
 footer {
@@ -108,7 +134,6 @@ footer i {
     margin: 0px;
     padding: 0px;
   }
-
   #advertising {
     display: none;
   }
