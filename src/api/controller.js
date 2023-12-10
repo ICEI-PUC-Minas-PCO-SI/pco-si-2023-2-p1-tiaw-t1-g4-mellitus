@@ -121,12 +121,82 @@ const getMeals = async (section) => {
     }
 }
 
+// Pega uma refeição especifica
+const getMealDetails = async (mealId) => {
+    try {
+        const res = await fetch(`${URL}/meals/${mealId}`);
+        const mealDetails = await res.json();
+        return mealDetails;
+    } catch (error) {
+        throw alert(error.mensagem);
+    }
+};
+
+// Função para criar uma nova refeição
+const createMeal = async (section, name, measure, amount, carbs, calories) => {
+    try {
+        const res = await fetch(`${URL}/meals`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                section,
+                name,
+                measure,
+                amount,
+                carbs,
+                calories,
+            }),
+        });
+
+        const newMeal = await res.json();
+        return newMeal;
+    } catch (error) {
+        console.error('Erro ao criar a refeição', error);
+        throw error;
+    }
+};
+
+// Função para atualizar os detalhes de uma refeição existente
+const updateMeal = async (mealId, updatedMealData) => {
+    try {
+        const res = await fetch(`${URL}/meals/${mealId}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(updatedMealData),
+        });
+
+        const updatedMeal = await res.json();
+        return updatedMeal;
+    } catch (error) {
+        console.error('Erro ao atualizar a refeição', error);
+        throw error;
+    }
+};
+
+// Função para excluir uma refeição existente
+const deleteMeal = async (mealId) => {
+    try {
+        const res = await fetch(`${URL}/meals/${mealId}`, {
+            method: 'DELETE',
+        });
+
+        const deletedMeal = await res.json();
+        return deletedMeal;
+    } catch (error) {
+        console.error('Erro ao excluir a refeição', error);
+        throw error;
+    }
+};
 /*
     Article
 */
 
 // Pega todos os artigos
-const getArticles = async() => {
+const getArticles = async () => {
     try {
         const res = await fetch(`${URL}article`);
         const articles = await res.json();
