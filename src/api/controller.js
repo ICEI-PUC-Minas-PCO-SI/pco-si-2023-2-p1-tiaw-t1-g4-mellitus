@@ -9,96 +9,118 @@ const createUser = async (user) => {
     }
 }
 
+const getUsuarios = async () => {
+    try {
+        const res = await fetch(`${URL}user?_sort=id&_order=asc`);
+        const usuarios = await res.json();
+        return usuarios;
+    } catch {
+        alert('Erro ao obter usuários!');
+    }
+};
 
+const getUsuario = async (idBusca) => {
+    let response = {
+        resultado: false,
+        mensagem: "",
+        dados: ""
+    };
 
+    try {
+        const res = await fetch(`${URL}user/${idBusca}`);
 
+        if (!res.ok) {
+            throw new Error(`O usuário não foi encontrado.`);
+        }
 
+        const usuario = await res.json();
+        response.resultado = true;
+        response.mensagem = "Usuário encontrado com sucesso.";
+        response.dados = usuario;
+    } catch (error) {
+        response.mensagem = error.message;
+    }
 
-// function getUsuarios() {
-//     fetch(`${URL}usuarios?_sort=id&_order=asc`).then(res => res.json()).then(usuarios => {
-//         return usuarios;
-//     })
-// }
+    return response;
+};
 
-// function getUsuario(idBusca) {
-//     let response = {
-//         resultado: false,
-//         mensagem: "",
-//         dados: ""
-//     };
+const setUsuario = async (newNome, newLogin, newSenha) => {
+    try {
+        const usuariosResponse = await fetch(`${URL}user?_sort=id&_order=desc&_limit=1`);
+        const usuarios = await usuariosResponse.json();
 
-//     return fetch(`${URL}usuarios/${idBusca}`)
-//         .then(res => {
-//             if (!res.ok) {
-//                 throw new Error(`O usuario não foi encontrado.`);
-//             }
-//             return res.json();
-//         })
-//         .then(usuario => {
-//             response.resultado = true;
-//             response.mensagem = "Usuario encontrado com sucesso.";
-//             response.dados = usuario;
-//             return response;
-//         })
-//         .catch(error => {
-//             response.mensagem = error.message;
-//             return response;
-//         });
-// }
+        const lastId = usuarios.length > 0 ? usuarios[0].id + 1 : 1;
 
-// function setUsuario(newNome, newLogin, newSenha) {
+        const newUser = {
+            id: lastId,
+            nome: newNome,
+            login: newLogin,
+            senha: newSenha
+        };
 
-//     let lastId;
+        const newUserResponse = await fetch(`${URL}usuarios`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(newUser)
+        });
 
-//     fetch(`${URL}usuarios?_sort=id&_order=desc&_limit=1`).then(res => res.json()).then(usuarios => {
-//         console.log(usuarios);
-//         lastId = usuarios[0].id + 1;
-//         console.log(lastId);
+        if (!newUserResponse.ok) {
+            throw new Error('Erro ao criar usuário');
+        }
 
-//         let newUser = JSON.stringify({
-//             id: lastId,
-//             nome: newNome,
-//             login: newLogin,
-//             senha: newSenha
-//         });
+        const newUserResult = await newUserResponse.json();
+        return newUserResponse;
+    } catch (error) {
+        alert(error.message);
+    }
+};
 
-//         console.log(newUser);
+const updateUsuario = async (idBusca, updateNome, updateLogin, updateSenha) => {
+    try {
+        const updateUser = {
+            id: idBusca,
+            nome: updateNome,
+            login: updateLogin,
+            senha: updateSenha
+        };
 
-//         fetch(`${URL}usuarios`, {
-//             method: 'POST',
-//             headers: {
-//                 'Content-Type': 'application/json'
-//             },
-//             body: newUser
-//         }).then(res => res.json())
-//     })
+        const updateUserResponse = await fetch(`${URL}user/${idBusca}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(updateUser)
+        });
 
-// }
+        if (!updateUserResponse.ok) {
+            throw new Error('Erro ao atualizar usuário');
+        }
 
-// function updateUsuario(idBusca, updateNome, updateLogin, updateSenha) {
+        const updateUserResult = await updateUserResponse.json();
+        return updateUserResult;
+    } catch (error) {
+        alert(error.message);
+    }
+};
 
-//     let updateUser = JSON.stringify({
-//         id: idBusca,
-//         nome: updateNome,
-//         login: updateLogin,
-//         senha: updateSenha
-//     });
+const deletaUsuario = async (idBusca) => {
+    try {
+        const deleteUserResponse = await fetch(`${URL}user/${idBusca}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
 
-//     fetch(`${URL}usuarios/${idBusca}`, {
-//         method: 'PUT',
-//         headers: {
-//             'Content-Type': 'application/json'
-//         },
-//         body: updateUser
-//     }).then(res => res.json())
-// }
+        if (!deleteUserResponse.ok) {
+            throw new Error('Erro ao excluir usuário');
+        }
 
-// function deletaUsuario(idBusca) {
-
-//     fetch(`${URL}usuarios/${idBusca}`, {
-//         method: 'DELETE',
-//         headers: {
-//             'Content-Type': 'application/json'
-//         },
-//     }).then(res => res.json())
-// }
+        const deleteUserResult = await deleteUserResponse.json();
+        return deleteUserResult;
+    } catch (error) {
+        alert(error.message);
+    }
+};
