@@ -1,4 +1,4 @@
-const URL = 'http://localhost:3000/'
+const URL = 'https://api-mellitus-server.vercel.app/'
 
 const createUser = async (user) => {
     try {
@@ -42,39 +42,6 @@ const getUsuario = async (idBusca) => {
     }
 
     return response;
-};
-
-const setUsuario = async (newNome, newLogin, newSenha) => {
-    try {
-        const usuariosResponse = await fetch(`${URL}user?_sort=id&_order=desc&_limit=1`);
-        const usuarios = await usuariosResponse.json();
-
-        const lastId = usuarios.length > 0 ? usuarios[0].id + 1 : 1;
-
-        const newUser = {
-            id: lastId,
-            nome: newNome,
-            login: newLogin,
-            senha: newSenha
-        };
-
-        const newUserResponse = await fetch(`${URL}user`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(newUser)
-        });
-
-        if (!newUserResponse.ok) {
-            throw new Error('Erro ao criar usuário');
-        }
-
-        const newUserResult = await newUserResponse.json();
-        return newUserResult;
-    } catch (error) {
-        alert(error.message);
-    }
 };
 
 const updateUsuario = async (idBusca, updateNome, updateLogin, updateSenha) => {
