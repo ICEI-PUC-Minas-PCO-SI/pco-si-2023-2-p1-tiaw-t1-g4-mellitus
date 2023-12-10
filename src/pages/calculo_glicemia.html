@@ -11,7 +11,6 @@
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
 
     <link href="./style.css" rel="stylesheet" type="text/css" />
-    <link href="styleCG.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -118,10 +117,15 @@
                         <div class="col">
                             <label id="cabecalho_alimentos">TABELA DE ALIMENTOS: FESTAS E COMEMORAÇÕES</label>
                         </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="pesquisar..." oninput="pesquisaAlimentos()">
+                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col text-center cantina_col">
-                            <label class="cantina">CANTINA ITALIANA</label>
+                </div>
+                <div class="container-fluid" id="MealsTable">
+                    <!--<div class="row">
+                        <div class="col text-center Meal_col">
+                            <label class="Title">CANTINA ITALIANA</label>
                         </div>
                     </div>
                     <div class="row">
@@ -255,8 +259,8 @@
                         </table>
                     </div>
                     <div class="row">
-                        <div class="col text-center cantina_col">
-                            <label class="cantina">NATAL</label>
+                        <div class="col text-center Meal_col">
+                            <label class="Title">NATAL</label>
                         </div>
                     </div>
                     <div class="row">
@@ -424,16 +428,16 @@
                             </tr>
                         </table>
 
-                    </div>
+                    </div>-->
                 </div>
             </div>
+        </div>
     </main>
-
+    <script src="controle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
         integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/d617ea5e74.js" crossorigin="anonymous"></script>
-    <script src="controle.js"></script>
 </body>
 
 </html>

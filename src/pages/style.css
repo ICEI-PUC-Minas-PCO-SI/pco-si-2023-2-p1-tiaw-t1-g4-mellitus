@@ -163,3 +163,33 @@ main {
     flex-direction: column;
   }
 }
+
+/*Estilização do conteúdo:*/
+
+.row{
+  padding-top: 20px; 
+}
+
+#calculo {
+  width: 60%;
+  background-color: #4C8BF5;
+  color: #A2EACB;
+}
+#calculo2 {
+  width: 60%;
+  background-color: #4C8BF5;
+  color: #A2EACB;
+}
+
+#cabecalho_alimentos {
+  color: var(--blue);
+}
+
+.Title {
+  color: #A2EACB;
+}
+
+.Meal_col {
+  font-size: 30px;
+  background-color: #4C8BF5;
+}

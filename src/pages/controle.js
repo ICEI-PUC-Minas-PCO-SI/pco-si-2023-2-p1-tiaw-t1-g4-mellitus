@@ -25,3 +25,71 @@ function calculo2() {
     
 }
 
+const url_meal = 'https://api-mellitus-server.vercel.app/meals'
+let alimentos = []
+function LoadMealsJSONServer(func){
+    fetch(url_meal).then(response => response.json())
+    .then(dadosAlimentos => {
+    alimentos = dadosAlimentos;
+
+    func();
+    console.log(`Dados carregados!`);
+    });
+}
+
+function LoadMeals(){
+    let HTMLtable = document.getElementById('MealsTable');
+    strTextHTML = '';
+
+    for (let i = 0; i < alimentos.length; i++) {
+        let secao = alimentos[i];
+
+        strTextHTML += `
+        <div class="row">
+            <div class="col text-center Meal_col">
+                <label class="Title">${secao.section}</label>
+            </div>
+        </div>
+        <div class="row">
+            <table class="table table-striped table-hover">
+                <tr>
+                    <th><b>Alimento</b></th>
+                    <th><b>Medida Usual</b></th>
+                    <th class="text-center"><b>g ou mL</b></th>
+                    <th class="text-center"><b>CHO (g)</b></th>
+                    <th class="text-center"><b>kcal</b></th>
+                </tr>
+        `
+
+        for (let j = 0; j < secao.foods.length; j++) {
+            let alimento = secao.foods[j];
+
+            strTextHTML += `
+            <tr>
+                <td>${alimento.name}</td>
+                <td>${alimento.measure}</td>
+                <td class="text-center">${alimento.amount}</td>
+                <td class="text-center">${alimento.carbs}</td>
+                <td class="text-center">${alimento.calories}</td>
+            </tr>
+            `
+        }
+
+        strTextHTML += `</table></div>`
+    }
+    HTMLtable.innerHTML = strTextHTML;
+}
+LoadMealsJSONServer(LoadMeals)
+
+
+function pesquisaAlimentos(name){
+    let result = [];
+    for(let i = 0; i < alimentos.length; i++) {
+        for(let j = 0; j < alimentos[i].foods.length; j++) {
+            if(alimentos[i].foods[j].name && alimentos[i].foods[j].name.toLowerCase().includes(name.toLowerCase())) {
+                result.push(alimentos[i].foods[j]);
+            }
+        }
+    }
+    return result;
+}
