@@ -191,6 +191,7 @@ const deleteMeal = async (mealId) => {
         throw error;
     }
 };
+
 /*
     Article
 */
