@@ -58,7 +58,7 @@ const setUsuario = async (newNome, newLogin, newSenha) => {
             senha: newSenha
         };
 
-        const newUserResponse = await fetch(`${URL}usuarios`, {
+        const newUserResponse = await fetch(`${URL}user`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -71,7 +71,7 @@ const setUsuario = async (newNome, newLogin, newSenha) => {
         }
 
         const newUserResult = await newUserResponse.json();
-        return newUserResponse;
+        return newUserResult;
     } catch (error) {
         alert(error.message);
     }
