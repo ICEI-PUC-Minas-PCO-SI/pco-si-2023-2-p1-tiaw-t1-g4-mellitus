@@ -45,7 +45,7 @@ function LoadMeals() {
         let secao = alimentos[i];
 
         strTextHTML += `
-        <div class="row">
+        <div class="row rowsec">
             <div class="col text-center Meal_col">
                 <label class="Title">${secao.section}</label>
             </div>
@@ -65,7 +65,7 @@ function LoadMeals() {
             let alimento = secao.foods[j];
 
             strTextHTML += `
-            <tr>
+            <tr class="list-item">
                 <td>${alimento.name}</td>
                 <td>${alimento.measure}</td>
                 <td class="text-center">${alimento.amount}</td>
@@ -81,28 +81,59 @@ function LoadMeals() {
 }
 LoadMealsJSONServer(LoadMeals)
 
+function createSearchTable(filteredRows) {
+    let HTMLtable = document.getElementById('MealsTable');
+    let strTextHTML = `
+    <div class="row">
+            <table class="table table-striped table-hover">
+                <tr>
+                    <th><b>Alimento</b></th>
+                    <th><b>Medida Usual</b></th>
+                    <th class="text-center"><b>g ou mL</b></th>
+                    <th class="text-center"><b>CHO (g)</b></th>
+                    <th class="text-center"><b>kcal</b></th>
+                </tr>
+    `;
+
+    for (let i = 0; i < filteredRows.length; i++) {
+        let alimento = filteredRows[i];
+
+        strTextHTML += `
+        <tr class="list-item">
+            <td>${alimento.name}</td>
+            <td>${alimento.measure}</td>
+            <td class="text-center">${alimento.amount}</td>
+            <td class="text-center">${alimento.carbs}</td>
+            <td class="text-center">${alimento.calories}</td>
+        </tr>
+        `;
+    }
+
+    HTMLtable.innerHTML = strTextHTML;
+}
 
 function search() {
     let input = document.getElementById('searchbar').value.toLowerCase();
 
-    let rows = document.querySelectorAll('#MealsTable table tr');
+    if (input.trim() === '') {
+        LoadMealsJSONServer(LoadMeals);
+        return;
+    }
 
-    for (let i = 0; i < rows.length; i++) {
-        let cells = rows[i].querySelectorAll('td, th');
+    let filteredRows = [];
 
-        let rowMatchesSearch = false;
+    for (let i = 0; i < alimentos.length; i++) {
+        let secao = alimentos[i];
 
-        for (let j = 0; j < cells.length; j++) {
-            let cellText = cells[j].textContent.toLowerCase();
+        for (let j = 0; j < secao.foods.length; j++) {
+            let alimento = secao.foods[j];
+            let cellText = alimento.name.toLowerCase();
 
             if (cellText.includes(input)) {
-                rowMatchesSearch = true;
-                break;
+                filteredRows.push(alimento);
             }
         }
-
-        rows[i].style.display = rowMatchesSearch ? "table-row" : "none";
     }
+
+    createSearchTable(filteredRows);
 }
-
-
