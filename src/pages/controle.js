@@ -83,19 +83,26 @@ LoadMealsJSONServer(LoadMeals)
 
 
 function search() {
-    let input = document.getElementById('searchbar').value;
-    input = input.toLowerCase(); // Corrigido para toLowerCase()
+    let input = document.getElementById('searchbar').value.toLowerCase();
 
     let rows = document.querySelectorAll('#MealsTable table tr');
 
     for (let i = 0; i < rows.length; i++) {
-        let row = rows[i];
+        let cells = rows[i].querySelectorAll('td, th');
 
-        if (!row.innerHTML.toLowerCase().includes(input)) {
-            row.style.display = "none";
-        } else {
-            row.style.display = "table-row"; // Corrigido para "table-row"
+        let rowMatchesSearch = false;
+
+        for (let j = 0; j < cells.length; j++) {
+            let cellText = cells[j].textContent.toLowerCase();
+
+            if (cellText.includes(input)) {
+                rowMatchesSearch = true;
+                break;
+            }
         }
+
+        rows[i].style.display = rowMatchesSearch ? "table-row" : "none";
     }
 }
+
 
