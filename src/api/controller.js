@@ -91,3 +91,13 @@ const deletaUsuario = async (idBusca) => {
         alert(error.message);
     }
 };
+
+const getMeals = async (section) => {
+    try {
+        const res = await fetch(`${URL}meals/?section=${section}`);
+        const meals = await res.json();
+        return meals;
+    } catch {
+        alert('Erro ao recupearar a sessão');
+    }
+}
