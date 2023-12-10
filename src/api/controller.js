@@ -124,7 +124,7 @@ const getMeals = async (section) => {
 // Pega todos os artigos
 const getArticles = async() => {
     try {
-        const res = await fetch(``);
+        const res = await fetch(`${URL}article`);
         const articles = await res.json();
         return articles;
     } catch {
