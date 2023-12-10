@@ -1,5 +1,5 @@
 function calculo() {
-    
+
     let gliPre = parseFloat(document.getElementById('gliPre').value);
     let gliPos = parseFloat(document.getElementById('gliPos').value);
     let sensi = parseFloat(document.getElementById('sensi').value);
@@ -9,35 +9,35 @@ function calculo() {
     let resultado = ((gliPre - gliPos) / sensi);
 
     elemento.textContent = (isNaN(resultado)) ? "Favor informar os dados corretamente." : resultado + "u";
-    
+
 }
 function calculo2() {
-    
+
     let Carb = parseFloat(document.getElementById('Carb').value);
     let Res = parseFloat(document.getElementById('Res').value);
     let Relacao = parseFloat(document.getElementById('Relacao').value);
 
     let elemento = document.getElementById("correto2");
 
-    let resultado2 = ((Carb/Relacao) + Res);
+    let resultado2 = ((Carb / Relacao) + Res);
 
     elemento.textContent = (isNaN(resultado2)) ? "Favor informar os dados corretamente." : resultado2 + "u";
-    
+
 }
 
 const url_meal = 'https://api-mellitus-server.vercel.app/meals'
 let alimentos = []
-function LoadMealsJSONServer(func){
+function LoadMealsJSONServer(func) {
     fetch(url_meal).then(response => response.json())
-    .then(dadosAlimentos => {
-    alimentos = dadosAlimentos;
+        .then(dadosAlimentos => {
+            alimentos = dadosAlimentos;
 
-    func();
-    console.log(`Dados carregados!`);
-    });
+            func();
+            console.log(`Dados carregados!`);
+        });
 }
 
-function LoadMeals(){
+function LoadMeals() {
     let HTMLtable = document.getElementById('MealsTable');
     strTextHTML = '';
 
@@ -82,14 +82,20 @@ function LoadMeals(){
 LoadMealsJSONServer(LoadMeals)
 
 
-function pesquisaAlimentos(name){
-    let result = [];
-    for(let i = 0; i < alimentos.length; i++) {
-        for(let j = 0; j < alimentos[i].foods.length; j++) {
-            if(alimentos[i].foods[j].name && alimentos[i].foods[j].name.toLowerCase().includes(name.toLowerCase())) {
-                result.push(alimentos[i].foods[j]);
-            }
+function search() {
+    let input = document.getElementById('searchbar').value;
+    input = input.toLowerCase(); // Corrigido para toLowerCase()
+
+    let rows = document.querySelectorAll('#MealsTable table tr');
+
+    for (let i = 0; i < rows.length; i++) {
+        let row = rows[i];
+
+        if (!row.innerHTML.toLowerCase().includes(input)) {
+            row.style.display = "none";
+        } else {
+            row.style.display = "table-row"; // Corrigido para "table-row"
         }
     }
-    return result;
 }
+
