@@ -52,13 +52,17 @@ const getUsuario = async (idBusca) => {
 };
 
 // Atualiza um usuario
-const updateUsuario = async (idBusca, updateNome, updateLogin, updateSenha) => {
+const updateUsuario = async (idBusca, updateNome, updateAge, updateGender, updateGoal, updateEmail, updateLogin, updatePassword) => {
     try {
         const updateUser = {
             id: idBusca,
-            nome: updateNome,
-            login: updateLogin,
-            senha: updateSenha
+            Nome: updateNome,
+            Age: updateAge,
+            Gender: updateGender,
+            Goal: updateGoal,
+            Email: updateEmail,
+            Login: updateLogin,
+            Password: updatePassword
         };
 
         const updateUserResponse = await fetch(`${URL}user/${idBusca}`, {
