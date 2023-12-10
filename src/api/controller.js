@@ -1,14 +1,10 @@
 const URL = 'https://api-mellitus-server.vercel.app/'
 
-const createUser = async (user) => {
-    try {
-        const res = await fetch(`${URL}user`, { method: "POST", body: JSON.stringify(user) })
-        return res.json()
-    } catch {
-        alert('Erro na criação do usuário!')
-    }
-}
+/*
+    User
+*/
 
+// Pega todos os usuarios
 const getUsuarios = async () => {
     try {
         const res = await fetch(`${URL}user?_sort=id&_order=asc`);
@@ -19,6 +15,17 @@ const getUsuarios = async () => {
     }
 };
 
+// Cria um novo usuario com base no formato que esta no json
+const createUser = async (user) => {
+    try {
+        const res = await fetch(`${URL}user`, { method: "POST", body: JSON.stringify(user) })
+        return res.json()
+    } catch {
+        alert('Erro na criação do usuário!')
+    }
+}
+
+// Pega um usuario especifico com base no seu id
 const getUsuario = async (idBusca) => {
     let response = {
         resultado: false,
@@ -44,6 +51,7 @@ const getUsuario = async (idBusca) => {
     return response;
 };
 
+// Atualiza um usuario
 const updateUsuario = async (idBusca, updateNome, updateLogin, updateSenha) => {
     try {
         const updateUser = {
@@ -72,6 +80,7 @@ const updateUsuario = async (idBusca, updateNome, updateLogin, updateSenha) => {
     }
 };
 
+// Delete um usuario com base no seu id
 const deletaUsuario = async (idBusca) => {
     try {
         const deleteUserResponse = await fetch(`${URL}user/${idBusca}`, {
@@ -92,6 +101,12 @@ const deletaUsuario = async (idBusca) => {
     }
 };
 
+
+/*
+    Meals
+*/
+
+// Pega comidas com base na sessão que for passada
 const getMeals = async (section) => {
     try {
         const res = await fetch(`${URL}meals/?section=${section}`);
@@ -99,5 +114,20 @@ const getMeals = async (section) => {
         return meals;
     } catch {
         alert('Erro ao recupearar a sessão');
+    }
+}
+
+/*
+    Article
+*/
+
+// Pega todos os artigos
+const getArticles = async() => {
+    try {
+        const res = await fetch(``);
+        const articles = await res.json();
+        return articles;
+    } catch {
+        alert('Erro ao recuperar os artigos.');
     }
 }
