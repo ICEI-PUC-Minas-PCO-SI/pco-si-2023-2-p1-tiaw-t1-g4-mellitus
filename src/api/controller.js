@@ -205,3 +205,61 @@ const getArticles = async () => {
         alert('Erro ao recuperar os artigos.');
     }
 }
+
+// Função para criar um novo artigo
+const createArticle = async (author, subject, content, publishDate) => {
+    try {
+        const res = await fetch(`${URL}/article`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                author,
+                subject,
+                content,
+                publishDate,
+            }),
+        });
+
+        const newArticle = await res.json();
+        return newArticle;
+    } catch (error) {
+        console.error('Erro ao criar o artigo', error);
+        throw error;
+    }
+};
+
+// Função para atualizar os detalhes de um artigo existente
+const updateArticle = async (articleId, updatedArticleData) => {
+    try {
+        const res = await fetch(`${URL}/article/${articleId}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(updatedArticleData),
+        });
+
+        const updatedArticle = await res.json();
+        return updatedArticle;
+    } catch (error) {
+        console.error('Erro ao atualizar o artigo', error);
+        throw error;
+    }
+};
+
+// Função para excluir um artigo existente
+const deleteArticle = async (articleId) => {
+    try {
+        const res = await fetch(`${URL}/article/${articleId}`, {
+            method: 'DELETE',
+        });
+
+        const deletedArticle = await res.json();
+        return deletedArticle;
+    } catch (error) {
+        console.error('Erro ao excluir o artigo', error);
+        throw error;
+    }
+};
