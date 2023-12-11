@@ -137,12 +137,12 @@ Cenário 1: Você é uma pessoa que precisa de um cauculo raoido de carboidratos
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 27.87 segundos                  |
-| 2       | SIM             | 5                    | 17.11 segundos                  |
-| 3       | SIM             | 5                    | 39.09 segundos                  |
+| 1       | SIM             | 3                    | 25.87 segundos                  |
+| 2       | SIM             | 4                    | 21.11 segundos                  |
+| 3       | SIM             | 4                    | 28.07 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 8.66 segundos |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 22.69 segundos |
 
 
     Comentários dos usuários: Deu pra caucular mas acho que pode ser mais rapido, no geral muito bom!
@@ -154,12 +154,12 @@ Cenário 2: Você é uma pessoa que possui um pai idoso(diabetico) e precisa se 
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 22.54 segundos                          |
-| 2       | SIM             | 5                    | 31.42 segundos                          |
-| 3       | SIM             | 5                    | 36.21 segundos                          |
+| 1       | SIM             | 4                    | 28.94 segundos                          |
+| 2       | SIM             | 5                    | 27.42 segundos                          |
+| 3       | SIM             | 3                    | 36.21 segundos                          |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 15.00 segundos |
 
 
     Comentários dos usuários: achei muito informativo acho que ate pessoas nao diabeticas deveriam montar dietas no mellitus.
