@@ -69,15 +69,15 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |---|---|
 |Requisito Associado | RF-004 - pesquisa de alimentos.|
 |Link do vídeo do teste realizado: | 
- | 
+ 
 
 
 |*Caso de Teste*                                 |*TC-03 - Cauculadolara de carboidratos*                                         |
 |---|---|
 |Requisito Associado | RF-004 - cauculadora de insulina.|
-|Link:file:///home/chronos/u-01fa509e705463f987cb5abdc046ba82dbceda7e/MyFiles/Downloads/IMG-20231211-WA0040.jpg
+|Link:
 
-|*Caso de Teste*                                 |*TC-04 - Efetuar Login (usuário autenticado)*                                         |
+|*Caso de Teste*                                 |*TC-04 - Efetuar Login (usuário autenticado)*                                         
 |---|---|
 |Requisito Associado | RF-004 - Cadastro de dados do usuario.|
 |Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
