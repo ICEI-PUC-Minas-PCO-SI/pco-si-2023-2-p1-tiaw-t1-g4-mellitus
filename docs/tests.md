@@ -75,7 +75,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |*Caso de Teste*                                 |*TC-03 - Cauculadolara de carboidratos*                                         |
 |---|---|
 |Requisito Associado | RF-004 - cauculadora de insulina.|
-|Link do vídeo do teste realizado: |https://photos.google.com/photo/AF1QipOgg0hOnouGPYJ9dEuhokN_cfQ9VaRpN3BU1vD7 
+|Link do vídeo do teste realizado: |file:///home/chronos/u-01fa509e705463f987cb5abdc046ba82dbceda7e/MyFiles/Downloads/IMG-20231211-WA0040.jpg
 
 |*Caso de Teste*                                 |*TC-04 - Efetuar Login (usuário autenticado)*                                         |
 |---|---|
