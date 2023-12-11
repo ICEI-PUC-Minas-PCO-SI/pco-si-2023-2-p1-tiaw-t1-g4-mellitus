@@ -34,3 +34,6 @@ ETAPA 3
 * Matheus Freitas: Fiquei responsável pela criação da tela de cálculo de glicemia. Além disso, unifiquei todo o projeto, conectando as telas em uma única branch, estabelecendo o fluxo de navegação e organizando a disposição dos diretórios para uma melhor organização do projeto.
 * Gabriel Fioreze: Fiquei responsável por fazer as páginas iniciais do "Meu Guia" e "Alimentação", juntamente com as paginas informativas restantes (Alimentação orgânica, Alimentação e tecnologia, Alimentação e esportes, Alimentação saúdavel, Nutrição equlibrada e Intolerâncias alimentares).
 * João Pedro de Castro Vieira: Me responsabilizei por padronizar as páginas de login e cadastro, criação da página de cadastro e sí e da conexão entre essas duas páginas e o fluxo da aplicação.
+
+ETAPA 3
+* Bernardo Garcia: Fiquei responsável por duas funcionalidades. A primeira é a calculadora completa de aplicação de insulina. Corrige tanto para alimentação tanto para dose de correção. Também fiz sua responsividade que depois foi incrementada pelo Felipe Claver. A outra funcionalidade foi a barra de pesquisa de alimentos para a pagina de calculo de insulina.
