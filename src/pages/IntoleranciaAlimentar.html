@@ -1,125 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mellitus</title>
-    <link rel="stylesheet" href="../assets/css/AlimentosOrganicos.css">
+    <link rel="stylesheet" href="../assets/css/AlimentosOrganicos.css" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://kit.fontawesome.com/d617ea5e74.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://kit.fontawesome.com/d617ea5e74.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <main>
-        <header>
-            <nav class="navbar fixed-top navbar-expand-md">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img height="48" width="48" src="../assets/images/logo.png"
-                            alt="Logo do Mellitus" /></a>
-                    <button class="navbar-toggler custom rounded-3" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
-                        id="menuButton">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
+      <header>
+        <nav class="navbar fixed-top navbar-expand-md">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><img
+                height="48"
+                width="48"
+                src="../assets/images/logo.png"
+                alt="Logo do Mellitus"
+            /></a>
+            <button
+              class="navbar-toggler custom rounded-3"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+              id="menuButton"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
 
-                    <div class="offcanvas w-75 offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <span class="offcanvas-title" id="offcanvasNavbarLabel">
-                                Mellitus
-                            </span>
-                            <button class="btn-close custom" type="button" data-bs-dismiss="offcanvas"
-                                aria-label="Close">
-                                <i class="fa-solid fa-xmark"></i>
-                            </button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="HomePage.html"><i class="fa-solid fa-house"></i>Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="CalculoGlicemia.html"><i
-                                            class="fa-solid fa-calculator"></i>Cálculo de
-                                        Glicemia</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Alimentacao.html"><i class="fa-solid fa-bowl-food"></i>Alimentação</a>
-                                </li>
-                            </ul>
-                            <ul class="navbar-nav auth-items">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="login.html"><i
-                                            class="fa-solid fa-arrow-right-to-bracket"></i>Logar</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="register.html"><i class="fa-solid fa-pen-to-square"></i>Cadastrar</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <section class="shadow">
-            <div class="container-fluid">
-                <div class="row">
-                    <h1 class="col m-4 px-3" > Intolerâncias alimentares</h1>
-                </div>
-
+            <div
+              class="offcanvas w-75 offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <span class="offcanvas-title" id="offcanvasNavbarLabel">
+                  Mellitus
+                </span>
+                <button
+                  class="btn-close custom"
+                  type="button"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                >
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="HomePage.html"
+                      ><i class="fa-solid fa-house"></i>Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      aria-current="page"
+                      href="CalculoGlicemia.html"
+                      ><i class="fa-solid fa-calculator"></i>Cálculo de
+                      Glicemia</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Alimentacao.html"
+                      ><i class="fa-solid fa-bowl-food"></i>Alimentação</a
+                    >
+                  </li>
+                </ul>
+                <ul class="navbar-nav auth-items">
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html"
+                      ><i class="fa-solid fa-arrow-right-to-bracket"></i
+                      >Logar</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="register.html"
+                      ><i class="fa-solid fa-pen-to-square"></i>Cadastrar</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="containet-fluid"></div>
-            <div class="row p-0 m-0">
-                <div class="col-md-8 px-5">
-                    <h4>O que é?</h4>
-                    <p>Intolerâncias alimentares são reações adversas a alimentos que não envolvem o sistema imunológico, ao contrário das alergias alimentares. Elas ocorrem quando o corpo tem dificuldade em digerir ou processar certos componentes dos alimentos. </p>
-                    <h4>Algumas das intolerâncias alimentares mais comuns</h4>
-                    <ul>
-                        <li>Intolerância à Lactose: A intolerância à lactose ocorre devido à deficiência da enzima lactase, que é necessária para digerir a lactose, o açúcar do leite. Isso pode resultar em sintomas como inchaço, diarreia, cólicas e gases após o consumo de produtos lácteos.</li>
-                        <li>Intolerância ao Glúten:A intolerância ao glúten é comum em pessoas com doença celíaca ou sensibilidade ao glúten não celíaca. O glúten é uma proteína encontrada em cereais como trigo, centeio e cevada. Os sintomas incluem problemas gastrointestinais, fadiga e dores de cabeça.</li>
-                        <li>Intolerância à Frutose:Pessoas com intolerância à frutose têm dificuldade em absorver a frutose, um açúcar encontrado em frutas e alguns vegetais. Isso pode causar desconforto abdominal, diarreia e outros sintomas.</li>
-                        <li>Intolerância à Sacarose:A intolerância à sacarose ocorre quando o corpo não consegue quebrar adequadamente o açúcar comum (sacarose), levando a sintomas semelhantes aos da intolerância à lactose, como inchaço e diarreia.</li>
-                        <li>Intolerância a Aditivos Alimentares:Alguns aditivos alimentares, como sulfitos, corantes ou conservantes, podem causar reações adversas em algumas pessoas. Os sintomas variam de acordo com o aditivo.</li>
-                        <li>Intolerância à Histamina:Pessoas com intolerância à histamina têm dificuldade em metabolizar a histamina, uma substância química presente em muitos alimentos. Isso pode causar sintomas como dor de cabeça, erupções cutâneas, urticária e problemas gastrointestinais.</li>
-                        <li>Intolerância a Alimentos Picantes ou Condimentados:Alguns indivíduos podem experimentar sintomas gastrointestinais, como azia ou dor abdominal, após consumir alimentos muito picantes ou condimentados.</li>
-                        <li>Intolerância a Açúcares Sintéticos (Sorbitol, Manitol, Xilitol, etc.): A intolerância a açúcares sintéticos pode causar sintomas gastrointestinais, como diarreia, quando esses açúcares são consumidos em excesso.</li>
+          </div>
+        </nav>
+      </header>
+
+      <section class="shadow">
+        <div class="container-fluid">
+          <div class="row">
+            <h1 class="col m-4 px-3">Intolerâncias alimentares</h1>
+          </div>
+        </div>
+        <div class="containet-fluid"></div>
+        <div class="row p-0 m-0">
+          <div class="col-md-8 px-5">
+            <h4>O que é?</h4>
+            <p>
+              Intolerâncias alimentares são reações adversas a alimentos que não
+              envolvem o sistema imunológico, ao contrário das alergias
+              alimentares. Elas ocorrem quando o corpo tem dificuldade em
+              digerir ou processar certos componentes dos alimentos.
+            </p>
+            <h4>Algumas das intolerâncias alimentares mais comuns</h4>
+            <ul>
+              <li>
+                Intolerância à Lactose: A intolerância à lactose ocorre devido à
+                deficiência da enzima lactase, que é necessária para digerir a
+                lactose, o açúcar do leite. Isso pode resultar em sintomas como
+                inchaço, diarreia, cólicas e gases após o consumo de produtos
+                lácteos.
+              </li>
+              <li>
+                Intolerância ao Glúten:A intolerância ao glúten é comum em
+                pessoas com doença celíaca ou sensibilidade ao glúten não
+                celíaca. O glúten é uma proteína encontrada em cereais como
+                trigo, centeio e cevada. Os sintomas incluem problemas
+                gastrointestinais, fadiga e dores de cabeça.
+              </li>
+              <li>
+                Intolerância à Frutose:Pessoas com intolerância à frutose têm
+                dificuldade em absorver a frutose, um açúcar encontrado em
+                frutas e alguns vegetais. Isso pode causar desconforto
+                abdominal, diarreia e outros sintomas.
+              </li>
+              <li>
+                Intolerância à Sacarose:A intolerância à sacarose ocorre quando
+                o corpo não consegue quebrar adequadamente o açúcar comum
+                (sacarose), levando a sintomas semelhantes aos da intolerância à
+                lactose, como inchaço e diarreia.
+              </li>
+              <li>
+                Intolerância a Aditivos Alimentares:Alguns aditivos alimentares,
+                como sulfitos, corantes ou conservantes, podem causar reações
+                adversas em algumas pessoas. Os sintomas variam de acordo com o
+                aditivo.
+              </li>
+              <li>
+                Intolerância à Histamina:Pessoas com intolerância à histamina
+                têm dificuldade em metabolizar a histamina, uma substância
+                química presente em muitos alimentos. Isso pode causar sintomas
+                como dor de cabeça, erupções cutâneas, urticária e problemas
+                gastrointestinais.
+              </li>
+              <li>
+                Intolerância a Alimentos Picantes ou Condimentados:Alguns
+                indivíduos podem experimentar sintomas gastrointestinais, como
+                azia ou dor abdominal, após consumir alimentos muito picantes ou
+                condimentados.
+              </li>
+              <li>
+                Intolerância a Açúcares Sintéticos (Sorbitol, Manitol, Xilitol,
+                etc.): A intolerância a açúcares sintéticos pode causar sintomas
+                gastrointestinais, como diarreia, quando esses açúcares são
+                consumidos em excesso.
+              </li>
             </ul>
-                </div>
+          </div>
 
-                <div class="col-md-4 pe-4">
-                    <img class="w-100 pt-3 mb-3" src="../assets/images/Imagem1.png" alt="Imagem">
-                </div>
-
-              
-            </div>
-        </section>
-        <footer class="pb-3">
-            <h1 class="d-flex ms-5 py-3">Mellitus</h1>
-            <div class="d-flex p-3 mx-5" id="busca">
-                <i class="fa-solid fa-magnifying-glass pt-2"></i>
-                <form class="w-100" crole="search" method="get" id="search-form"
-                    action="https://drauziovarella.uol.com.br/">
-                    <input class="w-100 border border-white" type="text" autocomplete="off" value="" name="s"
-                        data-swplive="true" data-swpengine="default" data-swpconfig="default" id="search"
-                        placeholder="PESQUISAR..." aria-owns="searchwp_live_search_results_65467edd7423c"
-                        aria-autocomplete="both"
-                        aria-label="When autocomplete results are available use up and down arrows to review and enter to go to the desired page. Touch device users, explore by touch or with swipe gestures.">
-                </form>
-            </div>
-            <div class="d-flex m-4 justify-content-center">
-                <span>@2023</span>
-            </div>
-        </footer>
+          <div class="col-md-4 pe-4">
+            <img
+              class="w-100 pt-3 mb-3"
+              src="../assets/images/Imagem1.png"
+              alt="Imagem"
+            />
+          </div>
+        </div>
+      </section>
+      <footer class="pb-3">
+        <h1 class="d-flex ms-5 py-3">Mellitus</h1>
+        <div class="d-flex p-3 mx-5" id="busca">
+          <i class="fa-solid fa-magnifying-glass pt-2"></i>
+          <form
+            class="w-100"
+            crole="search"
+            method="get"
+            id="search-form"
+            action="https://drauziovarella.uol.com.br/"
+          >
+            <input
+              class="w-100 border border-white"
+              type="text"
+              autocomplete="off"
+              value=""
+              name="s"
+              data-swplive="true"
+              data-swpengine="default"
+              data-swpconfig="default"
+              id="search"
+              placeholder="PESQUISAR..."
+              aria-owns="searchwp_live_search_results_65467edd7423c"
+              aria-autocomplete="both"
+              aria-label="When autocomplete results are available use up and down arrows to review and enter to go to the desired page. Touch device users, explore by touch or with swipe gestures."
+            />
+          </form>
+        </div>
+        <div class="d-flex m-4 justify-content-center">
+          <span>@2023</span>
+        </div>
+      </footer>
     </main>
-</body>
-
+  </body>
+  <script src="/src/assets/js/handleUser.js"></script>
 </html>
