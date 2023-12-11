@@ -28,45 +28,64 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Caso de Teste** | **CT01 - Fluxo de usuario**
  :--------------: | ------------
 **Procedimento**  | 1) O usuario ao clicar nos "botões" de texto tem que ser levado as paginas indexadas.
-**Requisitos associados** | RF-001
+**Requisitos associados** | RF-003
 **Resultado esperado** | Prosseguir para a proxima pagina.
 **Dados de entrada** | ...
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT02 - Criar conta logada**
+**Caso de Teste** | **CT02 - Tabela de alimentos pre-definidos com pesquisa**
  :--------------: | ------------
-**Procedimento**  | 1) Usuário informa nome, sobrenome, email, senha.
-**Requisitos associados** | RF-001
-**Resultado esperado** | Prosseguir para a parte 2 do cadastro.
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
+**Procedimento**  | 1) Usuário informa nome do alimento a ser pesquisado e recebe os valores nutricionais 
+**Requisitos associados** | RF-007
+**Resultado esperado** | info do alimento pesquisado.
+**Dados de entrada** | Inserção do nome do alimento.
 **Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT03 - Cauculadolara de carboidratos**
  :--------------: | ------------
 **Procedimento**  | 1) Usuário informa o valor calorico do alimento a ser consumido a cauculadora retorna o qunto de insulina a ser colocada
-**Requisitos associados** | RF-001
+**Requisitos associados** | RF-005
 **Resultado esperado** | Valor da insulina a ser aplicada
 **Dados de entrada** | Numeros de caboridratos
 **Resultado obtido** | Sucesso.
 
+**Caso de Teste** | **CT04 - Efetuar loguin/cadastro**
+ :--------------: | ------------
+**Procedimento**  | 1) Usuário informa nome, senha e email
+**Requisitos associados** | RF-001
+**Resultado esperado** | Armazenamento de valores
+**Dados de entrada** | Nome senha email.
+**Resultado obtido** | Sucesso.
 ## Registro dos Testes de Software
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
 
-|*Caso de Teste*                                 |*TC-01 - Criar uma conta*                                         |
+|*Caso de Teste*                                 |*TC-01 - Fluxo de usuario*                                         |
 |---|---|
 |Requisito Associado | RF-004 - Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados.|
 |Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
 
-|*Caso de Teste*                                 |*TC-02 - Efetuar Login (usuário autenticado)*                                         |
+|*Caso de Teste*               |*TC-02 - Tabela de alimentos pre-definidos com pesquisa*                                         |
 |---|---|
-|Requisito Associado | RF-004 - Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados.|
+|Requisito Associado | RF-004 - pesquisa de alimentos.|
 |Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+
+|*Caso de Teste*                                 |*TC-03 - Cauculadolara de carboidratos*                                         |
+|---|---|
+|Requisito Associado | RF-004 - cauculadora de insulina.|
+|Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
+
+|*Caso de Teste*                                 |*TC-04 - Efetuar Login (usuário autenticado)*                                         |
+|---|---|
+|Requisito Associado | RF-004 - Cadastro de dados do usuario.|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
 
 
 ## Avaliação dos Testes de Software
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+Os primeiros testes foram de grande valor para o projeto ao descobrir falhas simples, princialmente de user flow, auxiliando na identificação e na respostas a essas falhas que foram devidamente corrigidas, quanto a quesitos como calculadora de insulina os resultados foram bons para um requisito tao complexo no todo resultados inesperados mas de tudo foram feitas as devidas correçoes.
 
 
 
@@ -107,14 +126,14 @@ Apresente os cenários de testes utilizados na realização dos testes de usabil
 
 | Nº do Cenário | Descrição do cenário |
 |---------------|----------------------|
-| 1             | Você é uma pessoa que tem diabetes. |
+| 1             | Você é uma pessoa que tem diabetes que precisa organizar seu tratamento da doença. |
 
 
 
 
 ## Registro de Testes de Usabilidade
 
-Cenário 1: Você é uma pessoa que deseja comprar um iphone. Encontre no site um iphone e veja detalhes de localização e contato da loja que anunciando.
+Cenário 1: Você é uma pessoa que precisa de um cauculo raoido de carboidratos de sua refeiçao para aplicar a devida dose de insulina.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
@@ -126,13 +145,12 @@ Cenário 1: Você é uma pessoa que deseja comprar um iphone. Encontre no site u
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 8.66 segundos |
 
 
-    Comentários dos usuários: Achei o site muito bom e intuitivo. 
-    Não tive dificuldades e acho que ficou bem intuitivo.
+    Comentários dos usuários: Deu pra caucular mas acho que pode ser mais rapido, no geral muito bom!
 
 
 
 
-Cenário 2: Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço.
+Cenário 2: Você é uma pessoa que possui um pai idoso(diabetico) e precisa se informar sobre uma dieta balanciada para cuidar dele .
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
@@ -144,10 +162,7 @@ Cenário 2: Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,0
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
 
 
-    Comentários dos usuários: O site é fácil de acessar, mas algumas páginas poderiam 
-    redirecionar a gente automaticamente para outras. Senti a falta de mais opções de filtros, 
-    tanto na hora da pesquisa, quanto depois dela, nos resultados.
-
+    Comentários dos usuários: achei muito informativo acho que ate pessoas nao diabeticas deveriam montar dietas no mellitus.
 
 
 
