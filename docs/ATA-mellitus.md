@@ -24,9 +24,6 @@ ETAPA 2
 * Matheus Antônio: Auxiliou no html e css do template padrão. 
 * Gabriel Fioreze: Indentificou problemas no userflow e os aprimorou.
 
-
-
-
 ETAPA 3
 * Bernardo Garcia: Fiquei responsável pelo desenvolvimento das páginas do Meu Guia. Horário para tomar insulina, execícios e quais especialistas consultar. Eu e o Gabriel concordamos que seria melhor nos desenvolvermos na mesma Brench pois seria mais fácil de organizar e linkar a navegação das páginas.
 * Felipe Claver Diniz: Eu me encarreguei pelo desenvolvimento das duas páginas Home, tanto quanto a para usuários não logados quanto para usúarios logados, e ajudei os outros membros do grupo, melhorando o desenvolvimento da entrega de valor. 
@@ -35,5 +32,6 @@ ETAPA 3
 * Gabriel Fioreze: Fiquei responsável por fazer as páginas iniciais do "Meu Guia" e "Alimentação", juntamente com as paginas informativas restantes (Alimentação orgânica, Alimentação e tecnologia, Alimentação e esportes, Alimentação saúdavel, Nutrição equlibrada e Intolerâncias alimentares).
 * João Pedro de Castro Vieira: Me responsabilizei por padronizar as páginas de login e cadastro, criação da página de cadastro e sí e da conexão entre essas duas páginas e o fluxo da aplicação.
 
-ETAPA 3
+ETAPA 4
 * Bernardo Garcia: Fiquei responsável por duas funcionalidades. A primeira é a calculadora completa de aplicação de insulina. Corrige tanto para alimentação tanto para dose de correção. Também fiz sua responsividade que depois foi incrementada pelo Felipe Claver. A outra funcionalidade foi a barra de pesquisa de alimentos para a pagina de calculo de insulina.
+* Matheus Antônio: Responsavel por fazer as funcionalidades do back-end e subir o servidor tanto o json quanto da aplicação além de fazer os merges para a finalização do projeto.
