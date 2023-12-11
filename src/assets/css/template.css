@@ -9,7 +9,7 @@ background-color: var(--blue);
 }
 
 .offcanvas-header {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .offcanvas-body {
@@ -19,7 +19,7 @@ background-color: var(--blue);
 a.nav-link {
   color: var(--white);
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 
 }
 
