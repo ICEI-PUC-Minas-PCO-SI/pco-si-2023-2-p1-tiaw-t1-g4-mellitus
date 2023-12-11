@@ -18,14 +18,14 @@ const getUserByCredentials = async (credentials) => {
 };
 
 const register = async (dto) => {
-  const alreadyExists = await routes.getUserByCredentials({
+  const alreadyExists = await getUserByCredentials({
     email: dto.email,
     password: dto.password,
   });
   if (alreadyExists) {
     return alert("Já existe um usuário associado a este email.");
   } else
-    await routes.createUser({
+    await createUser({
       name: "João Vieira",
       age: 21,
       gender: "male",
@@ -37,9 +37,6 @@ const register = async (dto) => {
 };
 
 const login = async (credentials) => {
-  console.log("teste");
-  const getUserByCredentials =
-    routes.getUserByCredentials(getUserByCredentials);
   const foundUser = await getUserByCredentials(credentials);
 
   if (!foundUser)
@@ -102,4 +99,39 @@ const getCookie = (cname) => {
   return "";
 };
 
+const loginForm = document.getElementById("login-form");
+if (loginForm)
+  loginForm.onsubmit = (ev) => {
+    ev.preventDefault();
+    const email = document.getElementById("login-email");
+    const password = document.getElementById("login-password");
+
+    login({
+      email: email.value,
+      password: password.value,
+    });
+  };
+
+const registerForm = document.getElementById("register-form");
+if (registerForm)
+  registerForm.onsubmit = (ev) => {
+    ev.preventDefault();
+    const email = document.getElementById("register-email");
+    const password = document.getElementById("register-password");
+    const age = document.getElementById("register-age");
+    const genre = document.getElementById("register-genre");
+    const name = document.getElementById("register-name");
+    const goal = document.getElementById("register-goal");
+
+    register({
+      email: email.value,
+      password: password.value,
+      age: age.value,
+      genre: genre.value,
+      name: name.value,
+      goal: goal.value,
+    });
+  };
+
+  
 setTimeout(authenticate, 60 * 60 * 1000);
