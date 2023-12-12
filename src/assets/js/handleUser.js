@@ -72,7 +72,7 @@ const handleAppBar = (authed) => {
   if (authed) {
     appBar.innerHTML = `<nav class="navbar fixed-top navbar-expand-md">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img height="48" width="48" src="/src/assets/images/logo.png"
+        <a class="navbar-brand" href="/#"><img height="48" width="48" src="/src/assets/images/logo.png"
                 alt="Logo do Mellitus" /></a>
         <button class="navbar-toggler custom rounded-3" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
@@ -95,8 +95,10 @@ const handleAppBar = (authed) => {
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link ${
-                          currentPage === "/" || currentPage === "index.html"
-                            ? active
+                          currentPage === "/" ||
+                          currentPage === "index.html" ||
+                          currentPage === ""
+                            ? "active"
                             : ""
                         }" href="/"><i class="fa-solid fa-house"></i>Home</a>
                     </li>
@@ -104,7 +106,7 @@ const handleAppBar = (authed) => {
                         <a class="nav-link ${
                           currentPage === "/" ||
                           currentPage === "CalculoGlicemia.html"
-                            ? active
+                            ? "active"
                             : ""
                         }" aria-current="page" href="/src/pages/CalculoGlicemia.html"><i
                                 class="fa-solid fa-calculator"></i>Cálculo de
@@ -114,14 +116,14 @@ const handleAppBar = (authed) => {
                         <a class="nav-link ${
                           currentPage === "/" ||
                           currentPage === "Alimentacao.html"
-                            ? active
+                            ? "active"
                             : ""
                         }" href="/src/pages/Alimentacao.html"><i class="fa-solid fa-bowl-food"></i>Alimentação</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link ${
                           currentPage === "/" || currentPage === "MeuGuia.html"
-                            ? active
+                            ? "active"
                             : ""
                         }" href="/src/pages/MeuGuia.html"><i class="fa-solid fa-book-open-reader"></i>Meu
                             Guia</a>
@@ -130,7 +132,7 @@ const handleAppBar = (authed) => {
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <!--Aqui coloquei o símbolo do usuário-->
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-regular fa-circle-user fa-2xl"></i></a>
+                        <a class="nav-link" href="/#"><i class="fa-regular fa-circle-user fa-2xl"></i></a>
                     </li>
                 </ul>
             </div>
@@ -140,7 +142,7 @@ const handleAppBar = (authed) => {
   } else {
     appBar.innerHTML = ` <nav class="navbar fixed-top navbar-expand-md">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img height="48" width="48" src="/src/assets/images/logo.png"
+        <a class="navbar-brand" href="/#"><img height="48" width="48" src="/src/assets/images/logo.png"
                 alt="Logo do Mellitus" /></a>
         <button class="navbar-toggler custom rounded-3" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
@@ -164,7 +166,7 @@ const handleAppBar = (authed) => {
                     <li class="nav-item">
                         <a class="nav-link ${
                           currentPage === "/" || currentPage === "index.html"
-                            ? active
+                            ? "active"
                             : ""
                         }" href="/"><i class="fa-solid fa-house"></i>Home</a>
                     </li>
@@ -172,7 +174,7 @@ const handleAppBar = (authed) => {
                         <a class="nav-link  ${
                           currentPage === "/" ||
                           currentPage === "CalculoGlicemia.html"
-                            ? active
+                            ? "active"
                             : ""
                         }" aria-current="page" href="/src/pages/CalculoGlicemia.html"><i
                                 class="fa-solid fa-calculator"></i>Cálculo de
@@ -182,7 +184,7 @@ const handleAppBar = (authed) => {
                         <a class="nav-link  ${
                           currentPage === "/" ||
                           currentPage === "Alimentacao.html"
-                            ? active
+                            ? "active"
                             : ""
                         }" href="/src/pages/Alimentacao.html"><i class="fa-solid fa-bowl-food"></i>Alimentação</a>
                     </li>

@@ -1,174 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/src/assets/images/logo.png"
+    />
+    <title>Mellitus</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="/src/assets/images/logo.png" />
-  <title>Mellitus</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+    <link href="../assets/css/styleAlim.css" rel="stylesheet" type="text/css" />
+  </head>
 
-  <link href="../assets/css/styleAlim.css" rel="stylesheet" type="text/css" />
-</head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/#"
+            ><img
+              height="48"
+              width="48"
+              src="../assets/images/logo.png"
+              alt="Logo do Mellitus"
+          /></a>
+          <button
+            class="navbar-toggler custom rounded-3"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            id="menuButton"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
 
-<body>
-  <header>
-    <nav class="navbar fixed-top navbar-expand-md">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img height="48" width="48" src="../assets/images/logo.png"
-            alt="Logo do Mellitus" /></a>
-        <button class="navbar-toggler custom rounded-3" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
-          id="menuButton">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-
-        <div class="offcanvas w-75 offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <span class="offcanvas-title" id="offcanvasNavbarLabel">
-              Mellitus
-            </span>
-            <button class="btn-close custom" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
+          <div
+            class="offcanvas w-75 offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <span class="offcanvas-title" id="offcanvasNavbarLabel">
+                Mellitus
+              </span>
+              <button
+                class="btn-close custom"
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../../../index.html"
+                    ><i class="fa-solid fa-house"></i>Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="CalculoGlicemia.html"
+                    ><i class="fa-solid fa-calculator"></i>Cálculo de
+                    Glicemia</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="Alimentacao.html"
+                    ><i class="fa-solid fa-bowl-food"></i>Alimentação</a
+                  >
+                </li>
+              </ul>
+              <ul class="navbar-nav auth-items">
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html"
+                    ><i class="fa-solid fa-arrow-right-to-bracket"></i>Logar</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="register.html"
+                    ><i class="fa-solid fa-pen-to-square"></i>Cadastrar</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="../../../../index.html"><i class="fa-solid fa-house"></i>Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="CalculoGlicemia.html"><i
-                    class="fa-solid fa-calculator"></i>Cálculo de
-                  Glicemia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="Alimentacao.html"><i class="fa-solid fa-bowl-food"></i>Alimentação</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav auth-items">
-              <li class="nav-item">
-                <a class="nav-link" href="login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>Logar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="register.html"><i class="fa-solid fa-pen-to-square"></i>Cadastrar</a>
-              </li>
-            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col p-4">
+          <div class="info-rectangle rounded-4 h-100" id="efeito">
+            <h2>Alimentação Orgânica</h2>
+            <img
+              class="imagem-retangulo"
+              src="../assets/images/Imagem21.png"
+              alt="Imagem 2"
+            />
+            <p>
+              Alimentos orgânicos são aqueles produzidos sem uso de agrotóxicos
+              sintéticos, transgênicos ou fertilizantes químicos.
+            </p>
+            <a href="AlimentosOrganicos.html">
+              <button class="btn btn-green">Saiba mais</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="col p-4">
+          <div class="info-rectangle rounded-4 h-100" id="efeito">
+            <h2>Nutrição Equilibrada</h2>
+            <img
+              class="imagem-retangulo"
+              src="../assets/images/Imagem1.png"
+              alt="Imagem 2"
+            />
+            <p>
+              Resumidamente, uma nutrição equilibrada é aquela que fornece os
+              nutrientes necessários para abastecer a energia do corpo sem
+              prejudicar sua saúde.
+            </p>
+            <a href="NutricaoEquilibrada.html">
+              <button class="btn btn-green">Saiba mais</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="col p-4">
+          <div class="info-rectangle rounded-4 h-100" id="efeito">
+            <h2>Alimentação e tecnologia</h2>
+            <img
+              class="imagem-retangulo"
+              src="../assets/images/Imagem3.png"
+              alt="Imagem 2"
+            />
+            <p>
+              As técnicas permitem a introdução de substâncias bioativas dos
+              alimentos em uma única matriz. Deste modo, reações por contato a
+              outros compostos diminuem, reduzindo o processo de envelhecimento
+              do alimento.
+            </p>
+            <a href="AlimentacaoeTecnologia.html">
+              <button class="btn btn-green">Saiba mais</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="col p-4">
+          <div class="info-rectangle rounded-4 h-100" id="efeito">
+            <h2>Alimentação saudável</h2>
+            <img
+              class="imagem-retangulo"
+              src="../assets/images/Imagem3.png"
+              alt="Imagem 2"
+            />
+            <p>
+              Uma alimentação saudável é aquela que garante o fornecimento de
+              todos os nutrientes necessários para o funcionamento do nosso
+              corpo.
+            </p>
+            <a href="AlimentacaoSaudavel.html">
+              <button class="btn btn-green">Saiba mais</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="col p-4">
+          <div class="info-rectangle rounded-4 h-100" id="efeito">
+            <h2>Alimentação e esportes</h2>
+            <img
+              class="imagem-retangulo"
+              src="../assets/images/Imagem1.png"
+              alt="Imagem 2"
+            />
+            <p>
+              De antemão, apenas a prática de exercícios físicos, de forma
+              isolada, não garante uma vida saudável. Assim, uma boa alimentação
+              também se torna importante no processo. A ingestão de bons
+              alimentos ajuda a armazenar e a repor os estoques de energia do
+              corpo.
+            </p>
+            <a href="AlimentacaoeEsportes.html">
+              <button class="btn btn-green">Saiba mais</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="col p-4">
+          <div class="info-rectangle rounded-4 h-100" id="efeito">
+            <h2>Intolerâncias alimentares</h2>
+            <img
+              class="imagem-retangulo"
+              src="../assets/images/Imagem1.png"
+              alt="Imagem 2"
+            />
+            <p>
+              A intolerância alimentar é caracterizada pela má digestão de
+              determinados alimentos. O problema é resultado da deficiência ou
+              ausência de enzimas responsáveis pela quebra de moléculas maiores
+              em produtos menores, os quais o organismo é capaz de absorver e
+              aproveitar adequadamente.
+            </p>
+            <a href="IntoleranciaAlimentar.html">
+              <button class="btn btn-green">Saiba mais</button>
+            </a>
           </div>
         </div>
       </div>
-    </nav>
-  </header>
-
-
-  <div class="container-fluid">
-    <div class="row row-cols-1 row-cols-md-2">
-      <div class="col p-4">
-        <div class="info-rectangle rounded-4 h-100" id="efeito">
-          <h2>Alimentação Orgânica</h2>
-          <img class="imagem-retangulo" src="../assets/images/Imagem21.png" alt="Imagem 2" />
-          <p>
-            Alimentos orgânicos são aqueles produzidos sem uso de agrotóxicos
-            sintéticos, transgênicos ou fertilizantes químicos.
-          </p>
-          <a href="AlimentosOrganicos.html">
-            <button class="btn btn-green">Saiba mais</button>
-          </a>
-        </div>
-      </div>
-
-      <div class="col p-4">
-        <div class="info-rectangle rounded-4 h-100" id="efeito">
-          <h2>Nutrição Equilibrada</h2>
-          <img class="imagem-retangulo" src="../assets/images/Imagem1.png" alt="Imagem 2" />
-          <p>
-            Resumidamente, uma nutrição equilibrada é aquela que fornece os
-            nutrientes necessários para abastecer a energia do corpo sem
-            prejudicar sua saúde.
-          </p>
-          <a href="NutricaoEquilibrada.html">
-            <button class="btn btn-green">Saiba mais</button>
-          </a>
-        </div>
-      </div>
-
-      <div class="col p-4">
-        <div class="info-rectangle rounded-4 h-100" id="efeito">
-          <h2>Alimentação e tecnologia</h2>
-          <img class="imagem-retangulo" src="../assets/images/Imagem3.png" alt="Imagem 2" />
-          <p>
-            As técnicas permitem a introdução de substâncias bioativas dos
-            alimentos em uma única matriz. Deste modo, reações por contato a
-            outros compostos diminuem, reduzindo o processo de envelhecimento
-            do alimento.
-          </p>
-          <a href="AlimentacaoeTecnologia.html">
-            <button class="btn btn-green">Saiba mais</button>
-          </a>
-        </div>
-      </div>
-
-      <div class="col p-4">
-        <div class="info-rectangle rounded-4 h-100" id="efeito">
-          <h2>Alimentação saudável</h2>
-          <img class="imagem-retangulo" src="../assets/images/Imagem3.png" alt="Imagem 2" />
-          <p>
-            Uma alimentação saudável é aquela que garante o fornecimento de
-            todos os nutrientes necessários para o funcionamento do nosso
-            corpo.
-          </p>
-          <a href="AlimentacaoSaudavel.html">
-            <button class="btn btn-green">Saiba mais</button>
-          </a>
-        </div>
-      </div>
-
-      <div class="col p-4">
-        <div class="info-rectangle rounded-4 h-100" id="efeito">
-          <h2>Alimentação e esportes</h2>
-          <img class="imagem-retangulo" src="../assets/images/Imagem1.png" alt="Imagem 2" />
-          <p>
-            De antemão, apenas a prática de exercícios físicos, de forma
-            isolada, não garante uma vida saudável. Assim, uma boa alimentação
-            também se torna importante no processo. A ingestão de bons
-            alimentos ajuda a armazenar e a repor os estoques de energia do
-            corpo.
-          </p>
-          <a href="AlimentacaoeEsportes.html">
-            <button class="btn btn-green">Saiba mais</button>
-          </a>
-        </div>
-      </div>
-
-      <div class="col p-4">
-        <div class="info-rectangle rounded-4 h-100" id="efeito">
-          <h2>Intolerâncias alimentares</h2>
-          <img class="imagem-retangulo" src="../assets/images/Imagem1.png" alt="Imagem 2" />
-          <p>
-            A intolerância alimentar é caracterizada pela má digestão de
-            determinados alimentos. O problema é resultado da deficiência ou
-            ausência de enzimas responsáveis pela quebra de moléculas maiores
-            em produtos menores, os quais o organismo é capaz de absorver e
-            aproveitar adequadamente.
-          </p>
-          <a href="IntoleranciaAlimentar.html">
-            <button class="btn btn-green">Saiba mais</button>
-          </a>
-        </div>
-      </div>
-
     </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/d617ea5e74.js" crossorigin="anonymous"></script>
-  <script src="/src/assets/js/handleUser.js"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d617ea5e74.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/src/assets/js/handleUser.js"></script>
+  </body>
 </html>
