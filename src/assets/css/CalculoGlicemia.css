@@ -4,8 +4,9 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-nav, div.offcanvas-header {
-background-color: var(--blue);
+nav,
+div.offcanvas-header {
+  background-color: var(--blue);
 }
 
 .offcanvas-header {
@@ -28,7 +29,8 @@ a.nav-link {
 }
 
 
-a.nav-link:hover, a.nav-link.active {
+a.nav-link:hover,
+a.nav-link.active {
   color: var(--dark-blue) !important;
 }
 
@@ -40,9 +42,10 @@ ul.navbar-nav {
   margin-right: 0.5rem;
 }
 
-.fa-solid.fa-bars, .fa-solid.fa-xmark {
+.fa-solid.fa-bars,
+.fa-solid.fa-xmark {
   color: var(--white);
-  margin-right:0;
+  margin-right: 0;
 }
 
 button.btn-close.custom {
@@ -50,7 +53,8 @@ button.btn-close.custom {
   background-color: transparent;
 }
 
-button.navbar-toggler.custom, button.navbar-toggler.custom:focus {
+button.navbar-toggler.custom,
+button.navbar-toggler.custom:focus {
   border: 1px solid var(--white);
   box-shadow: unset;
 }
@@ -66,6 +70,10 @@ button.navbar-toggler.custom, button.navbar-toggler.custom:focus {
   --white: #ffffff;
 }
 
+body{
+  padding-top: 70px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -73,28 +81,16 @@ button.navbar-toggler.custom, button.navbar-toggler.custom:focus {
   font: 1em sans-serif;
 }
 
-p{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    text-align: justify;
-}
-
-.nome {
-  font-size: 1rem;
-  color: #ffff;
-}
-
-@media (max-width: 992px) {
-  .nome {
-    display: none;
-  }
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.9rem;
 }
 
 main {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 4rem 3.5rem;
+  padding: 0 3.5rem;
   background-color: #f0f2f2;
 }
 
@@ -142,17 +138,6 @@ main {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.main-body {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.body-width {
-  width: 70%;
-}
-
 .body-width-image {
   text-align: center;
   width: 30%;
@@ -162,10 +147,14 @@ main {
   .main-header form {
     flex-direction: column;
   }
+  main {
+    padding: 0;
+    margin: 0;
+  }
 }
 
-.row{
-  padding-top: 20px; 
+.row {
+  padding-top: 20px;
 }
 
 #calculo {
@@ -173,6 +162,7 @@ main {
   background-color: #4C8BF5;
   color: #A2EACB;
 }
+
 #calculo2 {
   width: 60%;
   background-color: #4C8BF5;
@@ -188,6 +178,6 @@ main {
 }
 
 .Meal_col {
-  font-size: 30px;
+  font-size: 2rem;
   background-color: #4C8BF5;
 }
