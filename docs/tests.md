@@ -76,7 +76,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |Link do vídeo do teste realizado: | 
  
 
-![IMG-20231211-WA0040](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2023-2-p1-tiaw-t1-g4-mellitus/assets/126624707/4fbf6bd1-65aa-44a0-af72-654bbcec97aa)
+![IMG-20231211-WA0040](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2023-2-p1-tiaw-t1-g4-mellitus/assets/126624707/4fbf6bd1-65aa-44a0-af72-654bbcec97aa)|
 
 |*Caso de Teste*                                 |*TC-03 - Cauculadolara de carboidratos*                      |
 |---|---|
