@@ -6,19 +6,24 @@ const createUser = async (userDto) => {
   const res = await fetch(API_BASE_URL + "user", {
     method: "POST",
     body: JSON.stringify(userDto),
+    headers: {
+      "Content-Type": "application/json",
+    },
   });
   return res.json();
 };
 
 const userAlreadyExists = async (email) => {
   const users = await fetch(API_BASE_URL + "user").then((res) => res.json());
-  const user = new Array(users).some((user) => user.email === email);
+  const user = users.some((user) => {
+    return user.email === email;
+  });
   return user ?? null;
 };
 
 const getUserByCredentials = async (credentials) => {
   const users = await fetch(API_BASE_URL + "user").then((res) => res.json());
-  const user = new Array(users).find(
+  const user = users.find(
     (user) =>
       user.email === credentials.email && user.password === credentials.password
   );
@@ -27,14 +32,16 @@ const getUserByCredentials = async (credentials) => {
 
 const register = async (dto) => {
   const alreadyExists = await userAlreadyExists(dto.email);
+  console.log(alreadyExists);
   if (alreadyExists) {
     return alert("Já existe um usuário associado a este email.");
   } else await createUser(dto);
+  await login({ email: dto.email, password: dto.password });
 };
 
 const login = async (credentials) => {
   const foundUser = await getUserByCredentials(credentials);
-
+  console.log(foundUser);
   if (!foundUser)
     return alert(
       "Email ou senha estão incorretos, verifique e tente novamente."
@@ -42,7 +49,7 @@ const login = async (credentials) => {
   else {
     setCookie("user", JSON.stringify(foundUser), 1);
     handleAppBar(true);
-    window.location.href = "/src/pages/index.html";
+    document.location.href = "/";
   }
   return foundUser;
 };
@@ -50,11 +57,12 @@ const login = async (credentials) => {
 const logout = () => {
   deleteCookie("user");
   handleAppBar(false);
-  window.location.href = "/src/pages/index.html";
+  window.location.href = "/";
 };
 
 const handleAppBar = (authed) => {
   const appBar = document.querySelector("header");
+  if (!appBar) return;
 
   if (authed) {
     appBar.innerHTML = `<nav class="navbar fixed-top navbar-expand-md">
