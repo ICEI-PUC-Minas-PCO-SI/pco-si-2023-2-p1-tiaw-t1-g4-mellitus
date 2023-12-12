@@ -147,24 +147,23 @@ main {
   .main-header form {
     flex-direction: column;
   }
-  main {
+  .main-header {
     padding: 0;
     margin: 0;
   }
-}
-
-.row {
-  padding-top: 20px;
+  main{
+    padding: 0;
+  }
 }
 
 #calculo {
-  width: 60%;
+  width: 50%;
   background-color: #4C8BF5;
   color: #A2EACB;
 }
 
 #calculo2 {
-  width: 60%;
+  width: 50%;
   background-color: #4C8BF5;
   color: #A2EACB;
 }
