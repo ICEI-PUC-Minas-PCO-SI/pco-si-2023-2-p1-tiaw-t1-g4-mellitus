@@ -55,7 +55,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Requisitos associados** | RF-001
 **Resultado esperado** | Armazenamento de valores
 **Dados de entrada** | Nome senha email.
-**Resultado obtido** | Sucesso.
+**Resultado obtido** | falhou.
 ## Registro dos Testes de Software
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
