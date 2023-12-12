@@ -180,14 +180,8 @@ Cenário 2: Você é uma pessoa que possui um pai idoso(diabetico) e precisa se 
 
 ## Avaliação dos Testes de Usabilidade
 
+A aplicação se mostrou cumprir com exito sua principal função que é a da calculadora com um bom desempenho de tempo de resposta, quanto ao fluxo das páginas a aplicação não deixou a desejar
 
-Tomando como base os resultados obtidos, foi possível verificar que a aplicação web apresenta bons resultados quanto à taxa de sucesso na interação dos usuários, tendo em vista que os cenários propostos foram concluídos com sucesso.
+A parte informativa talvez foi a que mais mostrou-se rápida no tempo de resposta ao usuário, talvez por ser uma funcionalidade mais leve
 
-Além disso, a aplicação obteve também uma elevada satisfação subjetiva dos usuários no momento que realizavam os cenários propostos. Prova são as médias das avaliações em cada um dos cenários, que variou entre 4 (bom) e 5 (ótimo).
-
-Com relação ao tempo para conclusão de cada tarefa/cenário, notamos discrepância entre a média de tempo dos usuários e o tempo do especialista/desenvolvedor em todos os cenários. Tal discrepância, em certa medida, é esperada, tendo em vista que o desenvolvedor já tem prévio conhecimento de toda a interface da aplicação, do posicionamento dos elementos, lógica de organização das páginas, etc.
-
-Contudo, tendo em vista que a diferença foi relevante (por exemplo, 113 segundos — média usuários — contra 25 segundos — especialista — no cenário três), e ainda os comentários feitos por alguns usuários, entendemos haver oportunidades de melhoria na usabilidade da aplicação.
-
-
-
+no mais tanto o cadastro como o login estão com um ótimo desempenho.
