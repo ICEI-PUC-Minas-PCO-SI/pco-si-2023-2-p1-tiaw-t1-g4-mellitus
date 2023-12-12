@@ -143,6 +143,10 @@ Apresente os cenários de testes utilizados na realização dos testes de usabil
 ![IMG-20231211-WA0064](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2023-2-p1-tiaw-t1-g4-mellitus/assets/126624707/3e4d0b35-e06a-4303-993e-1ab17e685f7f)
 
 
+usuario logado acrecenta 
+
+![IMG-20231211-WA0065](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2023-2-p1-tiaw-t1-g4-mellitus/assets/126624707/878f6e36-11a2-4b3b-80c9-4362db7e7186)
+
 
 ## Registro de Testes de Usabilidade
 
