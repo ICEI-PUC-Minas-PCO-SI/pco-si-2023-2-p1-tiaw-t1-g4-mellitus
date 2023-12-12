@@ -63,7 +63,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |*Caso de Teste*                                 |*TC-01 - Fluxo de usuario*                                         |
 |---|---|
 |Requisito Associado | RF-004 - Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados.|
-|Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
+|Link do vídeo do teste realizado: | 
 
 
 ![IMG-20231211-WA0048](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2023-2-p1-tiaw-t1-g4-mellitus/assets/126624707/d7e3cdc1-e23e-41f5-a310-3daa26b6b5e5)
@@ -91,7 +91,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |*Caso de Teste*                                 |*TC-04 - Efetuar Login (usuário autenticado)*                                         
 |---|---|
 |Requisito Associado | RF-004 - Cadastro de dados do usuario.|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: || 
 
 
 
