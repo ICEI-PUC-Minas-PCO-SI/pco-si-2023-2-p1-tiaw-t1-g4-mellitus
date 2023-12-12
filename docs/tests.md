@@ -140,6 +140,7 @@ Apresente os cenários de testes utilizados na realização dos testes de usabil
 |---------------|----------------------|
 | 1             | Você é uma pessoa que tem diabetes que precisa organizar seu tratamento da doença. |
 
+![IMG-20231211-WA0064](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2023-2-p1-tiaw-t1-g4-mellitus/assets/126624707/3e4d0b35-e06a-4303-993e-1ab17e685f7f)
 
 
 
