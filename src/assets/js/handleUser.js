@@ -1,16 +1,29 @@
 const API_BASE_URL = "https://api-mellitus-server.vercel.app/";
 
+const isAuthedPage = (pageUrl = "") => pageUrl.includes("MeuGuia");
+
 const createUser = async (userDto) => {
   const res = await fetch(API_BASE_URL + "user", {
     method: "POST",
     body: JSON.stringify(userDto),
+    headers: {
+      "Content-Type": "application/json",
+    },
   });
   return res.json();
 };
 
+const userAlreadyExists = async (email) => {
+  const users = await fetch(API_BASE_URL + "user").then((res) => res.json());
+  const user = users.some((user) => {
+    return user.email === email;
+  });
+  return user ?? null;
+};
+
 const getUserByCredentials = async (credentials) => {
   const users = await fetch(API_BASE_URL + "user").then((res) => res.json());
-  const user = new Array(users).find(
+  const user = users.find(
     (user) =>
       user.email === credentials.email && user.password === credentials.password
   );
@@ -18,27 +31,17 @@ const getUserByCredentials = async (credentials) => {
 };
 
 const register = async (dto) => {
-  const alreadyExists = await getUserByCredentials({
-    email: dto.email,
-    password: dto.password,
-  });
+  const alreadyExists = await userAlreadyExists(dto.email);
+  console.log(alreadyExists);
   if (alreadyExists) {
     return alert("Já existe um usuário associado a este email.");
-  } else
-    await createUser({
-      name: "João Vieira",
-      age: 21,
-      gender: "male",
-      goal: "enhance health",
-      email: "joaopedro.castrovieira@gmail.com",
-      password: "123",
-      recentMeals: [],
-    });
+  } else await createUser(dto);
+  await login({ email: dto.email, password: dto.password });
 };
 
 const login = async (credentials) => {
   const foundUser = await getUserByCredentials(credentials);
-
+  console.log(foundUser);
   if (!foundUser)
     return alert(
       "Email ou senha estão incorretos, verifique e tente novamente."
@@ -46,7 +49,7 @@ const login = async (credentials) => {
   else {
     setCookie("user", JSON.stringify(foundUser), 1);
     handleAppBar(true);
-    window.location.href = "/src/pages/index.html";
+    document.location.href = "/";
   }
   return foundUser;
 };
@@ -58,8 +61,109 @@ const logout = () => {
 };
 
 const handleAppBar = (authed) => {
-  const appBar = document.querySelector("headeder > nav");
-  console.log(appBar, authed);
+  const appBar = document.querySelector("header");
+  if (!appBar) return;
+
+  if (authed) {
+    appBar.innerHTML = `<nav class="navbar fixed-top navbar-expand-md">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img height="48" width="48" src="/src/assets/images/logo.png"
+                alt="Logo do Mellitus" /></a>
+        <button class="navbar-toggler custom rounded-3" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+            id="menuButton">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="offcanvas w-50 offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <span class="offcanvas-title" id="offcanvasNavbarLabel">
+                    Mellitus
+                </span>
+                <button class="btn-close custom" type="button" data-bs-dismiss="offcanvas"
+                    aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/"><i class="fa-solid fa-house"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/src/pages/CalculoGlicemia.html"><i
+                                class="fa-solid fa-calculator"></i>Cálculo de
+                            Glicemia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/Alimentacao.html"><i class="fa-solid fa-bowl-food"></i>Alimentação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/MeuGuia.html"><i class="fa-solid fa-book-open-reader"></i>Meu
+                            Guia</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <!--Aqui coloquei o símbolo do usuário-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-regular fa-circle-user fa-2xl"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>`;
+  } else {
+    appBar.innerHTML = ` <nav class="navbar fixed-top navbar-expand-md">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img height="48" width="48" src="/src/assets/images/logo.png"
+                alt="Logo do Mellitus" /></a>
+        <button class="navbar-toggler custom rounded-3" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+            id="menuButton">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="offcanvas w-75 offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <span class="offcanvas-title" id="offcanvasNavbarLabel">
+                    Mellitus
+                </span>
+                <button class="btn-close custom" type="button" data-bs-dismiss="offcanvas"
+                    aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/"><i class="fa-solid fa-house"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/src/pages/CalculoGlicemia.html"><i
+                                class="fa-solid fa-calculator"></i>Cálculo de
+                            Glicemia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/Alimentacao.html"><i class="fa-solid fa-bowl-food"></i>Alimentação</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav auth-items">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/login.html"><i
+                                class="fa-solid fa-arrow-right-to-bracket"></i>Logar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/register.html"><i class="fa-solid fa-pen-to-square"></i>Cadastrar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>`;
+  }
 };
 
 const authenticate = () => {
@@ -67,6 +171,8 @@ const authenticate = () => {
   const isAuthed = !!getCookie("user");
   if (isAuthed) {
     handleAppBar(true);
+  } else if (!isAuthedPage(window.location.href)) {
+    handleAppBar(false);
   } else {
     logout();
   }
@@ -121,7 +227,6 @@ if (registerForm)
     const age = document.getElementById("register-age");
     const genre = document.getElementById("register-genre");
     const name = document.getElementById("register-name");
-    const goal = document.getElementById("register-goal");
 
     register({
       email: email.value,
@@ -129,9 +234,9 @@ if (registerForm)
       age: age.value,
       genre: genre.value,
       name: name.value,
-      goal: goal.value,
     });
   };
 
-  
+window.onload = authenticate;
+
 setTimeout(authenticate, 60 * 60 * 1000);

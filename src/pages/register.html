@@ -16,46 +16,36 @@
     </div>
     <div class="shadow p-3 bg-body-tertiary rounded-bottom">
       <label for="exampleInputEmail1" class="form-label ">Usuario</label>
-      <input type="email" class="form-control shadow p-3 mb-3 bg-body-tertiary rounded" id="register-email" >
+      <input type="email" class="form-control shadow p-3 mb-3 bg-body-tertiary rounded" id="register-email" required>
      
     <div class="mb-1">
       <label for="exampleInputPassword1" class="form-label ">Senha</label>
-      <input type="password" class="form-control shadow p-3 mb-3 bg-body-tertiary rounded" id="register-password">
+      <input type="password" class="form-control shadow p-3 mb-3 bg-body-tertiary rounded" id="register-password" required>
     </div>
 
     <div class="mb-1">
       <label for="exampleInputEmail1" class="form-label ">Nome</label>
-      <input type="email" class="form-control shadow p-3 mb-3 bg-body-tertiary rounded" id="register-name" >
+      <input  class="form-control shadow p-3 mb-3 bg-body-tertiary rounded" id="register-name" required>
     </div>
 
     <div class="mb-1">
       <label for="exampleInputEmail1" class="form-label ">Idade</label>
-      <input type="email" class="form-control shadow p-3 mb-3 bg-body-tertiary rounded" id="register-age" >
+      <input class="form-control shadow p-3 mb-3 bg-body-tertiary rounded" id="register-age" required>
     </div>
 
     <div class="mb-1">
       <label for="exampleInputPassword1" class="form-label ">Gênero</label>
-      <input type="password" class="form-control shadow p-3 mb-3 bg-body-tertiary rounded" id="register-genre">
+      <input  class="form-control shadow p-3 mb-3 bg-body-tertiary rounded" id="register-genre" required>
     </div>
-
-    <div class="mb-1">
-      <label for="exampleInputPassword1" class="form-label">Objetivo</label>
-      <input type="passwordConfirmation" class="form-control shadow p-3 mb-5 bg-body-tertiary rounded" id="register-goal">
-    </div>
-
 
     <div class="container-fluid d-flex gap-4">
-    <button class="btn text-light w-50 shadow">
-            Avançar
+    <button type="submit" class="btn text-light w-100 shadow" id="ent">
+            Cadastrar
     </button>
-    <button disabled class="btn text-light w-50" id="ent">
-      <a href="login.html">
-          voltar
-      </a>
-  </button>
     </div>  
   </form>
 
+  <script  src="/src/assets/js/handleUser.js">
+  </script>
 </body>
-<script  src="/src/assets/js/handleUser.js"></script>
 </html>
