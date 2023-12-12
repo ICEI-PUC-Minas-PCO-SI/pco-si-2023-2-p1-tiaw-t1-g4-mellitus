@@ -81,7 +81,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |*Caso de Teste*                |*TC-03 - Cauculadolara de carboidratos*                                                         |
 |---|---|
 |Requisito Associado | RF-004 - cauculadora de insulina.|
-|Link:file:///home/chronos/u-01fa509e705463f987cb5abdc046ba82dbceda7e/MyFiles/Downloads/IMG-20231211-WA0040.jpg
+
 
 
 ![IMG-20231211-WA0040](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2023-2-p1-tiaw-t1-g4-mellitus/assets/126624707/ff99acaa-8f76-4ea6-904c-0816c0df9587)
