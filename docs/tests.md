@@ -64,8 +64,11 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |---|---|
 |Requisito Associado | RF-004 - Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados.|
 |Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
-![IMG-20231211-WA0040](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2023-2-p1-tiaw-t1-g4-mellitus/assets/126624707/36179b2a-5f35-46a7-9661-186b8bcd9b7b)
 
+
+
+
+![IMG-20231211-WA0040](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2023-2-p1-tiaw-t1-g4-mellitus/assets/126624707/36179b2a-5f35-46a7-9661-186b8bcd9b7b)
 
 |*Caso de Teste*               |*TC-02 - Tabela de alimentos pre-definidos com pesquisa*                                         |
 |---|---|
