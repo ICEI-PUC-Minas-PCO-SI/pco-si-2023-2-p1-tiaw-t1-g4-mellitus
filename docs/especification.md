@@ -44,16 +44,16 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| Permitir que o usuário se cadastre no site | ALTA |  |
-|RF-002| Permitir que o usuário faça login na plataforma   | ALTA | |
+|RF-001| Permitir que o usuário se cadastre no site | ALTA | Joao pedro castro|
+|RF-002| Permitir que o usuário faça login na plataforma   | ALTA | Joao pedro castro|
 |RF-003| Os usuários podem registrar suas refeições, incluindo alimentos consumidos, quantidade e horário   | ALTA | |
 |RF-004| Alterar, Adicionar e Remover alimentos de sua refeição | ALTA | |
-|RF-005| Cálculo de bolus alimentar e bolus de correção e sua somatória | ALTA | |
-|RF-006| A aplicação fornece dicas personalizadas com base nas informações do usuário | MÉDIA | |
-|RF-007| Pesquisar alimentos do site/app | ALTA | |
-|RF-008| Interação entre os usuários do site | ALTA | |
-|RF-009| Avaliação entre os usuários do site | ALTA | |
-|RF-010| Opiniões entre os usuários do site | ALTA | |
+|RF-005| Cálculo de bolus alimentar e bolus de correção e sua somatória | ALTA | Felipe claver e Bernardo Garcia|
+|RF-006| A aplicação fornece dicas personalizadas com base nas informações do usuário | MÉDIA | Bernardo Garcia e Felipe claver|
+|RF-007| Pesquisar alimentos do site/app | ALTA |Bernardo Garcia e Felipe claver  |
+|RF-008| Interação entre os usuários do site | ALTA |Gabriel Fioreze e Matheus Antônio e João Pedro de Castro Vieira |
+|RF-009| Avaliação entre os usuários do site | ALTA | Arthur Ramires|
+|RF-010| Opiniões entre os usuários do site | ALTA |Arthur Ramires e Bernardo Garcia  |
 
 
 ### Requisitos não Funcionais
