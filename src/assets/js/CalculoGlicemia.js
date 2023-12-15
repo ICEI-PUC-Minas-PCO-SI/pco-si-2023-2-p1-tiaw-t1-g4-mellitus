@@ -37,14 +37,17 @@ function LoadMealsJSONServer(func) {
         });
 }
 
+let CurrentPage = 0;
+
 function LoadMeals() {
     let HTMLtable = document.getElementById('MealsTable');
     strTextHTML = '';
+    let secao = [];
 
-    for (let i = 0; i < alimentos.length; i++) {
-        let secao = alimentos[i];
-
-        strTextHTML += `
+    if (CurrentPage < alimentos.length) {
+        secao = alimentos[CurrentPage];
+    }
+    strTextHTML += `
         <div class="row rowsec">
             <div class="col text-center Meal_col">
                 <label class="Title">${secao.section}</label>
@@ -61,6 +64,7 @@ function LoadMeals() {
                 </tr>
         `
 
+    if (CurrentPage < alimentos.length) {
         for (let j = 0; j < secao.foods.length; j++) {
             let alimento = secao.foods[j];
 
@@ -74,12 +78,11 @@ function LoadMeals() {
             </tr>
             `
         }
-
-        strTextHTML += `</table></div>`
     }
+    strTextHTML += `</table></div>`
+
     HTMLtable.innerHTML = strTextHTML;
 }
-LoadMealsJSONServer(LoadMeals)
 
 function createSearchTable(filteredRows) {
     let HTMLtable = document.getElementById('MealsTable');
@@ -137,3 +140,59 @@ function search() {
 
     createSearchTable(filteredRows);
 }
+
+function LoadPagination() {
+    let HTMLtable = document.getElementById('Pages');
+    let strTextHTML = '';
+
+    strTextHTML += `
+        <div>
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#Pages" aria-label="Previous" onclick="ChangePage(-1)">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+    `;
+
+    for (let i = 0; i <= alimentos.length; i++) {
+        strTextHTML += `
+            <li class="page-item ${i === CurrentPage ? 'active' : ''}" aria-current="page">
+                <a class="page-link" href="#Pages" onclick="ChangePage(${i})">${i + 1}</a>
+            </li>
+        `;
+    }
+
+    strTextHTML += `
+                <li class="page-item">
+                    <a class="page-link" href="#Pages" aria-label="Next" onclick="ChangePage(-2)">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    `;
+
+    HTMLtable.innerHTML = strTextHTML;
+}
+
+function ChangePage(change) {
+
+    if (CurrentPage > 0 && CurrentPage < alimentos.length && change == -1) {
+        CurrentPage -= 1;
+    } else if (CurrentPage < alimentos.length && change == -2) {
+        CurrentPage += 1;
+    } else if (change >= 0 && change < alimentos.length) {
+        CurrentPage = change;
+    } else {
+        console.log("ERRO");
+    }
+
+    LoadMeals(); // Adicionado para atualizar a tabela quando a página é alterada
+    LoadPagination(); // Adicionado para atualizar a paginação
+}
+
+LoadMealsJSONServer(() => {
+    LoadMeals();
+    LoadPagination();
+});

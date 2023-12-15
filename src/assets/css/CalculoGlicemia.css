@@ -91,7 +91,7 @@ main {
   flex-direction: column;
   gap: 1.5rem;
   padding: 0 3.5rem;
-  background-color: #f0f2f2;
+  background-color: var(--purple);
 }
 
 .main-header {
@@ -143,7 +143,16 @@ main {
   width: 30%;
 }
 
-@media (max-width: 704px) {
+iframe{
+  width: 60%;
+  height: 275px;
+}
+
+#Pages{
+  background-color: white !important;
+}
+
+@media (max-width: 768px) {
   .main-header form {
     flex-direction: column;
   }
@@ -154,6 +163,10 @@ main {
   main{
     padding: 0;
   }
+  iframe{
+    width: 100%;
+    height: auto;
+  }  
 }
 
 #calculo {
