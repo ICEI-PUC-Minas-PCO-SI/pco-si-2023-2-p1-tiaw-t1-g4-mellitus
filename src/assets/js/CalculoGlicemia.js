@@ -1,28 +1,68 @@
-function calculo() {
+let resultado1800 = 0;
+let resultado = 0;
 
+function calculo1800() {
+    let glilenta = parseFloat(document.getElementById('glilenta').value);
+    let glirapida = parseFloat(document.getElementById('glirapida').value);
+
+    let elemento = document.getElementById("correto1800");
+
+    resultado1800 = (1800 / (glilenta + glirapida));
+
+    elemento.textContent = (isNaN(resultado1800)) ? "Favor informar os dados corretamente." : "Sua glicemia abaixa " + resultado1800.toFixed(2) + " mg/dL pela ação de 1 UI aproximadamente";
+}
+
+function calculo() {
     let gliPre = parseFloat(document.getElementById('gliPre').value);
     let gliPos = parseFloat(document.getElementById('gliPos').value);
-    let sensi = parseFloat(document.getElementById('sensi').value);
+
+    calculo1800();
+
+    // Obtém o valor de resultado1800 atualizado após chamar calculo1800()
+    let sensi = parseFloat(resultado1800);
 
     let elemento = document.getElementById("correto");
 
-    let resultado = ((gliPre - gliPos) / sensi);
+    resultado = ((gliPre - gliPos) / sensi);
 
-    elemento.textContent = (isNaN(resultado)) ? "Favor informar os dados corretamente." : resultado + "u";
-
+    elemento.textContent = (isNaN(resultado)) ? "Favor informar os dados corretamente." : resultado.toFixed(2) + " UI";
 }
-function calculo2() {
 
+function calculo2() {
+    calculo();
     let Carb = parseFloat(document.getElementById('Carb').value);
-    let Res = parseFloat(document.getElementById('Res').value);
-    let Relacao = parseFloat(document.getElementById('Relacao').value);
+    let peso = parseFloat(document.getElementById('peso').value);
+    let Relacao = 0;
+
+    if (peso >= 108) {
+        Relacao = 6;
+    } else if (peso >= 99) {
+        Relacao = 7;
+    } else if (peso >= 90) {
+        Relacao = 8;
+    } else if (peso >= 85.5) {
+        Relacao = 9;
+    } else if (peso >= 81) {
+        Relacao = 10;
+    } else if (peso >= 76.5) {
+        Relacao = 11;
+    } else if (peso >= 67.5) {
+        Relacao = 12;
+    } else if (peso >= 63) {
+        Relacao = 13;
+    } else if (peso >= 58.5) {
+        Relacao = 14;
+    } else if (peso >= 49.5) {
+        Relacao = 15;
+    } else if (peso >= 45) {
+        Relacao = 16;
+    }
 
     let elemento = document.getElementById("correto2");
 
-    let resultado2 = ((Carb / Relacao) + Res);
+    let resultado2 = ((Carb / Relacao) + resultado);
 
-    elemento.textContent = (isNaN(resultado2)) ? "Favor informar os dados corretamente." : resultado2 + "u";
-
+    elemento.textContent = (isNaN(resultado2)) ? "Favor informar os dados corretamente." : resultado2.toFixed(2) + " UI";
 }
 
 const url_meal = 'https://api-mellitus-server.vercel.app/meals'

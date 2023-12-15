@@ -66,7 +66,6 @@
   <main>
     <div class="main-header mb-3">
       <div class="d-flex flex-row justify-content-center p-4">
-        <!--Decidir que tamanho fica o vídeo-->
         <iframe class="border border-2 border-primary rounded-2" src="https://www.youtube.com/embed/Dwu-wkg9crc"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -74,20 +73,34 @@
         </iframe>
       </div>
       <div class="container-fluid">
+        <div class="row my-2">
+          <div class="col-md-6 p-3">
+            <label class="pb-1">Insulina Basal</label>
+            <input id="glilenta" class="form-control" type="text" placeholder="Quantidade de Insulina Basal (UI) que você aplica em 1 dia">
+          </div>
+          <div class="col-md-6 p-3">
+            <label class="pb-1">Insulina Rápida</label>
+            <input id="glirapida" class="form-control" type="text" placeholder="Quantidade de Insulina Rápida (UI)  que você aplica em 1 dia">
+          </div>
+        </div>
         <div class="row my-3">
-          <div class="col-md-4 p-2">
+          <label>Resultado: <span id="correto1800"></span></label>
+        </div>
+        <div class="row my-3 text-center">
+          <div class="col">
+            <button id="calculo" type="button" onclick="calculo1800()" class="btn btn-primary">Calcular</button>
+          </div>
+        </div>
+
+        <div class="row my-3">
+          <div class="col-md-6 p-3">
             <label class="pb-1">Glicemia Pré Prandial</label>
             <input id="gliPre" class="form-control" type="text" placeholder="Glicemia Pré Prandial">
           </div>
-          <div class="col-md-4 p-2">
+          <div class="col-md-6 p-3">
             <label class="pb-1">Glicemia Pós Prandial</label>
             <input id="gliPos" class="form-control" type="text" placeholder="Glicemia Meta Pós Prandial">
           </div>
-          <div class="col-md-4 p-2">
-            <label class="pb-1">Sensibilidade Insulínica</label>
-            <input id="sensi" class="form-control" type="text" placeholder="Sensibilidade Insulínica">
-          </div>
-        </div>
         <div class="row my-3">
           <label>Dose de correção: <span id="correto"></span></label>
         </div>
@@ -98,21 +111,17 @@
         </div>
         <div class="container-fluid">
           <div class="row my-3">
-            <div class="col-md-4 p-2">
+            <div class="col-md-6 p-3">
               <label class="pb-1">Total em grama de Carboidratos</label>
               <input id="Carb" class="form-control" type="text" placeholder="Total em grama de Carboidratos">
             </div>
-            <div class="col-md-4 p-2">
-              <label class="pb-1">Dose de correção anterior</label>
-              <input id="Res" class="form-control" type="text" placeholder="Dose de correção anterior">
-            </div>
-            <div class="col-md-4 p-2">
-              <label class="pb-1">Relação Carboidratos Insulina</label>
-              <input id="Relacao" class="form-control" type="text" placeholder="Relação Carboidratos Insulina">
+            <div class="col-md-6 p-3">
+              <label class="pb-1">Digite seu peso</label>
+              <input id="peso" class="form-control" type="text" placeholder="Seu peso em kg">
             </div>
           </div>
           <div class="row my-3">
-            <label>Dose de correção Total: <span id="correto2"></span></label>
+            <label>Dose de correção Total (Correção + Alimentação): <span id="correto2"></span></label>
           </div>
           <div class="row text-center my-3">
             <div class="col">
