@@ -87,6 +87,14 @@ function LoadMeals() {
 function createSearchTable(filteredRows) {
     let HTMLtable = document.getElementById('MealsTable');
     let strTextHTML = `
+    <style>
+        #Pages{
+            display: none;
+        }
+    </style>
+    `
+
+    strTextHTML += `
     <div class="row">
             <table class="table table-striped table-hover">
                 <tr>
@@ -155,7 +163,10 @@ function LoadPagination() {
                 </li>
     `;
 
-    for (let i = 0; i <= alimentos.length; i++) {
+    let startPage = Math.max(0, CurrentPage - 2);
+    let endPage = Math.min(alimentos.length - 1, startPage + 4);
+
+    for (let i = startPage; i <= endPage; i++) {
         strTextHTML += `
             <li class="page-item ${i === CurrentPage ? 'active' : ''}" aria-current="page">
                 <a class="page-link" href="#Pages" onclick="ChangePage(${i})">${i + 1}</a>
@@ -174,14 +185,29 @@ function LoadPagination() {
     `;
 
     HTMLtable.innerHTML = strTextHTML;
+
+    let pageLinks = HTMLtable.querySelectorAll('.page-link');
+    pageLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Evita o comportamento padrão de navegação do link
+            let pageIndex = parseInt(this.getAttribute('data-page-index'));
+            ChangePage(pageIndex);
+        });
+    });
 }
 
 function ChangePage(change) {
 
-    if (CurrentPage > 0 && CurrentPage < alimentos.length && change == -1) {
+    if (CurrentPage >= 0 && CurrentPage < alimentos.length && change == -1) {
         CurrentPage -= 1;
+        if (CurrentPage === -1) {
+            CurrentPage = alimentos.length - 1;
+        }
     } else if (CurrentPage < alimentos.length && change == -2) {
         CurrentPage += 1;
+        if(CurrentPage === alimentos.length){
+            CurrentPage = 0;
+        }
     } else if (change >= 0 && change < alimentos.length) {
         CurrentPage = change;
     } else {

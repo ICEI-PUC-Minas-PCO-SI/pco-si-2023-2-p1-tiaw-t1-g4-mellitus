@@ -3,10 +3,11 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--lilac);
+  height: 100%;
+  overflow-x: hidden;
 }
 form {
-  padding: 25px 0 0 0;
-  height: 100%;
+  height: 100vh;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -33,7 +34,7 @@ span {
 }
 
 div#title-box {
-  background-color: var(--purple);
+  background-color: var(--blue);
 }
 
 label {
@@ -45,6 +46,42 @@ label {
 }
 #ent {
   background-color: var(--purple);
+}
+
+#content-form{
+  background-color: rgb(248, 249, 250);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+#title-box{
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+@media (max-width:768px) {
+  body{
+    background-color: white;
+  }
+  #title-box{
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  form{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #content-form{
+    background-color: var(--white);
+    box-shadow: none;
+    padding-left:15px !important;
+    padding-right: 15px !important;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }
 
 :root {
