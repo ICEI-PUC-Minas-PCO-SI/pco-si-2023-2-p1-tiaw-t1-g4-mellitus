@@ -12,7 +12,7 @@ Uma plataforma de healthcare para todas as pessoas portadoras da doença Diabete
 
 ## Integrantes
 
-* Arthur Ramires
+* Arthur Ramires Maia
 * Bernardo Garcia Marques
 * João Pedro de Castro Vieira
 * Gabriel Fioreze de Araújo
