@@ -17,7 +17,7 @@ Uma plataforma de healthcare para todas as pessoas portadoras da doença Diabete
 * João Pedro de Castro Vieira
 * Gabriel Fioreze de Araújo
 * Matheus Antônio Valentin Freitas
-* Felipe Claver
+* Felipe Claver Diniz
 
 ## Orientador
 
