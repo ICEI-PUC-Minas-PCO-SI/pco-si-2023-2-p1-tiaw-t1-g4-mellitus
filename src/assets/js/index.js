@@ -40,7 +40,7 @@ function LoadArticleDefault() {
                         <p class="btn p-2 text-center text-light rounded-3"
                             style="width: 150px; background-color: #4c8bf5;" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapseAll${i}" aria-expanded="false"
-                            aria-controls="collapseAll${i}">
+                            aria-controls="collapseAll${i}" onclick="applyAndRemoveStyle(${i})">
                             <strong>Saiba Mais</strong>
                         </p>
                     </a>
@@ -73,3 +73,12 @@ function LoadArticleDefault() {
 }
 
 LoadArticlesJSONServer(LoadArticleDefault);
+
+function applyAndRemoveStyle(index) {
+    let collapseElement = document.getElementById(`collapseAll${index}`);
+    collapseElement.classList.add('efeito');
+
+    setTimeout(() => {
+        collapseElement.classList.remove('efeito');
+    }, 1500);
+}
