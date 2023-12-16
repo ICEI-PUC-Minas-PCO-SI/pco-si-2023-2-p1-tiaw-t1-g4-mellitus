@@ -72,7 +72,7 @@ const handleAppBar = (authed) => {
   if (authed) {
     appBar.innerHTML = `<nav class="navbar fixed-top navbar-expand-md">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/#"><img height="48" width="48" src="./src/assets/images/logo.png"
+        <a class="navbar-brand" href="/#"><img height="48" width="48" src="/src/assets/images/logo.png"
                 alt="Logo do Mellitus" /></a>
         <button class="navbar-toggler custom rounded-3" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
@@ -142,7 +142,7 @@ const handleAppBar = (authed) => {
   } else {
     appBar.innerHTML = ` <nav class="navbar fixed-top navbar-expand-md">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/#"><img height="48" width="48" src="./src/assets/images/logo.png"
+        <a class="navbar-brand" href="/#"><img height="48" width="48" src="/src/assets/images/logo.png"
                 alt="Logo do Mellitus" /></a>
         <button class="navbar-toggler custom rounded-3" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
