@@ -12,7 +12,7 @@ Liste os arquivos produzidos e postados nesta pasta, com suas localizaçãoes e 
 O conjunto de slides deve ser apresentado em um arquivo PowerPoint ou PDF. A apresentação do projeto deve contemplar todos os itens trabalhados nos demais artefatos. Alguns aspectos que devem ser contemplados na apresentação são listados a seguir.
 
 ## Título do Projeto
-src/assets/images/logo.ong
+src/assets/images/logo.png
 
 ## Identidade Visual (Marca, Design)
 
