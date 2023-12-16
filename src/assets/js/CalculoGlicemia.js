@@ -206,6 +206,11 @@ function LoadPagination() {
     let startPage = Math.max(0, CurrentPage - 2);
     let endPage = Math.min(alimentos.length - 1, startPage + 4);
 
+    // Se a última página for atingida, ajusta o início para garantir 5 ícones
+    if (endPage - startPage < 4) {
+        startPage = Math.max(0, endPage - 4);
+    }
+
     for (let i = startPage; i <= endPage; i++) {
         strTextHTML += `
             <li class="page-item ${i === CurrentPage ? 'active' : ''}" aria-current="page">
