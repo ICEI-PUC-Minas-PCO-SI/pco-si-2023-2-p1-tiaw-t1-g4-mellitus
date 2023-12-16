@@ -176,7 +176,7 @@ const handleAppBar = (authed) => {
                           currentPage === "CalculoGlicemia.html"
                             ? "active"
                             : ""
-                        }" aria-current="page" href="./src/pages/CalculoGlicemia.html"><i
+                        }" aria-current="page" href="/src/pages/CalculoGlicemia.html"><i
                                 class="fa-solid fa-calculator"></i>Cálculo de
                             Glicemia</a>
                     </li>
@@ -186,7 +186,7 @@ const handleAppBar = (authed) => {
                           currentPage === "Alimentacao.html"
                             ? "active"
                             : ""
-                        }" href="./src/pages/Alimentacao.html"><i class="fa-solid fa-bowl-food"></i>Alimentação</a>
+                        }" href="/src/pages/Alimentacao.html"><i class="fa-solid fa-bowl-food"></i>Alimentação</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav auth-items">
