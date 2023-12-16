@@ -75,7 +75,7 @@ button.navbar-toggler.custom:focus {
 body {
   margin: 0;
   padding: 0;
-  padding-top: 115px;
+  padding-top: 75px;
   background-color: var(--purple);
 }
 
@@ -96,7 +96,7 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .info-rectangle p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -132,4 +132,18 @@ body {
 #efeito:focus,
 #efeito:active {
   box-shadow: 0 0 40px white;
+}
+
+footer {
+  color: var(--white);
+  background-color: var(--blue);
+  font-family: 'Segoe UI';
+}
+
+footer i {
+  color: var(--blue);
+}
+
+#busca {
+  background-color: white;
 }

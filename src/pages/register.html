@@ -5,47 +5,67 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>register</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link href="../assets/css/register.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body class="m-auto">
-  <form class="text-primary w-25" id="register-form">
-    <div id="title-box" class="p-2 rounded-top">
-    <h1>Cadastro</h1>
+<body>
+  <form class="text-primary" id="register-form">
+    <div id="title-box" class="p-2 pb-3 d-flex justify-content-between">
+      <img
+        class="ms-2 mt-2"
+        height="48"
+        width="48"
+        src="../assets/images/logo.png"
+        alt="Logo do Mellitus"/>
+      <h1 class="pe-4 pt-2">Cadastro</h1>
     </div>
-    <div class="shadow p-3 bg-body-tertiary rounded-bottom">
-      <label for="exampleInputEmail1" class="form-label ">Usuario</label>
-      <input type="email" class="form-control shadow p-3 mb-3 bg-body-tertiary rounded" id="register-email" required>
-     
-    <div class="mb-1">
-      <label for="exampleInputPassword1" class="form-label ">Senha</label>
-      <input type="password" class="form-control shadow p-3 mb-3 bg-body-tertiary rounded" id="register-password" required>
-    </div>
+    <div class="p-3 pt-2" id="content-form">
+      <div class="row">
 
-    <div class="mb-1">
-      <label for="exampleInputEmail1" class="form-label ">Nome</label>
-      <input  class="form-control shadow p-3 mb-3 bg-body-tertiary rounded" id="register-name" required>
-    </div>
+        <div class="mb-1">
+          <label for="exampleInputEmail1" class="form-label">Usuário</label>
+          <input type="email" class="form-control shadow p-2 px-3 mb-1 bg-body-tertiary rounded"
+          id="register-email" placeholder="E-mail" required>
+        </div>
+        <div class="mb-1 col-12">
+          <label for="exampleInputPassword1" class="form-label ">Senha</label>
+          <input type="password" class="form-control shadow p-2 px-3 mb-1 bg-body-tertiary rounded" id="register-password"
+            required>
+        </div>
 
-    <div class="mb-1">
-      <label for="exampleInputEmail1" class="form-label ">Idade</label>
-      <input class="form-control shadow p-3 mb-3 bg-body-tertiary rounded" id="register-age" required>
-    </div>
+        <div class="mb-1 col-12">
+          <label for="exampleInputEmail1" class="form-label ">Nome</label>
+          <input class="form-control shadow p-2 px-3 mb-1 bg-body-tertiary rounded" id="register-name" required>
+        </div>
 
-    <div class="mb-1">
-      <label for="exampleInputPassword1" class="form-label ">Gênero</label>
-      <input  class="form-control shadow p-3 mb-3 bg-body-tertiary rounded" id="register-genre" required>
-    </div>
+        <div class="mb-1 col-3">
+          <label for="exampleInputEmail1" class="form-label ">Idade</label>
+          <input class="form-control shadow p-2 px-3 mb-1 bg-body-tertiary rounded" id="register-age" required>
+        </div>
 
-    <div class="container-fluid d-flex gap-4">
-    <button type="submit" class="btn text-light w-100 shadow" id="ent">
+        <div class="mb-1 col-9">
+          <label for="exampleInputPassword1" class="form-label">Gênero</label>
+          <select class="form-select shadow p-2 px-3 mb-1 bg-body-tertiary rounded" id="register-genre" required>
+            <option value="" disabled selected>Escolha...</option>
+            <option>Masculino</option>
+            <option>Feminino</option>
+            <option>Outro</option>
+          </select>
+        </div>
+
+        <div class="container-fluid d-flex justify-content-center mt-3">
+          <button type="submit" class="btn text-light w-75 shadow" id="ent">
             Cadastrar
-    </button>
-    </div>  
+          </button>
+        </div>
+      </div>
+    </div>
   </form>
 
-  <script  src="/src/assets/js/handleUser.js">
+  <script src="/src/assets/js/handleUser.js">
   </script>
 </body>
+
 </html>

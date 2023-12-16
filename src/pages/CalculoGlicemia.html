@@ -1,192 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="/src/assets/images/logo.png"
-    />
-    <title>Mellitus</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="/src/assets/images/logo.png" />
+  <title>Mellitus</title>
 
-    <link
-      href="../assets/css/CalculoGlicemia.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-  </head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
 
-  <body>
-    <header>
-      <nav class="navbar fixed-top navbar-expand-md">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/#"
-            ><img
-              height="48"
-              width="48"
-              src="../assets/images/logo.png"
-              alt="Logo do Mellitus"
-          /></a>
-          <button
-            class="navbar-toggler custom"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <i class="fa-solid fa-bars"></i>
-          </button>
+  <link href="../assets/css/CalculoGlicemia.css" rel="stylesheet" type="text/css" />
+</head>
 
-          <div
-            class="offcanvas w-50 offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <span class="offcanvas-title" id="offcanvasNavbarLabel">
-                Mellitus
-              </span>
-              <button
-                class="btn-close custom"
-                type="button"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              >
-                <i class="fa-solid fa-xmark"></i>
-              </button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav mb-2 mb-md-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="../../index.html"
-                    ><i class="fa-solid fa-house"></i>Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="CalculoGlicemia.html"
-                    ><i class="fa-solid fa-calculator"></i>Cálculo de
-                    Glicemia</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Alimentacao.html"
-                    ><i class="fa-solid fa-bowl-food"></i>Alimentação</a
-                  >
-                </li>
-              </ul>
-              <ul class="navbar-nav auth-items">
-                <li class="nav-item">
-                  <a class="nav-link" href="login.html"
-                    ><i class="fa-solid fa-arrow-right-to-bracket"></i>Logar</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="register.html"
-                    ><i class="fa-solid fa-pen-to-square"></i>Cadastrar</a
-                  >
-                </li>
-              </ul>
-            </div>
+<body>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/#"><img height="48" width="48" src="../assets/images/logo.png"
+            alt="Logo do Mellitus" /></a>
+        <button class="navbar-toggler custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="offcanvas w-50 offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <span class="offcanvas-title" id="offcanvasNavbarLabel">
+              Mellitus
+            </span>
+            <button class="btn-close custom" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
           </div>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-        <div class="main-header">
-            <div class="container-fluid">
-                <div class="row my-3">
-                    <div class="col-md-4 p-2">
-                        <label class="pb-1">Glicemia Pré Prandial</label>
-                        <input id="gliPre" class="form-control" type="text" placeholder="Glicemia Pré Prandial">
-                    </div>
-                    <div class="col-md-4 p-2">
-                        <label class="pb-1">Glicemia Pós Prandial</label>
-                        <input id="gliPos" class="form-control" type="text" placeholder="Glicemia Meta Pós Prandial">
-                    </div>
-                    <div class="col-md-4 p-2">
-                        <label class="pb-1">Sensibilidade Insulínica</label>
-                        <input id="sensi" class="form-control" type="text" placeholder="Sensibilidade Insulínica">
-                    </div>
-                </div>
-                <div class="row my-3">
-                    <label>Dose de correção: <span id="correto"></span></label>
-                </div>
-                <div class="row my-3 text-center">
-                    <div class="col">
-                        <button id="calculo" type="button" onclick="calculo()" class="btn btn-primary">Calcular</button>
-                    </div>
-                </div>
-                <div class="container-fluid">
-                    <div class="row my-3">
-                        <div class="col-md-4 p-2">
-                            <label class="pb-1">Total em grama de Carboidratos</label>
-                            <input id="Carb" class="form-control" type="text"
-                                placeholder="Total em grama de Carboidratos">
-                        </div>
-                        <div class="col-md-4 p-2">
-                            <label class="pb-1">Dose de correção anterior</label>
-                            <input id="Res" class="form-control" type="text" placeholder="Dose de correção anterior">
-                        </div>
-                        <div class="col-md-4 p-2">
-                            <label class="pb-1">Relação Carboidratos Insulina</label>
-                            <input id="Relacao" class="form-control" type="text"
-                                placeholder="Relação Carboidratos Insulina">
-                        </div>
-                    </div>
-                    <div class="row my-3">
-                        <label>Dose de correção Total: <span id="correto2"></span></label>
-                    </div>
-                    <div class="row text-center my-3">
-                        <div class="col">
-                            <button id="calculo2" type="button" onclick="calculo2()"
-                                class="btn btn-primary">Calcular</button>
-                        </div>
-                    </div>
-
-                    <div class="row py-4">
-                        <div class="col">
-                            <label id="cabecalho_alimentos">TABELA DE ALIMENTOS: FESTAS E COMEMORAÇÕES</label>
-                        </div>
-                        <div class="col">
-                            <input id="searchbar"   type="text" class="form-control" placeholder="Pesquisar..." onkeyup="search()">
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid" id="MealsTable"> <!--div que recebe a tabela-->
-                </div>
-            </div>
-          </div>
-          <div class="container-fluid" id="MealsTable">
-            <!--div que recebe a tabela-->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../../index.html"><i class="fa-solid fa-house"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="CalculoGlicemia.html"><i
+                    class="fa-solid fa-calculator"></i>Cálculo de
+                  Glicemia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Alimentacao.html"><i class="fa-solid fa-bowl-food"></i>Alimentação</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav auth-items">
+              <li class="nav-item">
+                <a class="nav-link" href="login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>Logar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html"><i class="fa-solid fa-pen-to-square"></i>Cadastrar</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </main>
-    <script src="../assets/js/CalculoGlicemia.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/d617ea5e74.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/src/assets/js/handleUser.js"></script>
-  </body>
+    </nav>
+  </header>
+
+  <main>
+    <div class="main-header mb-3">
+      <div class="d-flex flex-row justify-content-center p-4">
+        <iframe class="border border-2 border-primary rounded-2" src="https://www.youtube.com/embed/Dwu-wkg9crc"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="container-fluid">
+        <div class="row my-2">
+          <div class="col-md-6 p-3">
+            <label class="pb-1">Insulina Basal</label>
+            <input id="glilenta" class="form-control" type="text" placeholder="Quantidade de Insulina Basal (UI) que você aplica em 1 dia">
+          </div>
+          <div class="col-md-6 p-3">
+            <label class="pb-1">Insulina Rápida</label>
+            <input id="glirapida" class="form-control" type="text" placeholder="Quantidade de Insulina Rápida (UI)  que você aplica em 1 dia">
+          </div>
+        </div>
+        <div class="row my-3">
+          <label>Resultado: <span id="correto1800"></span></label>
+        </div>
+        <div class="row my-3 text-center">
+          <div class="col">
+            <button id="calculo" type="button" onclick="calculo1800()" class="btn btn-primary">Calcular</button>
+          </div>
+        </div>
+
+        <div class="row my-3">
+          <div class="col-md-6 p-3">
+            <label class="pb-1">Glicemia Pré Prandial</label>
+            <input id="gliPre" class="form-control" type="text" placeholder="Glicemia Pré Prandial">
+          </div>
+          <div class="col-md-6 p-3">
+            <label class="pb-1">Glicemia Pós Prandial</label>
+            <input id="gliPos" class="form-control" type="text" placeholder="Glicemia Meta Pós Prandial">
+          </div>
+        <div class="row my-3">
+          <label>Dose de correção: <span id="correto"></span></label>
+        </div>
+        <div class="row my-3 text-center">
+          <div class="col">
+            <button id="calculo" type="button" onclick="calculo()" class="btn btn-primary">Calcular</button>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row my-3">
+            <div class="col-md-6 p-3">
+              <label class="pb-1">Total em grama de Carboidratos</label>
+              <input id="Carb" class="form-control" type="text" placeholder="Total em grama de Carboidratos">
+            </div>
+            <div class="col-md-6 p-3">
+              <label class="pb-1">Digite seu peso</label>
+              <input id="peso" class="form-control" type="text" placeholder="Seu peso em kg">
+            </div>
+          </div>
+          <div class="row my-3">
+            <label>Dose de correção Total (Correção + Alimentação): <span id="correto2"></span></label>
+          </div>
+          <div class="row text-center my-3">
+            <div class="col">
+              <button id="calculo2" type="button" onclick="calculo2()" class="btn btn-primary">Calcular</button>
+            </div>
+          </div>
+
+          <div class="row py-4">
+            <div class="col">
+              <label id="cabecalho_alimentos">TABELA DE ALIMENTOS: FESTAS E COMEMORAÇÕES</label>
+            </div>
+            <div class="col">
+              <input id="searchbar" type="text" class="form-control" placeholder="Pesquisar..." onkeyup="search()">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" id="Pages">
+        <!--Recebe a navegação-->
+      </div>
+      <div class="container-fluid" id="MealsTable">
+        <!--div que recebe a tabela-->
+      </div>
+    </div>
+    </div>
+  </main>
+  <script src="../assets/js/CalculoGlicemia.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/d617ea5e74.js" crossorigin="anonymous"></script>
+  <script src="/src/assets/js/handleUser.js"></script>
+</body>
+
 </html>

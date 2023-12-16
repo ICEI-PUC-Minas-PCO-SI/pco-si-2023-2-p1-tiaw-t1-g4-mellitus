@@ -1,12 +1,18 @@
+html{
+  width: 100%;
+}
+
 body {
   box-sizing: border-box;
   margin: auto;
   padding: 0;
-  height: 100vh;
-  background-color: var(--blue);
+  height: 100%;
+  width: 100%;
+  background-color: var(--lilac);
 }
 form {
-  height: 100%;
+  height: 100vh;
+  width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,20 +28,56 @@ a {
   color: var(--purple);
 }
 h1 {
-  color: var(--lilac);
+  color: var(--white);
 }
-span {
+.account {
   color: black;
 }
 div#title-box {
-  background-color: var(--dark-blue);
+  background-color: var(--blue);
 }
 
 #ent:hover {
-  background-color: var(--dark-blue);
+  background-color: var(--blue);
 }
 #ent {
   background-color: var(--purple);
+}
+
+#content-form{
+  background-color: rgb(248, 249, 250);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+#title-box{
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+@media (max-width:768px) {
+  body{
+    background-color: white;
+  }
+  #title-box{
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  form{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #content-form{
+    background-color: var(--white);
+    box-shadow: none;
+    padding-left:15px !important;
+    padding-right: 15px !important;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }
 
 :root {

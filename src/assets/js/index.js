@@ -21,7 +21,10 @@ function LoadArticleDefault() {
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row row-cols-md-4 row-cols-sm-2 pb-4">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="container-fluid">
+                    <div class="row row-cols-lg-3 row-cols-sm-2 pb-4">
     `;
 
     for (let i = 0; i < articles[0].content.length; i++) {
@@ -37,7 +40,7 @@ function LoadArticleDefault() {
                         <p class="btn p-2 text-center text-light rounded-3"
                             style="width: 150px; background-color: #4c8bf5;" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapseAll${i}" aria-expanded="false"
-                            aria-controls="collapseAll${i}">
+                            aria-controls="collapseAll${i}" onclick="applyAndRemoveStyle(${i})">
                             <strong>Saiba Mais</strong>
                         </p>
                     </a>
@@ -60,9 +63,22 @@ function LoadArticleDefault() {
         `;
     }
 
-    strTextHTML += `</div>`;
+    strTextHTML += `</div></div>
+        <div class="col-md-4">
+            <img class="w-100 pt-3 px-2 mb-3" src="./src/assets/images/aplicar-insulina.png" alt="Imagem" id="advertising">
+        </div>
+        </div></div>`;
 
     HTMLtext.innerHTML = strTextHTML;
 }
 
 LoadArticlesJSONServer(LoadArticleDefault);
+
+function applyAndRemoveStyle(index) {
+    let collapseElement = document.getElementById(`collapseAll${index}`);
+    collapseElement.classList.add('efeito');
+
+    setTimeout(() => {
+        collapseElement.classList.remove('efeito');
+    }, 1500);
+}
